@@ -36,6 +36,7 @@ only once photos are self-hosted (Wikimedia hot-linking would send visitor IPs t
 
 ```bash
 cd web
+cp .env.example .env         # local settings; all keys are optional
 npm install
 npx prisma migrate dev      # creates prisma/dev.db
 npm run dev                 # http://localhost:3000
