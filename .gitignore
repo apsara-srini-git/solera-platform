@@ -1,0 +1,26 @@
+# Dependencies and build output
+node_modules/
+.next/
+out/
+build/
+*.tsbuildinfo
+next-env.d.ts
+__pycache__/
+*.pyc
+
+# Secrets: copy web/.env.example to web/.env and fill in locally
+.env
+.env.*
+!.env.example
+
+# Local database, uploaded protocols, dev logs
+web/prisma/*.db*
+web/storage/
+*.log
+.next-dev.log
+
+# Raw downloads (~350 MB): rebuilt by `python3 pipeline/build_data.py --refresh`
+pipeline/raw/
+
+# OS
+.DS_Store

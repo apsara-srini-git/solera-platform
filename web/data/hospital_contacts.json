@@ -1,0 +1,2549 @@
+{
+ "checkedOn": "2026-10-06",
+ "note": "Curated public contact points for each Madrid hospital (CNH code), compiled by hand/research agents from official hospital, research-institute and research-foundation web pages and re-checked periodically. Only role/unit mailboxes are recorded (no named people, no personal data). Each contact cites the page it was seen on (sourceUrl, sourceTitle, evidenceQuote) and the date it was checked. 'kind' is one of clinical_trials_unit, research_foundation, research_institute, research_support_office, ceim_secretariat, hospital_general. Webmail addresses (e.g. gmail.com) are kept here for completeness but are not offered as recipients by the web app.",
+ "hospitals": [
+  {
+   "id": "280014",
+   "name": "Hospital Universitario La Paz",
+   "website": "https://www.idipaz.es/",
+   "notes": "VERIFIED 2026-10-06: I opened all 3 sources. ensayosclinicos@idipaz.es and 91 727 75 76 appear in the official idipaz.es PDF (June 2022), so they may be out of date. info@idipaz.es and +34 91 207 14 66 are on the UCICEC page. ceic.hulp@salud.madrid.org and 91 727 74 13 are on the CEIm organigram page; the address sits next to a named head of the secretariat but is a role mailbox, so it is kept and no name is recorded. No changes. Researcher's notes: the current contracts page uses a web form, not email. The gmail address in the PDF and the named staff addresses were excluded.",
+   "contacts": [
+    {
+     "email": "ensayosclinicos@idipaz.es",
+     "phone": "91 727 75 76",
+     "kind": "research_foundation",
+     "label_es": "Gestión de Ensayos Clínicos (FIBHULP / IdiPAZ)",
+     "label_en": "Clinical Trials Management (FIBHULP / IdiPAZ)",
+     "description_es": "Buzón de gestión de ensayos clínicos de la Fundación de Investigación del Hospital La Paz, indicado para el contrato económico de los ensayos; publicado en un documento de 2022, conviene confirmar que sigue activo.",
+     "description_en": "The La Paz research foundation's clinical-trials management mailbox, given for clinical-trial economic contracts. It comes from a 2022 document, so confirm it is still in use.",
+     "sourceUrl": "https://www.idipaz.es/ficheros/files/Requisitos%20evaluacion%20Ensayo%20Cl%C3%ADnico%20con%20Medicamento%20e%20I_C_%20Producto%20Sanitario_jun22pdf.pdf",
+     "sourceTitle": "Requisitos para evaluación de Ensayos Clínicos con Medicamentos (ECM) e I.C. Producto Sanitario (IdiPAZ, jun 2022)",
+     "evidenceQuote": "Todos los ensayos requerirán para su inicio la firma del contrato económico con la Fundación para la Investigación Biomédica del Hospital La Paz. Contacto: ensayosclinicos.idipaz@gmail.com; ensayosclinicos@idipaz.es; 91 727 75 76.",
+     "checkedOn": "2026-10-06",
+     "confidence": "high"
+    },
+    {
+     "email": "info@idipaz.es",
+     "phone": "+34 91 207 14 66",
+     "kind": "research_institute",
+     "label_es": "IdiPAZ (contacto general)",
+     "label_en": "IdiPAZ Research Institute (general contact)",
+     "description_es": "Buzón general del Instituto de Investigación del Hospital La Paz; aparece en la página de la UCICEC (unidad de ensayos clínicos), cuyo teléfono es el indicado.",
+     "description_en": "General mailbox of the La Paz Hospital Research Institute. It appears on the UCICEC (clinical trials unit) page, and the phone shown is the UCICEC's.",
+     "sourceUrl": "https://www.idipaz.es/EspacioInvestigador/UCICEC",
+     "sourceTitle": "Espacio del Investigador - UCICEC | IdiPAZ",
+     "evidenceQuote": "Instituto de Investigación del Hospital Universitario La Paz Paseo de la Castellana 261 28046 Madrid info@idipaz.es",
+     "checkedOn": "2026-10-06",
+     "confidence": "medium"
+    },
+    {
+     "email": "ceic.hulp@salud.madrid.org",
+     "phone": "91 727 74 13",
+     "kind": "ceim_secretariat",
+     "label_es": "Secretaría Técnica CEIm",
+     "label_en": "Ethics Committee (CEIm) secretariat",
+     "description_es": "Secretaría técnica del Comité de Ética de la Investigación con Medicamentos del Hospital La Paz; para cuestiones regulatorias, no para viabilidad.",
+     "description_en": "Technical secretariat of La Paz Hospital's drug research ethics committee. For regulatory questions, not feasibility.",
+     "sourceUrl": "https://www.idipaz.es/quienessomos/Organigrama/CEIm",
+     "sourceTitle": "Organigrama - Comité de Ética de la Investigación con Medicamentos (CEIm) | IdiPAZ",
+     "evidenceQuote": "Jefe de la Secretaría Técnica CEIm Farmacéutica ceic.hulp@salud.madrid.org",
+     "checkedOn": "2026-10-06",
+     "confidence": "medium"
+    }
+   ]
+  },
+  {
+   "id": "280029",
+   "name": "Hospital Universitario Ramón y Cajal",
+   "website": "https://www.comunidad.madrid/hospital/ramonycajal/",
+   "notes": "VERIFIED 2026-10-06: I opened the official comunidad.madrid page. All 3 addresses and the phones 91 336 89 63 and 91 336 83 22 appear on it. No changes. Researcher's notes: named-person gmail and salud.madrid.org addresses were excluded.",
+   "contacts": [
+    {
+     "email": "contratos.ec@irycis.org",
+     "phone": "91 336 89 63",
+     "kind": "research_foundation",
+     "label_es": "Unidad de Contratos de la Fundación (IRYCIS)",
+     "label_en": "Foundation Contracts Unit (IRYCIS)",
+     "description_es": "Unidad de la fundación IRYCIS que gestiona los contratos de ensayos clínicos del hospital; punto de entrada habitual para promotores.",
+     "description_en": "The IRYCIS foundation unit that handles the hospital's clinical-trial contracts. The usual entry point for sponsors.",
+     "sourceUrl": "https://www.comunidad.madrid/hospital/ramonycajal/profesionales/ensayos-clinicos-otros-estudios-investigacion-clinica/ensayos-clinicos-otros-estudios",
+     "sourceTitle": "Ensayos Clínicos y otros Estudios de Investigación Clínica | Hospital Universitario Ramón y Cajal",
+     "evidenceQuote": "Contactos Unidad de Contratos de la Fundación: ... Teléfono: 91 336 89 63 / 91 336 80 00 Ext. 7922 Correo: contratos.ec@irycis.org",
+     "checkedOn": "2026-10-06",
+     "confidence": "high"
+    },
+    {
+     "email": "uasic.hrc@irycis.org",
+     "phone": "91 336 83 22",
+     "kind": "research_support_office",
+     "label_es": "UASIC – Idoneidad del centro",
+     "label_en": "UASIC – Site suitability office",
+     "description_es": "Unidad de apoyo que recibe la documentación de los ensayos y gestiona la idoneidad del centro; útil para la puesta en marcha más que para la viabilidad inicial.",
+     "description_en": "Support unit that receives trial documents and handles site-suitability paperwork. More useful for study start-up than for initial feasibility.",
+     "sourceUrl": "https://www.comunidad.madrid/hospital/ramonycajal/profesionales/ensayos-clinicos-otros-estudios-investigacion-clinica/ensayos-clinicos-otros-estudios",
+     "sourceTitle": "Ensayos Clínicos y otros Estudios de Investigación Clínica | Hospital Universitario Ramón y Cajal",
+     "evidenceQuote": "Los documentos deben ser presentados en la -UASIC- en formato PDF Por correo electrónico ... Teléfono / Fax: 91 336 83 22 Correo: uasic.hrc@irycis.org",
+     "checkedOn": "2026-10-06",
+     "confidence": "high"
+    },
+    {
+     "email": "ceic.hrc@salud.madrid.org",
+     "phone": "91 336 83 22",
+     "kind": "ceim_secretariat",
+     "label_es": "Secretaría CEIm",
+     "label_en": "Ethics Committee (CEIm) secretariat",
+     "description_es": "Contacto administrativo del Comité de Ética de la Investigación con Medicamentos del hospital; para cuestiones regulatorias, no para viabilidad.",
+     "description_en": "Administrative contact of the hospital's drug research ethics committee. For regulatory questions, not feasibility.",
+     "sourceUrl": "https://www.comunidad.madrid/hospital/ramonycajal/profesionales/ensayos-clinicos-otros-estudios-investigacion-clinica/ensayos-clinicos-otros-estudios",
+     "sourceTitle": "Ensayos Clínicos y otros Estudios de Investigación Clínica | Hospital Universitario Ramón y Cajal",
+     "evidenceQuote": "El Comité de Etica de la Investigación con medicamentos -CEIm- del Hospital Universitario Ramón y Cajal pone a su disposición la siguiente información de contacto: ... Correo: ceic.hrc@salud.madrid.org",
+     "checkedOn": "2026-10-06",
+     "confidence": "medium"
+    }
+   ]
+  },
+  {
+   "id": "280035",
+   "name": "Hospital Universitario 12 de Octubre",
+   "website": "https://imas12.es/",
+   "notes": "VERIFIED 2026-10-06: I fetched the source page and all 4 addresses and phones appear on it verbatim. ceic@h12o.es is listed under a staff member's name but is itself a role mailbox (the CEIm secretariat for drug trials), so it is kept; the name is not recorded. No changes. Researcher's notes: all addresses are from the i+12 / FIBH12O contact page. Excluded: named-person addresses, plus accounting, invoicing, HR and purchasing mailboxes. The contracts unit also lists ensayos.hdoc@salud.madrid.org, which is the same unit. No feasibility-specific mailbox is published.",
+   "contacts": [
+    {
+     "email": "ensayos.imas12@h12o.es",
+     "phone": "91 779 2619",
+     "kind": "research_foundation",
+     "label_es": "Unidad de Gestión de Contratos de Ensayos Clínicos",
+     "label_en": "Clinical Trial Contracts Unit",
+     "description_es": "Unidad de la fundación de investigación (FIBH12O / i+12) que gestiona los contratos de ensayos clínicos del hospital; probablemente el mejor punto de entrada para promotores, aunque no se menciona expresamente la viabilidad.",
+     "description_en": "The research foundation's (FIBH12O / i+12) unit that handles the hospital's clinical-trial contracts. Probably the best entry point for sponsors, although the page does not mention feasibility.",
+     "sourceUrl": "https://imas12.es/contacto-659496544/",
+     "sourceTitle": "Contacto – i+12",
+     "evidenceQuote": "Unidad de Gestión de Contratos de Ensayos Clínicos Tlf. 91 779 2619 e-mail: ensayos.hdoc@salud.madrid.org e-mail: ensayos.imas12@h12o.es",
+     "checkedOn": "2026-10-06",
+     "confidence": "high"
+    },
+    {
+     "email": "info.imas12@h12o.es",
+     "phone": "+34 91 779 28 39",
+     "kind": "research_institute",
+     "label_es": "Instituto i+12 (contacto general)",
+     "label_en": "i+12 Research Institute (general contact)",
+     "description_es": "Buzón general del Instituto de Investigación del Hospital 12 de Octubre; útil si no se sabe a qué unidad dirigirse.",
+     "description_en": "General mailbox of the 12 de Octubre Hospital Research Institute. Useful when you don't know which unit to contact.",
+     "sourceUrl": "https://imas12.es/contacto-659496544/",
+     "sourceTitle": "Contacto – i+12",
+     "evidenceQuote": "Avda. de Córdoba, s/n 28041 - MADRID Tel: +34 91 779 28 39 info.imas12@h12o.es",
+     "checkedOn": "2026-10-06",
+     "confidence": "medium"
+    },
+    {
+     "email": "fundacion.hdoc@salud.madrid.org",
+     "phone": "91 779 2839",
+     "kind": "research_foundation",
+     "label_es": "Recepción de la Fundación (FIBH12O)",
+     "label_en": "Research Foundation reception (FIBH12O)",
+     "description_es": "Recepción general de la Fundación para la Investigación Biomédica del Hospital 12 de Octubre; redirige consultas a la unidad correspondiente.",
+     "description_en": "General reception of the 12 de Octubre Hospital Biomedical Research Foundation. It forwards enquiries to the right unit.",
+     "sourceUrl": "https://imas12.es/contacto-659496544/",
+     "sourceTitle": "Contacto – i+12",
+     "evidenceQuote": "Recepción Tlf: 659 496 544 – 91 779 2839 e-mail: fundacion.hdoc@salud.madrid.org e-mail: recepcion.imas12@h12o.es",
+     "checkedOn": "2026-10-06",
+     "confidence": "medium"
+    },
+    {
+     "email": "ceic@h12o.es",
+     "phone": "91 779 26 16",
+     "kind": "ceim_secretariat",
+     "label_es": "Secretaría Técnica CEIm (ensayos con medicamentos)",
+     "label_en": "Ethics Committee (CEIm) secretariat – drug trials",
+     "description_es": "Secretaría técnica del Comité de Ética para la documentación de ensayos clínicos con medicamentos; para cuestiones regulatorias, no para viabilidad.",
+     "description_en": "Ethics Committee technical secretariat for drug clinical-trial documentation. For regulatory questions, not feasibility.",
+     "sourceUrl": "https://imas12.es/contacto-659496544/",
+     "sourceTitle": "Contacto – i+12",
+     "evidenceQuote": "Secretaría Técnica CEIm ... Ensayos clínicos con medicamentos: ... Tlf. 91 779 26 16 e-mail: ceic@h12o.es",
+     "checkedOn": "2026-10-06",
+     "confidence": "medium"
+    }
+   ]
+  },
+  {
+   "id": "280072",
+   "name": "Hospital Universitario Clínico San Carlos",
+   "website": "https://www.idissc.org/",
+   "notes": "VERIFIED 2026-10-06: I opened both idissc.org pages. fuinvest.hcsc@salud.madrid.org and 91 704 23 07 appear on the trials-with-medicines page, and ceic.hcsc and coordinacioneecc.hcsc appear on the CEIm contact page. No changes. Researcher's notes: coordinacioneecc.hcsc is listed on the CEIm page, so its role is probably regulatory or trial coordination rather than feasibility. Named-person contacts were excluded.",
+   "contacts": [
+    {
+     "email": "fuinvest.hcsc@salud.madrid.org",
+     "phone": "91 704 23 07",
+     "kind": "research_foundation",
+     "label_es": "Fundación de Investigación Biomédica del HCSC",
+     "label_en": "San Carlos Biomedical Research Foundation",
+     "description_es": "Fundación de investigación del Clínico San Carlos, contacto en la página de ensayos clínicos con medicamentos (tramitación de contratos y tarifas); probable entrada para promotores.",
+     "description_en": "San Carlos's research foundation, listed as the contact on the clinical-trials-with-medicines page (contract processing and fees). The likely entry point for sponsors.",
+     "sourceUrl": "https://www.idissc.org/estudios-clinicos-y-preclinicos/ensayos-clinicos-con-medicamentos/",
+     "sourceTitle": "Ensayos Clínicos con Medicamentos - IdISSC",
+     "evidenceQuote": "Ver los requisitos para la tramitación de los contratos y las tarifas asociadas aquí . Descargar modelos aquí . T. 91 704 23 07 fuinvest.hcsc@salud.madrid.org Hospital Clínico San Carlos 4ª Planta S",
+     "checkedOn": "2026-10-06",
+     "confidence": "high"
+    },
+    {
+     "email": "coordinacioneecc.hcsc@salud.madrid.org",
+     "kind": "ceim_secretariat",
+     "label_es": "Coordinación de ensayos clínicos (CEIm)",
+     "label_en": "Clinical trials coordination (CEIm)",
+     "description_es": "Buzón de coordinación de ensayos clínicos publicado en la página de contacto del CEIm; su función exacta no se especifica, probablemente regulatoria.",
+     "description_en": "Clinical-trials coordination mailbox listed on the CEIm contact page. Its exact role isn't stated; probably regulatory.",
+     "sourceUrl": "https://www.idissc.org/estudios-clinicos-y-preclinicos/contacto-ceim/",
+     "sourceTitle": "Contacto CEIm - IdISSC",
+     "evidenceQuote": "Direcciones Electrónicas ceic.hcsc@salud.madrid.org ceicnotificaciones.hcsc@salud.madrid.org coordinacioneecc.hcsc@salud.madrid.org",
+     "checkedOn": "2026-10-06",
+     "confidence": "medium"
+    },
+    {
+     "email": "ceic.hcsc@salud.madrid.org",
+     "kind": "ceim_secretariat",
+     "label_es": "Secretaría CEIm",
+     "label_en": "Ethics Committee (CEIm) secretariat",
+     "description_es": "Comité de Ética de la Investigación con Medicamentos del Clínico San Carlos; para cuestiones regulatorias, no para viabilidad.",
+     "description_en": "San Carlos's drug research ethics committee. For regulatory questions, not feasibility.",
+     "sourceUrl": "https://www.idissc.org/estudios-clinicos-y-preclinicos/contacto-ceim/",
+     "sourceTitle": "Contacto CEIm - IdISSC",
+     "evidenceQuote": "4ª planta, Ala Norte (Puerta G) Hospital Clínico San Carlos C/Profesor Martín Lagos, s/n 28040 Madrid Direcciones Electrónicas ceic.hcsc@salud.madrid.org",
+     "checkedOn": "2026-10-06",
+     "confidence": "medium"
+    }
+   ]
+  },
+  {
+   "id": "280091",
+   "name": "Hospital Virgen de la Torre",
+   "website": "https://www.comunidad.madrid/hospital/infantaleonor/nosotros/hospital-virgen-torre",
+   "notes": "VERIFIED 2026-10-06: both addresses appear on the Infanta Leonor research page. The official Virgen de la Torre page confirms 'El 1 de enero de 2017 el Hospital Virgen de la Torre quedó integrado jurídicamente en el Hospital Universitario Infanta Leonor', so the FIIB HUIL-HUSE contacts apply. The contacts are shared with Infanta Leonor. No changes. Billing, innovation, DPO, project-management and the external UAMI (pertica.net) mailboxes, and a named person's address, were left out.",
+   "contacts": [
+    {
+     "email": "unidadinvestigacionclinica@fiibhuilhuse.es",
+     "phone": "91 191 98 55 / 91 191 88 55",
+     "kind": "clinical_trials_unit",
+     "label_es": "Unidad de Investigación Clínica – FIIB Infanta Leonor/Sureste",
+     "label_en": "Clinical Research Unit – FIIB Infanta Leonor/Sureste",
+     "description_es": "Unidad de investigación clínica de la fundación del Infanta Leonor (que incluye el Virgen de la Torre); probablemente el mejor punto de entrada para viabilidad de ensayos, aunque la página no lo dice expresamente.",
+     "description_en": "Clinical research unit of the Infanta Leonor foundation (which covers Virgen de la Torre); likely the best entry point for trial feasibility, though the page does not say so explicitly.",
+     "sourceUrl": "https://www.comunidad.madrid/hospital/infantaleonor/profesionales/investigacion",
+     "sourceTitle": "Investigación | Hospital Universitario Infanta Leonor",
+     "evidenceQuote": "Unidad de Investigación Clínica: unidadinvestigacionclinica@fiibhuilhuse.es",
+     "checkedOn": "2026-10-06",
+     "confidence": "medium"
+    },
+    {
+     "email": "fundacion@fiibhuilhuse.es",
+     "phone": "91 191 98 55 / 91 191 88 55",
+     "kind": "research_foundation",
+     "label_es": "Departamento de contratos – FIIB Infanta Leonor/Sureste",
+     "label_en": "Contracts department – FIIB Infanta Leonor/Sureste",
+     "description_es": "Departamento de contratos de la fundación de investigación; gestiona los contratos con promotores una vez aceptado el estudio.",
+     "description_en": "Contracts department of the research foundation; it handles sponsor contracts once a study is accepted.",
+     "sourceUrl": "https://www.comunidad.madrid/hospital/infantaleonor/profesionales/investigacion",
+     "sourceTitle": "Investigación | Hospital Universitario Infanta Leonor",
+     "evidenceQuote": "Telf: 91 191 98 55 / 91 191 88 55 Departamento contratos : fundacion@fiibhuilhuse.es",
+     "checkedOn": "2026-10-06",
+     "confidence": "medium"
+    }
+   ]
+  },
+  {
+   "id": "280112",
+   "name": "Hospital Universitario Santa Cristina",
+   "website": "https://www.comunidad.madrid/hospital/santacristina/",
+   "contacts": [
+    {
+     "email": "eecc.fib.hlpr@salud.madrid.org",
+     "phone": "+34 915 202 586",
+     "kind": "research_foundation",
+     "label_es": "Ensayos Clínicos – FIB Princesa",
+     "label_en": "Clinical Trials – FIB Princesa",
+     "description_es": "Área de Ensayos Clínicos de la Fundación de Investigación Biomédica del H. U. de La Princesa, que gestiona los ensayos del IIS-Princesa, del que forma parte Santa Cristina. Es probablemente el mejor buzón para viabilidad y contratos.",
+     "description_en": "Clinical Trials desk of the La Princesa research foundation, which manages trials for the IIS-Princesa institute that Santa Cristina belongs to. Likely the best mailbox for feasibility and contracts.",
+     "sourceUrl": "https://www.iis-princesa.org/contactar/",
+     "sourceTitle": "Contactar – IIS PRINCESA",
+     "evidenceQuote": "Legal (+34) 915 204 003 legal.fib.hlpr@salud.madrid.org Ensayos Clínicos (+34) 915 202 586 eecc.fib.hlpr@salud.madrid.org",
+     "checkedOn": "2026-10-06",
+     "confidence": "high"
+    },
+    {
+     "email": "investigacionclinica.hlpr@salud.madrid.org",
+     "phone": "+34 91 520 22 47",
+     "kind": "clinical_trials_unit",
+     "label_es": "Unidad de Ensayos Clínicos (IIS-Princesa)",
+     "label_en": "Clinical Trials Unit (IIS-Princesa)",
+     "description_es": "Contacto de la Unidad de Ensayos Clínicos del IIS-Princesa, ubicada en el H. U. de La Princesa; da soporte a investigadores del instituto, aunque no consta expresamente que cubra Santa Cristina.",
+     "description_en": "Contact for the IIS-Princesa Clinical Trials Unit, based at H. U. de La Princesa. It supports the institute's investigators, though the page does not explicitly say it covers Santa Cristina.",
+     "sourceUrl": "https://www.iis-princesa.org/servicio/ensayos-clinicos/",
+     "sourceTitle": "Ensayos Clínicos – IIS PRINCESA",
+     "evidenceQuote": "Unidad Ensayos Clínicos Hospital Universitario de La Princesa C/ Diego de León 62 – 7a Planta 28006 Madrid Email: investigacionclinica.hlpr@salud.madrid.org Teléfono: + 34 91 520 22 47",
+     "checkedOn": "2026-10-06",
+     "confidence": "medium"
+    },
+    {
+     "email": "iis.hlpr@salud.madrid.org",
+     "phone": "+34 91 520 24 76",
+     "kind": "research_institute",
+     "label_es": "Secretaría Técnica IIS-Princesa",
+     "label_en": "IIS-Princesa Technical Secretariat",
+     "description_es": "Contacto general del Instituto de Investigación Sanitaria del H. de La Princesa, que incluye a Santa Cristina; útil para que deriven la consulta.",
+     "description_en": "General contact for the La Princesa health research institute, which includes Santa Cristina; useful to have the enquiry routed.",
+     "sourceUrl": "https://www.iis-princesa.org/contactar/",
+     "sourceTitle": "Contactar – IIS PRINCESA",
+     "evidenceQuote": "Secretaría Técnica IIS Princesa (+34) 91 520 24 76 iis.hlpr@salud.madrid.org",
+     "checkedOn": "2026-10-06",
+     "confidence": "medium"
+    }
+   ],
+   "notes": "VERIFIED: all three emails appear on their official IIS-Princesa pages. Santa Cristina's own Investigación page (https://www.comunidad.madrid/hospital/santacristina/profesionales/investigacion-0) says the institute 'está formado por el Hospital Universitario de La Princesa, el Hospital Universitario de Santa Cristina...', which confirms the link. CHANGED the Clinical Trials Unit contact: added the unit phone (+34 91 520 22 47) and replaced its evidence quote with the unit's address block. That block gives the email and phone without the director's name, and the phone is listed as the unit's official number. The Santa Cristina page publishes no email of its own."
+  },
+  {
+   "id": "280127",
+   "name": "Hospital Universitario de La Princesa",
+   "website": "https://www.iis-princesa.org/",
+   "notes": "VERIFIED 2026-10-06: both addresses and both phones appear on the official IIS-Princesa clinical-trials page. investigacionclinica.hlpr appears both next to the director's name and as the unit's own contact block, so it is a unit (role) mailbox. No names are recorded. No changes.",
+   "contacts": [
+    {
+     "email": "investigacionclinica.hlpr@salud.madrid.org",
+     "phone": "+34 91 520 22 47",
+     "kind": "clinical_trials_unit",
+     "label_es": "Unidad de Ensayos Clínicos",
+     "label_en": "Clinical Trials Unit",
+     "description_es": "Unidad de Ensayos Clínicos del Hospital de La Princesa (7ª planta); atiende consultas sobre la realización de ensayos en el centro.",
+     "description_en": "La Princesa Hospital's Clinical Trials Unit (7th floor). It handles enquiries about running trials at the site.",
+     "sourceUrl": "https://www.iis-princesa.org/servicio/ensayos-clinicos/",
+     "sourceTitle": "Ensayos Clínicos – IIS PRINCESA",
+     "evidenceQuote": "Unidad Ensayos Clínicos Hospital Universitario de La Princesa C/ Diego de León 62 – 7a Planta 28006 Madrid Email: investigacionclinica.hlpr@salud.madrid.org Teléfono: + 34 91 520 22 47",
+     "checkedOn": "2026-10-06",
+     "confidence": "high"
+    },
+    {
+     "email": "iis.hlpr@salud.madrid.org",
+     "phone": "+34 91 520 24 76",
+     "kind": "research_institute",
+     "label_es": "IIS-Princesa (contacto general)",
+     "label_en": "IIS-Princesa Research Institute (general contact)",
+     "description_es": "Buzón general del Instituto de Investigación Sanitaria del Hospital de La Princesa y su fundación.",
+     "description_en": "General mailbox of La Princesa Hospital's Health Research Institute and its foundation.",
+     "sourceUrl": "https://www.iis-princesa.org/servicio/ensayos-clinicos/",
+     "sourceTitle": "Ensayos Clínicos – IIS PRINCESA",
+     "evidenceQuote": "Instituto de Investigación Sanitaria Hospital La Princesa iis.hlpr@salud.madrid.org +34 91 520 24 76",
+     "checkedOn": "2026-10-06",
+     "confidence": "medium"
+    }
+   ]
+  },
+  {
+   "id": "280133",
+   "name": "Hospital Infantil Universitario Niño Jesús",
+   "website": "https://fibhnjs.org/",
+   "notes": "VERIFIED 2026-10-06: all four mailboxes appear on their source pages. CHANGED: the CEIm phone is now the full number the CEIm page gives ('91 503 59 00, ext. 624') instead of 'Ext 624'. The evidence quotes use [...] to leave out the named staff listed between the label and the mailbox. Named staff addresses and service mailboxes (Farmaciaensayos, gastroen, hematologiaclinica) were excluded. research_units.json maps this hospital to IIS-Princesa, but no IIS-Princesa contacts were added.",
+   "contacts": [
+    {
+     "email": "ensayosclinicos.hnjs@salud.madrid.org",
+     "phone": "Ext 7351",
+     "kind": "clinical_trials_unit",
+     "label_es": "Unidad de Ensayos Clínicos",
+     "label_en": "Clinical Trials Unit",
+     "description_es": "Unidad de ensayos del hospital, indicada como primer contacto y puesta en marcha de ensayos clínicos.",
+     "description_en": "Hospital trials unit, listed as first contact and start-up point for clinical trials.",
+     "sourceUrl": "https://fibhnjs.org/equipo-contacto-y-areas/",
+     "sourceTitle": "Equipo, contacto y áreas - Fundación para la investigación biomédica del hospital Niño Jesús",
+     "evidenceQuote": "UNIDAD DE ENSAYOS: Primer contacto y puesta en marcha [...] ensayosclinicos.hnjs@salud.madrid.org Ext 7351",
+     "checkedOn": "2026-10-06",
+     "confidence": "high"
+    },
+    {
+     "email": "ensayos.fibhnjs@salud.madrid.org",
+     "phone": "Ext 7360",
+     "kind": "research_foundation",
+     "label_es": "Fundación de investigación – Ensayos",
+     "label_en": "Research foundation – Trials",
+     "description_es": "Buzón de ensayos de la fundación de investigación; probablemente gestiona contratos y aspectos económicos de los ensayos.",
+     "description_en": "Trials mailbox of the research foundation; likely handles contracts and financial aspects of trials.",
+     "sourceUrl": "https://fibhnjs.org/equipo-contacto-y-areas/",
+     "sourceTitle": "Equipo, contacto y áreas - Fundación para la investigación biomédica del hospital Niño Jesús",
+     "evidenceQuote": "Contactos FIB [...] ensayos.fibhnjs@salud.madrid.org Ext 7360",
+     "checkedOn": "2026-10-06",
+     "confidence": "high"
+    },
+    {
+     "email": "fibhnjs@salud.madrid.org",
+     "phone": "608 718 339",
+     "kind": "research_foundation",
+     "label_es": "Fundación de investigación (general)",
+     "label_en": "Research foundation (general)",
+     "description_es": "Contacto general de la Fundación para la Investigación Biomédica del hospital.",
+     "description_en": "General contact of the hospital's biomedical research foundation.",
+     "sourceUrl": "https://fibhnjs.org/contacto/",
+     "sourceTitle": "Contacto - Fundación para la investigación biomédica del hospital Niño Jesús",
+     "evidenceQuote": "Dirección Avenida Menéndez Pelayo 65 28009 MADRID Teléfono (07:30 a 16:00 de lunes a viernes) 608 718 339 Email fibhnjs@salud.madrid.org",
+     "checkedOn": "2026-10-06",
+     "confidence": "medium"
+    },
+    {
+     "email": "ceic.hnjs@salud.madrid.org",
+     "phone": "91 503 59 00 ext. 624",
+     "kind": "ceim_secretariat",
+     "label_es": "Secretaría del CEIm",
+     "label_en": "Ethics committee (CEIm) secretariat",
+     "description_es": "Secretaría del comité de ética; útil para cuestiones regulatorias, no para viabilidad.",
+     "description_en": "Ethics committee secretariat; for regulatory questions, not for feasibility.",
+     "sourceUrl": "https://fibhnjs.org/comite-de-etica-investigacion-medicamentos/",
+     "sourceTitle": "Comité de ética Investigacion Medicamentos (CEIm) - Fundación para la investigación biomédica del hospital Niño Jesús",
+     "evidenceQuote": "Comité de Ética de la Investigación con Medicamentos (CEIm) Hospital Infantil Universitario Niño Jesús Avda. Menéndez Pelayo, 65 28009 Madrid Correo electrónico: ceic.hnjs@salud.madrid.org",
+     "checkedOn": "2026-10-06",
+     "confidence": "medium"
+    }
+   ]
+  },
+  {
+   "id": "280148",
+   "name": "Hospital Central de La Cruz Roja, San José y Santa Adela",
+   "website": "https://www.comunidad.madrid/hospital/cruzroja/",
+   "notes": "No suitable email found, so the list stays empty. The researcher checked the hospital's comunidad.madrid pages (Investigación, Contacto, Localización y acceso) and found no research, trials or general email. I searched again and found only named people's @salud.madrid.org addresses, quoted in search-engine summaries. Those are personal mailboxes, so they were excluded. No foundation or CEIm of its own was found.",
+   "contacts": []
+  },
+  {
+   "id": "280164",
+   "name": "Hospital Carlos III",
+   "website": "https://www.comunidad.madrid/hospital/lapaz/nosotros/hospital-carlos-iii",
+   "notes": "VERIFIED 2026-10-06. ensayosclinicos@idipaz.es and ucicec@idipaz.es both appear in IdiPAZ's own Guía de Acogida PDF on idipaz.es, which is an official source. The PDF lists them under units with a named head; only the role mailboxes are recorded, no names. 91 207 14 66 appears next to ucicec@idipaz.es in the org chart. info@idipaz.es and its phone appear on the IdiPAZ UCICEC page. Carlos III is part of the La Paz hospital complex served by IdiPAZ/FIBHULP. No changes.",
+   "contacts": [
+    {
+     "email": "ensayosclinicos@idipaz.es",
+     "kind": "research_foundation",
+     "label_es": "Gestión de Ensayos Clínicos (FIBHULP/IdiPAZ)",
+     "label_en": "Clinical Trials Management (FIBHULP/IdiPAZ)",
+     "description_es": "Área de la fundación/instituto de La Paz que gestiona los ensayos clínicos (contratos y puesta en marcha); probable destinatario de solicitudes de viabilidad.",
+     "description_en": "La Paz foundation/institute office that manages clinical trials (contracts and start-up); likely recipient of feasibility requests.",
+     "sourceUrl": "https://www.idipaz.es/ficheros/files/RRHH-MA-2_Guia%20de%20acogida_Ed_%207%2024_03_2025.pdf",
+     "sourceTitle": "Guía de Acogida de IdiPAZ/FIBHULP",
+     "evidenceQuote": "Gestión de Ensayos Clínicos ... ensayosclinicos@idipaz.es",
+     "checkedOn": "2026-10-06",
+     "confidence": "high"
+    },
+    {
+     "email": "ucicec@idipaz.es",
+     "phone": "91 207 14 66",
+     "kind": "clinical_trials_unit",
+     "label_es": "UICEC – Unidad Central de Investigación Clínica y Ensayos Clínicos",
+     "label_en": "Central Clinical Research & Trials Unit (UICEC)",
+     "description_es": "Unidad de apoyo que ejecuta ensayos clínicos (coordinación, monitorización) en el área de La Paz.",
+     "description_en": "Support unit that runs clinical trials (coordination, monitoring) in the La Paz area.",
+     "sourceUrl": "https://www.idipaz.es/ficheros/files/RRHH-MA-2_Guia%20de%20acogida_Ed_%207%2024_03_2025.pdf",
+     "sourceTitle": "Guía de Acogida de IdiPAZ/FIBHULP",
+     "evidenceQuote": "La Unidad Central de Investigación Clínica y Ensayos Clínicos (UICEC) ... Contacto: ucicec@idipaz.es",
+     "checkedOn": "2026-10-06",
+     "confidence": "high"
+    },
+    {
+     "email": "info@idipaz.es",
+     "phone": "(+34) 912 071 466",
+     "kind": "research_institute",
+     "label_es": "IdiPAZ – contacto general",
+     "label_en": "IdiPAZ general contact",
+     "description_es": "Buzón general del Instituto de Investigación del Hospital La Paz.",
+     "description_en": "General mailbox of the La Paz hospital research institute.",
+     "sourceUrl": "https://www.idipaz.es/EspacioInvestigador/UCICEC",
+     "sourceTitle": "Espacio del Investigador - UCICEC | IdiPAZ",
+     "evidenceQuote": "Instituto de Investigación del Hospital Universitario La Paz Paseo de la Castellana 261 28046 Madrid info@idipaz.es",
+     "checkedOn": "2026-10-06",
+     "confidence": "medium"
+    }
+   ]
+  },
+  {
+   "id": "280210",
+   "name": "Hospital de Cantoblanco",
+   "website": "https://www.idipaz.es/EspacioInvestigador/UCICEC",
+   "notes": "Checked. All three addresses appear on their sources. ensayosclinicos@idipaz.es and ucicec@idipaz.es are in IdiPAZ's own welcome guide (a PDF on idipaz.es, so an official source of the same organisation). info@idipaz.es is on the IdiPAZ UCICEC web page. Nothing changed. Cantoblanco is part of the La Paz complex, and research_units.json maps it to IdiPAZ. Named people's addresses in the guide were not recorded.",
+   "contacts": [
+    {
+     "email": "ensayosclinicos@idipaz.es",
+     "kind": "research_foundation",
+     "label_es": "Gestión de Ensayos Clínicos – IdiPAZ/FIBHULP",
+     "label_en": "Clinical Trials Management – IdiPAZ/FIBHULP",
+     "description_es": "Área de gestión de ensayos clínicos de la fundación/instituto de La Paz. Lleva la parte administrativa y contractual de los ensayos de promotores.",
+     "description_en": "Clinical trial management office of the La Paz foundation/institute. It handles the administrative and contract side of sponsor trials.",
+     "sourceUrl": "https://www.idipaz.es/ficheros/files/RRHH-MA-2_Guia%20de%20acogida_Ed_%207%2024_03_2025.pdf",
+     "sourceTitle": "Guía de Acogida de IdiPAZ/FIBHULP (Ed. 7, 24/03/2025)",
+     "evidenceQuote": "Gestión de Proyectos Privados ... proyectosprivados@idipaz.es Gestión de Ensayos Clínicos ... ensayosclinicos@idipaz.es Gestión de Proyectos Públicos",
+     "checkedOn": "2026-10-06",
+     "confidence": "high"
+    },
+    {
+     "email": "ucicec@idipaz.es",
+     "kind": "clinical_trials_unit",
+     "phone": "91 207 14 66",
+     "label_es": "Unidad de Investigación Clínica y Ensayos Clínicos (UICEC)",
+     "label_en": "Clinical Research and Clinical Trials Unit (UICEC)",
+     "description_es": "Unidad que apoya el diseño, la puesta en marcha y la gestión de ensayos clínicos en el complejo La Paz.",
+     "description_en": "Unit that supports the design, start-up and management of clinical trials in the La Paz complex.",
+     "sourceUrl": "https://www.idipaz.es/ficheros/files/RRHH-MA-2_Guia%20de%20acogida_Ed_%207%2024_03_2025.pdf",
+     "sourceTitle": "Guía de Acogida de IdiPAZ/FIBHULP (Ed. 7, 24/03/2025)",
+     "evidenceQuote": "Unidad de Investigación Clínica y Ensayos Clínicos (UICEC) • Responsable: [...] ucicec@idipaz.es Teléfono: 91 207 14 66",
+     "checkedOn": "2026-10-06",
+     "confidence": "high"
+    },
+    {
+     "email": "info@idipaz.es",
+     "kind": "research_institute",
+     "label_es": "Información general – IdiPAZ",
+     "label_en": "IdiPAZ general enquiries",
+     "description_es": "Buzón general del instituto de investigación de La Paz; útil si no responden los buzones de ensayos.",
+     "description_en": "General mailbox of the La Paz research institute; useful if the trial mailboxes do not answer.",
+     "sourceUrl": "https://www.idipaz.es/EspacioInvestigador/UCICEC",
+     "sourceTitle": "Espacio del Investigador - UCICEC | IdiPAZ",
+     "evidenceQuote": "Instituto de Investigación del Hospital Universitario La Paz Paseo de la Castellana 261 28046 Madrid info@idipaz.es",
+     "checkedOn": "2026-10-06",
+     "confidence": "medium"
+    }
+   ]
+  },
+  {
+   "id": "280246",
+   "name": "Hospital General Universitario Gregorio Marañón",
+   "website": "https://www.iisgm.com/",
+   "notes": "VERIFIED 2026-10-06: I opened all 3 iisgm.com pages. gestioncontratos@fibhgm.org and (+34) 914 265 115 appear verbatim, as do ceim.hgugm@salud.madrid.org and +34 91 586 70 07. The UCAICEC address appears in anti-spam form as 'ucaicec(ELIMINAR)@fibhgm.org'. It sits next to the named unit head but is a unit (role) mailbox, so it is kept and the name is not recorded. No changes. Researcher's notes: facturacion@fibhgm.org (invoicing) was excluded.",
+   "contacts": [
+    {
+     "email": "gestioncontratos@fibhgm.org",
+     "phone": "(+34) 914 265 115",
+     "kind": "research_foundation",
+     "label_es": "Contratos de estudios clínicos (FIBHGM)",
+     "label_en": "Clinical Study Contracts (FIBHGM)",
+     "description_es": "Oficina de la fundación de investigación del Gregorio Marañón que gestiona contratos y adendas de ensayos y estudios clínicos; probable entrada para promotores.",
+     "description_en": "The Gregorio Marañón research foundation's office for clinical-trial and study contracts and amendments. The likely entry point for sponsors.",
+     "sourceUrl": "https://www.iisgm.com/gestion/la-fundacion/contratos-convenios-y-donaciones/",
+     "sourceTitle": "Contratos, Convenios y Donaciones | IiSGM",
+     "evidenceQuote": "Para gestionar estos contratos y adendas a contratos póngase en contacto con gestioncontratos@fibhgm.org",
+     "checkedOn": "2026-10-06",
+     "confidence": "high"
+    },
+    {
+     "email": "ucaicec@fibhgm.org",
+     "kind": "clinical_trials_unit",
+     "label_es": "Unidad de Ensayos y Estudios Clínicos (UCAICEC/UICEC-SCReN)",
+     "label_en": "Clinical Trials & Studies Unit (UCAICEC/UICEC-SCReN)",
+     "description_es": "Unidad de apoyo a la investigación clínica del IiSGM, orientada sobre todo a ensayos no comerciales; puede orientar sobre capacidad del centro pero no es la vía principal para promotores comerciales.",
+     "description_en": "IiSGM's clinical-research support unit, mainly for non-commercial trials. It can advise on site capacity but is not the main route for commercial sponsors.",
+     "sourceUrl": "https://www.iisgm.com/infraestructuras/3/ensayos-y-estudios-clinicos-ucaicec-uicec-scren",
+     "sourceTitle": "Ensayos y Estudios Clínicos (UCAICEC/UICEC-SCREN) | IiSGM",
+     "evidenceQuote": "Contacto ... Responsable de la Unidad E-mail : ucaicec(ELIMINAR)@fibhgm.org Pabellón de Gobierno (planta baja) Hospital General Universitario Gregorio Marañón",
+     "checkedOn": "2026-10-06",
+     "confidence": "medium"
+    },
+    {
+     "email": "ceim.hgugm@salud.madrid.org",
+     "phone": "+34 91 586 70 07",
+     "kind": "ceim_secretariat",
+     "label_es": "Secretaría Técnica CEIm",
+     "label_en": "Ethics Committee (CEIm) secretariat",
+     "description_es": "Secretaría técnica del Comité de Ética de la Investigación con Medicamentos del Gregorio Marañón; para cuestiones regulatorias, no para viabilidad.",
+     "description_en": "Technical secretariat of Gregorio Marañón's drug research ethics committee. For regulatory questions, not feasibility.",
+     "sourceUrl": "https://www.iisgm.com/el-iisgm/estructura/comisiones/ceim/",
+     "sourceTitle": "Comité de Ética de la Investigación con Medicamentos (CEIm) | IiSGM",
+     "evidenceQuote": "Pabellón de Gobierno 1ª Planta C/ Dr. Esquerdo, 46. 28007 MADRID Teléfono: +34 91 586 70 07 Teléfono de Apoyo: +34 91 426 93 78. Correo Electrónico: ceim.hgugm@salud.madrid.org",
+     "checkedOn": "2026-10-06",
+     "confidence": "medium"
+    }
+   ]
+  },
+  {
+   "id": "280259",
+   "name": "Instituto Provincial de Rehabilitación",
+   "website": "https://www.comunidad.madrid/centros/instituto-provincial-rehabilitacion",
+   "notes": "VERIFIED 2026-10-06: gestioncontratos@fibhgm.org appears on the IiSGM contracts page, in a section about clinical study contracts and amendments. Changed the website to the IPR's own comunidad.madrid centre page (C/ Francisco Silvela 40, phone 91 586 89 33/34). That page does not name its parent hospital in the text. The link to Hospital General Universitario Gregorio Marañón comes from the official SERMAS directory and the HGUGM 91 586 xxxx phone range, and the link is widely documented. The shared FIBHGM/IiSGM contact is therefore kept. It is a contracts mailbox, not explicitly a feasibility one, so confidence stays medium. facturacion@fibhgm.org was left out because it is for invoicing.",
+   "contacts": [
+    {
+     "email": "gestioncontratos@fibhgm.org",
+     "kind": "research_foundation",
+     "label_es": "Gestión de contratos – FIB Gregorio Marañón (IiSGM)",
+     "label_en": "Contracts office – FIB Gregorio Marañón (IiSGM)",
+     "description_es": "Oficina de la fundación de investigación del Gregorio Marañón que gestiona contratos y adendas de ensayos y estudios clínicos; puede derivar consultas de viabilidad, pero no consta como buzón de viabilidad.",
+     "description_en": "Gregorio Marañón research foundation office that handles clinical trial/study contracts and amendments; it may forward feasibility enquiries but is not stated to be a feasibility mailbox.",
+     "sourceUrl": "https://www.iisgm.com/gestion/la-fundacion/contratos-convenios-y-donaciones/",
+     "sourceTitle": "Contratos, Convenios y Donaciones | IiSGM",
+     "evidenceQuote": "Para gestionar estos contratos y adendas a contratos póngase en contacto con gestioncontratos@fibhgm.org",
+     "checkedOn": "2026-10-06",
+     "confidence": "medium"
+    }
+   ]
+  },
+  {
+   "id": "280262",
+   "name": "Hospital Psiquiátrico Doctor Rodríguez Lafora",
+   "website": "https://www.comunidad.madrid/hospital/rlafora/",
+   "contacts": [
+    {
+     "email": "investigacion.lafora@salud.madrid.org",
+     "kind": "research_support_office",
+     "label_es": "Investigación – H. Dr. R. Lafora",
+     "label_en": "Research – H. Dr. R. Lafora",
+     "description_es": "Correo de contacto del área de investigación del hospital (sede de la Comisión de Investigación Clínica). La página lo da para enviar difusión científica, así que su uso para ensayos no está confirmado.",
+     "description_en": "Contact email for the hospital's research area (home of its Clinical Research Committee). The page gives it for sending scientific outputs, so its use for trial enquiries is unconfirmed.",
+     "sourceUrl": "https://www.comunidad.madrid/hospital/rlafora/profesionales/investigacion",
+     "sourceTitle": "Investigación | Hospital Universitario Dr. R. Lafora",
+     "evidenceQuote": "Correo de contacto: investigacion.lafora@salud.madrid.org , para que podáis mandar vuestra difusión científica.",
+     "checkedOn": "2026-10-06",
+     "confidence": "medium"
+    }
+   ],
+   "notes": "VERIFIED: the visible text on the official page shows investigacion.lafora@salud.madrid.org. I confirmed the mailto link points to 'investigacionLafora@salud.madrid.org' (no dot), so the two forms differ and it is worth confirming which one is delivered. No changes."
+  },
+  {
+   "id": "280323",
+   "name": "Sanatorio Nuestra Señora del Rosario",
+   "website": "https://www.hospitalrosario.es/",
+   "contacts": [
+    {
+     "email": "info@hospitalrosario.com",
+     "phone": "91 435 91 00",
+     "kind": "hospital_general",
+     "label_es": "Contacto general del hospital",
+     "label_en": "Hospital general contact",
+     "description_es": "Buzón general del hospital; no es específico de investigación, habría que pedir que lo deriven al responsable de ensayos clínicos.",
+     "description_en": "General hospital mailbox, not specific to research; ask for it to be forwarded to whoever handles clinical trials.",
+     "sourceUrl": "https://www.hospitalrosario.es/contacto/",
+     "sourceTitle": "Contacto – Hospital Universitario Nuestra Señora del Rosario",
+     "evidenceQuote": "Información y cita previa: 91 435 91 00 Consultas externas: 91 431 38 29 E-mail: info@hospitalrosario.com",
+     "checkedOn": "2026-10-06",
+     "confidence": "low"
+    }
+   ],
+   "notes": "VERIFIED: the email appears on the source page, which is the hospital's official site. No changes. Researcher notes: private non-profit hospital. They checked the home page, Contacto and the INEAMAD 'Investigación Clínica' page and found no research or clinical-trials mailbox."
+  },
+  {
+   "id": "280339",
+   "name": "Hospital San Rafael",
+   "website": "https://hospitalsanrafael.es",
+   "notes": "VERIFIED 2026-10-06. hsrmadrid.info@sjd.es and 91 564 99 44 appear on the hospital's contact page. No changes. No research, trials or CEIm mailbox is published on hospitalsanrafael.es. The A Coruña San Rafael sites were correctly ignored.",
+   "contacts": [
+    {
+     "email": "hsrmadrid.info@sjd.es",
+     "phone": "91 564 99 44",
+     "kind": "hospital_general",
+     "label_es": "Contacto general del hospital",
+     "label_en": "Hospital general contact",
+     "description_es": "Correo general del hospital; última opción, no hay buzón de investigación publicado.",
+     "description_en": "Hospital general email; last resort, no research mailbox is published.",
+     "sourceUrl": "https://hospitalsanrafael.es/contacto-y-localizacion/",
+     "sourceTitle": "Contacto y localización » Hospital Universitario San Rafael",
+     "evidenceQuote": "Contacto 91 564 99 44 hsrmadrid.info@sjd.es C/ Serrano 199. CP: 28016. Madrid.",
+     "checkedOn": "2026-10-06",
+     "confidence": "low"
+    }
+   ]
+  },
+  {
+   "id": "280344",
+   "name": "Hospital de la V.O.T. de San Francisco de Asís",
+   "website": "https://www.hospitalvot.org",
+   "notes": "VERIFIED 2026-10-06: info@hospitalvot.org appears on the official home page. No changes. This is a private Catholic general hospital with no research or trials unit. 0 registered trials.",
+   "contacts": [
+    {
+     "email": "info@hospitalvot.org",
+     "phone": "+34 91 365 76 00",
+     "kind": "hospital_general",
+     "label_es": "Contacto general del hospital",
+     "label_en": "Hospital general contact",
+     "description_es": "Buzón general del hospital; no hay unidad de investigación publicada, así que la consulta tendría que derivarse a dirección médica.",
+     "description_en": "General hospital mailbox; no research unit is published, so the enquiry would need forwarding to medical management.",
+     "sourceUrl": "https://www.hospitalvot.org/",
+     "sourceTitle": "Hospital VOT Madrid Centro: Innovando hospitalidad desde 1697",
+     "evidenceQuote": "Correo email info@hospitalvot.org i Resultados laboratorio Ver resultados ¡Llama! +34 91 365 76 00",
+     "checkedOn": "2026-10-06",
+     "confidence": "low"
+    }
+   ]
+  },
+  {
+   "id": "280357",
+   "name": "Hospital Quirónsalud San José",
+   "website": "https://www.quironsalud.com/san-jose",
+   "notes": "Checked. Both addresses appear on their source pages. Nothing changed. The Quirónsalud group's sponsor single entry point is listed first and the hospital's general mailbox second. No hospital-specific research mailbox was found.",
+   "contacts": [
+    {
+     "email": "qs.investigacion@quironsalud.es",
+     "kind": "research_support_office",
+     "label_es": "Quirónsalud Investigación e Innovación (ventanilla única para promotores)",
+     "label_en": "Quirónsalud Research & Innovation (sponsor single entry point)",
+     "description_es": "Entidad del Grupo Quirónsalud que gestiona la investigación de sus centros y atiende a los promotores que quieran hacer ensayos en sus hospitales.",
+     "description_en": "Quirónsalud group body that manages research at its centres and is the single entry point for sponsors wanting to run trials at its hospitals.",
+     "sourceUrl": "https://www.quironsalud.com/es/investigacion/ensayos-clinicos-acceso-precoz-nuevas-terapias",
+     "sourceTitle": "Ensayos clínicos, un acceso precoz a nuevas terapias | Quirónsalud",
+     "evidenceQuote": "Quirónsalud Investigación e Innovación es la entidad de gestión de la investigación realizada en los centros del Grupo Quirónsalud y actúa como ventanilla única para todos aquellos promotores ... qs.investigacion@quironsalud.es",
+     "checkedOn": "2026-10-06",
+     "confidence": "high"
+    },
+    {
+     "email": "info.sjo@quironsalud.es",
+     "kind": "hospital_general",
+     "phone": "91 068 70 00",
+     "label_es": "Información general del hospital",
+     "label_en": "Hospital general enquiries",
+     "description_es": "Buzón general de información del hospital. No es específico de investigación.",
+     "description_en": "Hospital's general information mailbox. It is not research-specific.",
+     "sourceUrl": "https://www.quironsalud.com/san-jose/es/informacion-contacto-situacion",
+     "sourceTitle": "Información de contacto | Hospital Quirónsalud San José",
+     "evidenceQuote": "Hospital Quirónsalud San José Dirección: C/ Cartagena, 111 28002 Madrid Madrid Citas - 91 068 70 00 Cómo llegar Correo electrónico: info.sjo@quironsalud.es",
+     "checkedOn": "2026-10-06",
+     "confidence": "low"
+    }
+   ]
+  },
+  {
+   "id": "280360",
+   "name": "Hospital Beata María Ana",
+   "website": "https://fundacionhospitalariasmadrid.org/",
+   "notes": "VERIFIED 2026-10-06: atencionalpaciente.hbma@hospitalarias.es appears on the Fundación Hospitalarias Madrid contact page next to 'Información General Hospital: 91 409 74 23'. The page also lists the DPO, the brain-injury unit, a dental reception and an external lab, none suitable. No research mailbox was found, so the general mailbox stays as a last resort. No changes.",
+   "contacts": [
+    {
+     "email": "atencionalpaciente.hbma@hospitalarias.es",
+     "phone": "91 409 74 23",
+     "kind": "hospital_general",
+     "label_es": "Información general del hospital",
+     "label_en": "Hospital general information",
+     "description_es": "Buzón general de información y atención al paciente; último recurso, no es una unidad de investigación.",
+     "description_en": "General information and patient services mailbox; last resort, not a research unit.",
+     "sourceUrl": "https://fundacionhospitalariasmadrid.org/contacto/",
+     "sourceTitle": "Contacto - Fundación Hospitalarias Madrid",
+     "evidenceQuote": "Información General Hospital: 91 409 74 23 atencionalpaciente.hbma@hospitalarias.es",
+     "checkedOn": "2026-10-06",
+     "confidence": "low"
+    }
+   ]
+  },
+  {
+   "id": "280376",
+   "name": "Hospital Viamed Santa Elena",
+   "website": "https://www.viamedsalud.com/hospital-santa-elena/",
+   "notes": "VERIFIED 2026-10-06: info@viamed.com appears on the Viamed group clinical trials page, in the footer right after the 'escríbenos' trials text. No changes. The group's corporate Teaching and Research Department is reached only through a web form. No research mailbox specific to Santa Elena was found. Admissions and traffic mailboxes, and a named person's address, were left out.",
+   "contacts": [
+    {
+     "email": "info@viamed.com",
+     "phone": "916 250 700",
+     "kind": "hospital_general",
+     "label_es": "Contacto general Grupo Viamed",
+     "label_en": "Viamed group general contact",
+     "description_es": "Buzón general del grupo Viamed que aparece en su página de ensayos clínicos; probablemente lo derivan al Departamento Corporativo de Docencia e Investigación, pero no está confirmado.",
+     "description_en": "General Viamed group mailbox shown on its clinical trials page; likely forwarded to the corporate Teaching and Research Department, but this is not confirmed.",
+     "sourceUrl": "https://www.viamedsalud.com/ensayos-clinicos/",
+     "sourceTitle": "Ensayos Clínicos | Viamed Salud",
+     "evidenceQuote": "Si estás interesado en ampliar tu información sobre Ensayos Clínicos, escríbenos ... 916 250 700 info@viamed.com Av. de la Vega, 15 28108 Alcobendas-Madrid",
+     "checkedOn": "2026-10-06",
+     "confidence": "low"
+    }
+   ]
+  },
+  {
+   "id": "280382",
+   "name": "Hospital San Francisco de Asís",
+   "website": "https://hsfda.com/",
+   "notes": "Checked. The address appears on the official home page. Nothing changed. No research or trials mailbox was found; this general mailbox is a last resort.",
+   "contacts": [
+    {
+     "email": "hsfda@hsfda.com",
+     "kind": "hospital_general",
+     "phone": "+34 915 61 71 00",
+     "label_es": "Contacto general del hospital",
+     "label_en": "Hospital general contact",
+     "description_es": "Buzón general del hospital. No es específico de investigación; habría que pedir que lo reenvíen al responsable de ensayos.",
+     "description_en": "Hospital's general mailbox. It is not research-specific; ask them to forward it to whoever handles trials.",
+     "sourceUrl": "https://hsfda.com/",
+     "sourceTitle": "Inicio - Hospital Universitario San Francisco de Asís",
+     "evidenceQuote": "Calle de Joaquín Costa 28 28002 Madrid Tlf.: +34 915 61 71 00 hsfda@hsfda.com",
+     "checkedOn": "2026-10-06",
+     "confidence": "low"
+    }
+   ]
+  },
+  {
+   "id": "280395",
+   "name": "Clínica San Miguel",
+   "website": "https://hospitalariassanmiguel.es/",
+   "contacts": [],
+   "notes": "Verified: no contacts to check. Madrid psychiatric clinic (Arturo Soria 204, Hermanas Hospitalarias). The official contact page (https://hospitalariassanmiguel.es/contacto/) publishes no email. clinicasanmiguel.es belongs to an unrelated Pamplona clinic and was not used. No research contact was found."
+  },
+  {
+   "id": "280409",
+   "name": "Clínica Nuestra Señora de La Paz",
+   "website": "https://www.nuestraseñoradelapaz.es/",
+   "contacts": [
+    {
+     "email": "cnspmadrid.admision@sjd.es",
+     "phone": "914156000",
+     "kind": "hospital_general",
+     "label_es": "Admisión de la clínica",
+     "label_en": "Clinic admissions",
+     "description_es": "Buzón de admisión de la clínica (San Juan de Dios); no es de investigación, solo sirve como último recurso para pedir que lo deriven.",
+     "description_en": "Clinic admissions mailbox (San Juan de Dios); not a research one, only useful as a last resort to ask for it to be forwarded.",
+     "sourceUrl": "https://sjd.es/location/clinica-nuestra-senora-de-la-paz-madri/",
+     "sourceTitle": "Clínica Nuestra Señora de la Paz - Madrid - San Juan de Dios",
+     "evidenceQuote": "https://www.nuestraseñoradelapaz.es cnspmadrid.admision@sjd.es 914156000 Calle de López de Hoyos, 259, 28043, Madrid",
+     "checkedOn": "2026-10-06",
+     "confidence": "low"
+    }
+   ],
+   "notes": "VERIFIED: curl gets 403 from sjd.es, but WebFetch confirmed the email and phone on the official San Juan de Dios page, which belongs to the order that owns the clinic. No changes. The researcher found no research mailbox on the clinic or SJD sites."
+  },
+  {
+   "id": "280416",
+   "name": "Fundación Instituto San José",
+   "website": "https://fundacioninstitutosanjose.com/",
+   "contacts": [
+    {
+     "email": "hospitalfundacionsanjose.info@sjd.es",
+     "phone": "91 508 01 40",
+     "kind": "hospital_general",
+     "label_es": "Información general",
+     "label_en": "General information",
+     "description_es": "Buzón general de información del hospital (San Juan de Dios); no consta una unidad de investigación propia, habría que pedir derivación.",
+     "description_en": "Hospital general information mailbox (San Juan de Dios); no dedicated research unit is published, so the enquiry would need forwarding.",
+     "sourceUrl": "https://fundacioninstitutosanjose.com/informacion-practica/",
+     "sourceTitle": "Información Práctica - Fundación Instituto San José",
+     "evidenceQuote": "Contacta con nosotros 91 508 01 40/ 41/ 42 - Fax: 91 508 37 60 hospitalfundacionsanjose.info@sjd.es",
+     "checkedOn": "2026-10-06",
+     "confidence": "low"
+    }
+   ],
+   "notes": "Verified 2026-10-06: the email and quote appear verbatim on the source page. No changes."
+  },
+  {
+   "id": "280421",
+   "name": "Hospital Universitario Fundación Jiménez Díaz",
+   "website": "https://www.fjd.es/iis-fjd/",
+   "notes": "VERIFIED 2026-10-06: investigacion@fjd.es and 91 550 48 97 appear on the official IIS-FJD contact page. No changes. Researcher's notes: the UICEC page lists only a named person's email (excluded), plus phone 915504800 ext. 3245-3214.",
+   "contacts": [
+    {
+     "email": "investigacion@fjd.es",
+     "phone": "91 550 48 97",
+     "kind": "research_institute",
+     "label_es": "IIS-FJD (contacto general de investigación)",
+     "label_en": "IIS-FJD Research Institute (general contact)",
+     "description_es": "Buzón general del Instituto de Investigación Sanitaria de la Fundación Jiménez Díaz; puede redirigir a la Unidad de Investigación Clínica y Ensayos Clínicos (UICEC).",
+     "description_en": "General mailbox of the Fundación Jiménez Díaz Health Research Institute. It can forward enquiries to the Clinical Research and Trials Unit (UICEC).",
+     "sourceUrl": "https://www.fjd.es/iis-fjd/es/situacion-contacto-4d7a9",
+     "sourceTitle": "Situación y contacto | Instituto de Investigación Sanitaria. FJD",
+     "evidenceQuote": "Situación y contacto C/ del Maestro Ángel Llorca, 6. Bajo B. Edificio alto. 28003-Madrid (España) 91 550 48 97 investigacion@fjd.es",
+     "checkedOn": "2026-10-06",
+     "confidence": "medium"
+    }
+   ]
+  },
+  {
+   "id": "280442",
+   "name": "Hospital Virgen del Mar",
+   "website": "https://www.hospitalvirgendelmar.es/",
+   "contacts": [
+    {
+     "email": "fundacionsh@sanitas.es",
+     "kind": "research_foundation",
+     "label_es": "Fundación Sanitas Hospitales (ensayos clínicos)",
+     "label_en": "Sanitas Hospitals Research Foundation (clinical trials)",
+     "description_es": "Fundación de investigación del grupo Sanitas, que gestiona los contratos de ensayos clínicos de sus hospitales, incluido Virgen del Mar; los promotores envían aquí el contrato.",
+     "description_en": "Sanitas group research foundation that manages clinical-trial contracts for its hospitals, including Virgen del Mar; sponsors send the trial contract to this address.",
+     "sourceUrl": "https://fundacionsanitashospitales.sanitas.es/",
+     "sourceTitle": "Fundación Sanitas",
+     "evidenceQuote": "Para facilitar la gestión de los ensayos clínicos en nuestros Centros, los promotores de dichos estudios pueden descargar aquí el contrato de ensayo clínico que utilizamos, cumplimentando los apartados específicos, y enviarlo a fundacionsh@sanitas.es",
+     "checkedOn": "2026-10-06",
+     "confidence": "high"
+    },
+    {
+     "email": "citashvm@hospitalvirgendelmar.es",
+     "phone": "91 353 95 00",
+     "kind": "hospital_general",
+     "label_es": "Contacto general del hospital (citas)",
+     "label_en": "Hospital general contact (appointments)",
+     "description_es": "Buzón de citas de pacientes del hospital; solo como último recurso para localizar al servicio adecuado.",
+     "description_en": "Patient appointments mailbox; use only as a last resort to reach the right department.",
+     "sourceUrl": "https://www.hospitalvirgendelmar.es/",
+     "sourceTitle": "Hospital Universitario Virgen del Mar. Hospital privado en Madrid",
+     "evidenceQuote": "Telf: 91 353 95 00 Email: citashvm@hospitalvirgendelmar.es",
+     "checkedOn": "2026-10-06",
+     "confidence": "low"
+    }
+   ],
+   "notes": "Verified 2026-10-06: both emails and quotes appear on their source pages. On the Fundación Sanitas page the address is written fundacionSH@sanitas.es. The same page lists Hospital Virgen del Mar in its research network (\"Hospital Blua Sanitas Valdebebas, Hospital Universitario La Moraleja, Hospital Universitario La Zarzuela, Hospital Virgen del Mar y Hospital Sanitas CIMA\"). No changes."
+  },
+  {
+   "id": "280455",
+   "name": "Hospital Hestia Madrid",
+   "website": "https://hestiahealth.es/centros/hestia-health-madrid/",
+   "notes": "Re-checked 2026-10-06: the official Hestia Health Madrid centre page and hestiahealth.es/contacto/ contain no email address, mailto link or obfuscated email. They give only the phone 91 734 05 00 and a form. No research contact was found, so no contacts were recorded.",
+   "contacts": []
+  },
+  {
+   "id": "280468",
+   "name": "Hospital San Camilo",
+   "website": "https://www.ruber.es/",
+   "notes": "Checked. The Quirónsalud group sponsor mailbox appears on its source page. Nothing changed. Caveat: the link between Hospital San Camilo (Juan Bravo 39) and today's Hospital Universitario Ruber Juan Bravo (Quirónsalud) rests on the Madrid city directory. It is plausible but should be confirmed, so the description says so. ruber.es/es/contactar offers only a contact form and the DPO address.",
+   "contacts": [
+    {
+     "email": "qs.investigacion@quironsalud.es",
+     "kind": "research_support_office",
+     "label_es": "Quirónsalud Investigación e Innovación (ventanilla única para promotores)",
+     "label_en": "Quirónsalud Research & Innovation (sponsor single entry point)",
+     "description_es": "Entidad del Grupo Quirónsalud que gestiona la investigación de sus centros y atiende a los promotores. La relación San Camilo–Ruber Juan Bravo está pendiente de confirmar.",
+     "description_en": "Quirónsalud group body that manages research at its centres and handles sponsors. The San Camilo–Ruber Juan Bravo link still needs confirming.",
+     "sourceUrl": "https://www.quironsalud.com/es/investigacion/ensayos-clinicos-acceso-precoz-nuevas-terapias",
+     "sourceTitle": "Ensayos clínicos, un acceso precoz a nuevas terapias | Quirónsalud",
+     "evidenceQuote": "Quirónsalud Investigación e Innovación es la entidad de gestión de la investigación realizada en los centros del Grupo Quirónsalud y actúa como ventanilla única para todos aquellos promotores ... qs.investigacion@quironsalud.es",
+     "checkedOn": "2026-10-06",
+     "confidence": "high"
+    }
+   ]
+  },
+  {
+   "id": "280474",
+   "name": "Hospital Nuestra Señora de América",
+   "website": "https://vithas.es/fundacion/",
+   "notes": "Checked. The address appears on its source page. Nothing changed. Now Hospital Universitario Vithas Madrid Arturo Soria (Vithas group). Vithas research runs through Fundación Vithas and its Unidad Centralizada de Investigación. That unit offers only a web form for trial enquiries. The foundation secretariat is published for R&D collaboration requests; whether it handles sponsor feasibility is not confirmed. hnsamerica@hnsamerica.nehos.com appears only on third-party directories and was not included.",
+   "contacts": [
+    {
+     "email": "secretaria.fundacion@vithas.es",
+     "kind": "research_foundation",
+     "label_es": "Secretaría de la Fundación Vithas",
+     "label_en": "Fundación Vithas Secretariat",
+     "description_es": "Secretaría de la fundación de investigación del grupo Vithas. Se publica para solicitudes de colaboración en proyectos de I+D+i; no está confirmado que atienda la viabilidad de ensayos.",
+     "description_en": "Secretariat of the Vithas group's research foundation. It is published for R&D project collaboration requests; it is not confirmed that it handles trial feasibility.",
+     "sourceUrl": "https://vithas.es/fundacion/investigacion/proyectos-de-i-d-i-internos/",
+     "sourceTitle": "Proyectos de Investigación I+D+i internos - Fundación Vithas",
+     "evidenceQuote": "Las solicitudes se podrán enviar por correo electrónico a la dirección: secretaria.fundacion@vithas.es , haciendo constar en el titulo: “Solicitud de colaboración a Fundación Vithas:",
+     "checkedOn": "2026-10-06",
+     "confidence": "medium"
+    }
+   ]
+  },
+  {
+   "id": "280534",
+   "name": "Clínica La Luz",
+   "website": "https://www.quironsalud.com/hospital-la-luz",
+   "notes": "Checked. Both addresses appear on their source pages, which I opened on 2026-10-06. Nothing changed. Now Hospital Universitario La Luz (Quirónsalud). The group's 'Quirónsalud Investigación e Innovación' is the single entry point for sponsors at all group hospitals. The hospital's research-staff page lists only named people's mailboxes, so nothing was taken from it. The hospital's general mailbox is listed as a last resort.",
+   "contacts": [
+    {
+     "email": "qs.investigacion@quironsalud.es",
+     "kind": "research_support_office",
+     "label_es": "Quirónsalud Investigación e Innovación (ventanilla única para promotores)",
+     "label_en": "Quirónsalud Research & Innovation (sponsor single entry point)",
+     "description_es": "Entidad del Grupo Quirónsalud que gestiona la investigación de sus centros y atiende a los promotores que quieran hacer ensayos clínicos en sus hospitales.",
+     "description_en": "Quirónsalud group body that manages research at its centres and is the single entry point for sponsors wanting to run clinical trials at its hospitals.",
+     "sourceUrl": "https://www.quironsalud.com/es/investigacion/ensayos-clinicos-acceso-precoz-nuevas-terapias",
+     "sourceTitle": "Ensayos clínicos, un acceso precoz a nuevas terapias | Quirónsalud",
+     "evidenceQuote": "Quirónsalud Investigación e Innovación es la entidad de gestión de la investigación realizada en los centros del Grupo Quirónsalud y actúa como ventanilla única para todos aquellos promotores que quieran dirigirse a nuestros hospitales para desarrollar ensayos clínicos ... qs.investigacion@quironsalud.es",
+     "checkedOn": "2026-10-06",
+     "confidence": "high"
+    },
+    {
+     "email": "info.laluz@quironsalud.es",
+     "kind": "hospital_general",
+     "phone": "91 453 03 03",
+     "label_es": "Información general del hospital",
+     "label_en": "Hospital general enquiries",
+     "description_es": "Buzón general de información del hospital. No es específico de investigación, así que es probable que reenvíen la consulta.",
+     "description_en": "Hospital's general information mailbox. It is not research-specific, so the enquiry will likely be forwarded.",
+     "sourceUrl": "https://www.quironsalud.com/hospital-la-luz/es/investigacion",
+     "sourceTitle": "Investigación | Hospital Universitario La Luz",
+     "evidenceQuote": "Hospital Universitario La Luz Dirección: Calle del Maestro Ángel Llorca, 8 28003 Madrid Madrid Citas - 91 453 03 03 Ext. 3 Cómo llegar Correo electrónico: info.laluz@quironsalud.es",
+     "checkedOn": "2026-10-06",
+     "confidence": "low"
+    }
+   ]
+  },
+  {
+   "id": "280549",
+   "name": "Hospital Fuensanta",
+   "website": "https://www.viamedsalud.com/hospital-fuensanta/",
+   "contacts": [
+    {
+     "email": "info@viamed.com",
+     "phone": "916 250 700",
+     "kind": "hospital_general",
+     "label_es": "Grupo Viamed – contacto general (página de ensayos clínicos)",
+     "label_en": "Viamed group – general contact (clinical trials page)",
+     "description_es": "Buzón general del grupo Viamed, que aparece en su página de ensayos clínicos; según la página, los ensayos los gestiona su Departamento Corporativo de Docencia e Investigación, pero no es un buzón específico de ensayos.",
+     "description_en": "Viamed group general mailbox shown on its clinical trials page; per the page, trials are run by its corporate Teaching and Research Department, but this is not a trials-specific mailbox.",
+     "sourceUrl": "https://www.viamedsalud.com/ensayos-clinicos/",
+     "sourceTitle": "Ensayos Clínicos | Viamed Salud",
+     "evidenceQuote": "Si estás interesado en ampliar tu información sobre Ensayos Clínicos, escríbenos Contactar ... 916 250 700 info@viamed.com Av. de la Vega, 15 28108 Alcobendas-Madrid",
+     "checkedOn": "2026-10-06",
+     "confidence": "low"
+    }
+   ],
+   "notes": "Verified 2026-10-06: info@viamed.com and 916 250 700 appear in the footer of the trials page. The page also confirms that \"El Departamento Corporativo de Docencia e Investigación de Viamed Salud, junto con nuestras Unidades de Apoyo a la Investigación (UAIs), garantiza una gestión integral y estandarizada de los ensayos clínicos en nuestra red hospitalaria\". The quote was adjusted slightly to match the page text. No other changes."
+  },
+  {
+   "id": "280552",
+   "name": "Hospital Ruber Juan Bravo",
+   "website": "https://www.quironsalud.com/ruber/es",
+   "notes": "VERIFIED 2026-10-06 that no contact is suitable. The Docencia 'Estructura y Contacto' page lists only named staff mailboxes (6 personal @quironsalud.es addresses, excluded). The 'Información de contacto' and 'Investigación' pages (quironsalud.com/ruber/es/...; ruber.es redirects to the same page) show no email. A search for a Quirónsalud group-level trials mailbox found only a Quirónsalud Madrid general address, from a search summary rather than a page I opened, so it was not used. The switchboard is 910 687 777. QA 2026-10-06: added the Quirónsalud group sponsor single-entry mailbox (qs.investigacion@quironsalud.es), the same contact already listed for La Luz, San José and San Camilo; its source page says it is the single entry point for sponsors at all Quirónsalud group hospitals, and this hospital is a group centre (quironsalud.com site).",
+   "contacts": [
+    {
+     "email": "qs.investigacion@quironsalud.es",
+     "kind": "research_support_office",
+     "label_es": "Quirónsalud Investigación e Innovación (ventanilla única para promotores)",
+     "label_en": "Quirónsalud Research & Innovation (sponsor single entry point)",
+     "description_es": "Entidad del Grupo Quirónsalud que gestiona la investigación de sus centros y atiende a los promotores que quieran hacer ensayos clínicos en sus hospitales.",
+     "description_en": "Quirónsalud group body that manages research at its centres and is the single entry point for sponsors wanting to run clinical trials at its hospitals.",
+     "sourceUrl": "https://www.quironsalud.com/es/investigacion/ensayos-clinicos-acceso-precoz-nuevas-terapias",
+     "sourceTitle": "Ensayos clínicos, un acceso precoz a nuevas terapias | Quirónsalud",
+     "evidenceQuote": "Quirónsalud Investigación e Innovación es la entidad de gestión de la investigación realizada en los centros del Grupo Quirónsalud y actúa como ventanilla única para todos aquellos promotores que quieran dirigirse a nuestros hospitales para desarrollar ensayos clínicos ... qs.investigacion@quironsalud.es",
+     "checkedOn": "2026-10-06",
+     "confidence": "high"
+    }
+   ]
+  },
+  {
+   "id": "280565",
+   "name": "Hospital Ruber Internacional",
+   "website": "https://www.ruberinternacional.es/",
+   "notes": "VERIFIED 2026-10-06: caja.rbi@ruberinternacional.es appears on the official contact page under 'Sugerencias y preguntas'. On re-check, the Quirónsalud clinical trials page (quironsalud.com/ruber-internacional/en/centers/clinical-trials) now loads (200) but shows no email. The /es/investigacion URLs are still 404. The named press contact was excluded. No research mailbox was found, so the general mailbox stays as a last resort.",
+   "contacts": [
+    {
+     "email": "caja.rbi@ruberinternacional.es",
+     "phone": "91 387 50 00",
+     "kind": "hospital_general",
+     "label_es": "Contacto general del hospital",
+     "label_en": "Hospital general contact",
+     "description_es": "Buzón general de sugerencias y preguntas del hospital; último recurso, no es una unidad de investigación.",
+     "description_en": "Hospital's general suggestions and questions mailbox; last resort, not a research unit.",
+     "sourceUrl": "https://www.ruberinternacional.es/es/contacto",
+     "sourceTitle": "Contacto | Hospital Ruber Internacional",
+     "evidenceQuote": "Contacto Inicio Contacto [...] Sugerencias y preguntas caja.rbi@ruberinternacional.es",
+     "checkedOn": "2026-10-06",
+     "confidence": "low"
+    }
+   ]
+  },
+  {
+   "id": "280587",
+   "name": "Hospital La Milagrosa",
+   "website": "https://vithas.es/en/center/vithas-madrid-la-milagrosa-hospital/",
+   "notes": "VERIFIED 2026-10-06. Both emails appear verbatim on their Vithas pages, as does the phone +34 914 472 100. No changes. The foundation secretariat is not explicitly a trials inbox, so it stays at medium confidence.",
+   "contacts": [
+    {
+     "email": "secretaria.fundacion@vithas.es",
+     "kind": "research_foundation",
+     "label_es": "Secretaría de Fundación Vithas",
+     "label_en": "Vithas Foundation Secretariat",
+     "description_es": "Secretaría de la fundación del grupo Vithas, de la que depende la Unidad de Ensayos Clínicos (UVEC) de Madrid; publicada para solicitudes de colaboración en investigación, no específicamente para viabilidad.",
+     "description_en": "Secretariat of the Vithas group foundation, which runs the Madrid clinical trials unit (UVEC); published for research collaboration requests, not specifically for feasibility.",
+     "sourceUrl": "https://vithas.es/fundacion/investigacion/proyectos-de-i-d-i-internos/",
+     "sourceTitle": "Proyectos de Investigación I+D+i internos - Fundación Vithas",
+     "evidenceQuote": "Las solicitudes se podrán enviar por correo electrónico a la dirección: secretaria.fundacion@vithas.es",
+     "checkedOn": "2026-10-06",
+     "confidence": "medium"
+    },
+    {
+     "email": "secretaria.lamilagrosa@vithas.es",
+     "phone": "+34 914 472 100",
+     "kind": "hospital_general",
+     "label_es": "Secretaría del hospital",
+     "label_en": "Hospital secretariat",
+     "description_es": "Correo general del hospital; última opción.",
+     "description_en": "Hospital general email; last resort.",
+     "sourceUrl": "https://vithas.es/en/center/vithas-madrid-la-milagrosa-hospital/",
+     "sourceTitle": "Private Hospital in Madrid | Vithas La Milagrosa",
+     "evidenceQuote": "Calle Modesto Lafuente, 14, 28010 Madrid, Madrid +34 914 472 100 secretaria.lamilagrosa@vithas.es",
+     "checkedOn": "2026-10-06",
+     "confidence": "low"
+    }
+   ]
+  },
+  {
+   "id": "280604",
+   "name": "Hospital Universitario La Zarzuela",
+   "website": "https://www.hospitallazarzuela.es",
+   "notes": "VERIFIED 2026-10-06. fundacionsh@sanitas.es appears on the Fundación Sanitas Hospitales page with the clinical-trial contract wording, and the page names La Zarzuela. No changes.",
+   "contacts": [
+    {
+     "email": "fundacionsh@sanitas.es",
+     "kind": "research_foundation",
+     "label_es": "Fundación Sanitas Hospitales – ensayos clínicos",
+     "label_en": "Sanitas Hospitals Foundation – clinical trials",
+     "description_es": "Fundación del grupo Sanitas que gestiona los ensayos clínicos en sus hospitales; los promotores envían aquí el contrato.",
+     "description_en": "Sanitas group foundation that manages clinical trials across its hospitals; sponsors send the trial contract here.",
+     "sourceUrl": "https://fundacionsanitashospitales.sanitas.es/",
+     "sourceTitle": "Fundación Sanitas",
+     "evidenceQuote": "facilitar la gestión de los ensayos clínicos en nuestros Centros, los promotores de dichos estudios pueden descargar aquí el contrato de ensayo clínico que utilizamos, cumplimentando los apartados específicos, y enviarlo a fundacionsh@sanitas.es",
+     "checkedOn": "2026-10-06",
+     "confidence": "high"
+    }
+   ]
+  },
+  {
+   "id": "280626",
+   "name": "Hospital HM Nuevo Belén",
+   "website": "https://www.hmhospitales.com/",
+   "contacts": [
+    {
+     "email": "StartUpFiHM@fundacionhm.com",
+     "kind": "clinical_trials_unit",
+     "label_es": "Área de Start-up – Unidad Central de Ensayos Clínicos (Fundación HM)",
+     "label_en": "Study Start-up – Central Clinical Trials Unit (HM Foundation)",
+     "description_es": "Área de puesta en marcha de estudios de la Unidad Central de Ensayos Clínicos de la Fundación HM, que coordina los ensayos de los hospitales del grupo HM. Es el buzón más adecuado para viabilidad y activación de centro.",
+     "description_en": "Study start-up desk of the HM Foundation's Central Clinical Trials Unit, which coordinates trials across HM group hospitals. The most suitable mailbox for feasibility and site activation.",
+     "sourceUrl": "https://www.fundacionhm.com/unidad-central-de-ensayos-clinicos-ucec/",
+     "sourceTitle": "Unidad Central de Ensayos Clínicos | Fundación HM",
+     "evidenceQuote": "Contacta con nosotros [...] Área de StartUp [...] StartUpFiHM@fundacionhm.com",
+     "checkedOn": "2026-10-06",
+     "confidence": "high"
+    },
+    {
+     "email": "secretaria@mail.fundacionhm.com",
+     "kind": "research_foundation",
+     "label_es": "Secretaría Técnica – Fundación HM",
+     "label_en": "Technical Secretariat – HM Foundation",
+     "description_es": "Secretaría de la Fundación de Investigación HM, que gestiona la I+D+i de todos los hospitales del grupo, incluidos los ensayos clínicos (idoneidad y puesta en marcha) y la relación con la industria farmacéutica.",
+     "description_en": "Secretariat of the HM research foundation, which manages R&D for all group hospitals, including clinical trials (suitability and start-up) and relations with pharma companies.",
+     "sourceUrl": "https://www.fundacionhm.com/con%C3%B3cenos/secretaria/contacto",
+     "sourceTitle": "Secretaría y Gestión Institucional | Fundación HM",
+     "evidenceQuote": "Gestión de Ensayos Clínicos, dando cobertura al control de idoneidad de desarrollo de estos y su puesta en marcha. [...] Contacto secretaria@mail.fundacionhm.com",
+     "checkedOn": "2026-10-06",
+     "confidence": "medium"
+    }
+   ],
+   "notes": "VERIFIED: StartUpFiHM@fundacionhm.com appears on the UCEC page, both as plain text and Cloudflare-encoded. secretaria@mail.fundacionhm.com appears on the Secretaría page as a Cloudflare-encoded address, which I decoded myself. That page says the Secretaría Técnica manages R&D 'de todos los hospitales del Grupo HM Hospitales', so it serves HM Nuevo Belén. A personal address on the UCEC page and the named person next to the StartUp mailbox were correctly excluded. CHANGED the secretariat description slightly so it says the foundation covers all group hospitals."
+  },
+  {
+   "id": "280647",
+   "name": "Clínica Dr. León",
+   "website": "https://clinicadrleon.com",
+   "notes": "VERIFIED 2026-10-06: info@clinicadrleon.com appears on the official home page. No changes. This is a private psychiatric clinic with no research unit. 0 registered trials.",
+   "contacts": [
+    {
+     "email": "info@clinicadrleon.com",
+     "phone": "91 551 77 22",
+     "kind": "hospital_general",
+     "label_es": "Contacto general de la clínica",
+     "label_en": "Clinic general contact",
+     "description_es": "Buzón general de la clínica; no hay unidad de investigación publicada, así que la consulta tendría que ir a dirección médica.",
+     "description_en": "General clinic mailbox; no research unit is published, so the enquiry would need to go to medical management.",
+     "sourceUrl": "https://clinicadrleon.com/",
+     "sourceTitle": "Clínica Dr. León | Psiquiatría y Psicología",
+     "evidenceQuote": "Clínica Dr. León | Psiquiatría y Psicología Urgencias 91 551 77 22 info@clinicadrleon.com",
+     "checkedOn": "2026-10-06",
+     "confidence": "low"
+    }
+   ]
+  },
+  {
+   "id": "280650",
+   "name": "Clínica López Ibor",
+   "website": "https://www.lopezibor.com",
+   "notes": "Re-checked 2026-10-06: the official home page and lopezibor.com/contacto/ show no email address, mailto link or obfuscated email. They give only the phone +34 913 162 740 and a web form. The info@ address appears only on third-party directories and was not recorded. A CRO would need to phone or use the form.",
+   "contacts": []
+  },
+  {
+   "id": "280679",
+   "name": "Sanatorio Esquerdo",
+   "website": "",
+   "notes": "Re-checked 2026-10-06: www.sanatorioesquerdo.com still does not resolve (curl connection failure), so there is no official source. The info@ address appears only on third-party directories and was not recorded. A 2015 press report says the Comunidad de Madrid suspended its activity, so it may not be operating. No contacts recorded.",
+   "contacts": []
+  },
+  {
+   "id": "280724",
+   "name": "Hospital Central de la Defensa Gómez Ulla",
+   "website": "https://www.defensa.gob.es/hcd-gomez-ulla/",
+   "notes": "VERIFIED 2026-10-06. All 3 emails appear verbatim on their defensa.gob.es pages. The general phone appears as '(34) 91 422 20 00' with a non-breaking space in the HTML. No changes.",
+   "contacts": [
+    {
+     "email": "jefaturadocencia_hcdgu@oc.mde.es",
+     "kind": "research_support_office",
+     "label_es": "Jefatura de Docencia e Investigación",
+     "label_en": "Teaching & Research Office",
+     "description_es": "Oficina que coordina la investigación del hospital; buzón compartido con docencia, no específico de ensayos.",
+     "description_en": "Office coordinating hospital research; mailbox shared with teaching, not trial-specific.",
+     "sourceUrl": "https://www.defensa.gob.es/hcd-gomez-ulla/profesionales/docencia-e-investigacion/ubicaci%C3%B3n-y-contacto46",
+     "sourceTitle": "Ubicación y Contacto - HCD Gómez Ulla",
+     "evidenceQuote": "La Jefatura de Docencia e Investigación se encuentra en la Torre principal, Planta Primera, Pasillo F, Área de Docencia. Contacto Email: jefaturadocencia_hcdgu@oc.mde.es",
+     "checkedOn": "2026-10-06",
+     "confidence": "medium"
+    },
+    {
+     "email": "ceic_defensa@oc.mde.es",
+     "phone": "914222186",
+     "kind": "ceim_secretariat",
+     "label_es": "Secretaría del CEIm",
+     "label_en": "CEIm Secretariat",
+     "description_es": "Secretaría del comité de ética de la investigación con medicamentos del hospital; para consultas regulatorias, no para viabilidad.",
+     "description_en": "Hospital drug research ethics committee secretariat; for regulatory questions, not feasibility.",
+     "sourceUrl": "https://www.defensa.gob.es/hcd-gomez-ulla/nosotros/cartera-de-servicios/comit%C3%A9-de-%C3%89tica-de-la-investigacion-con-medicamentos",
+     "sourceTitle": "Comité de Ética de la Investigación con Medicamentos - HCD Gómez Ulla",
+     "evidenceQuote": "En el despacho 3, está el Comité. Teléfono: 914222186. Email: ceic_defensa@oc.mde.es",
+     "checkedOn": "2026-10-06",
+     "confidence": "medium"
+    },
+    {
+     "email": "hcdgomezulla@oc.mde.es",
+     "phone": "(34) 91 422 20 00",
+     "kind": "hospital_general",
+     "label_es": "Contacto general del hospital",
+     "label_en": "Hospital general contact",
+     "description_es": "Correo general del hospital; última opción.",
+     "description_en": "Hospital general email; last resort.",
+     "sourceUrl": "https://www.defensa.gob.es/hcd-gomez-ulla/profesionales/docencia-e-investigacion/%C3%81rea-de-investigaci%C3%B3n-biosanitaria",
+     "sourceTitle": "Área de Investigación Biosanitaria - HCD Gómez Ulla",
+     "evidenceQuote": "Hospital Central de la Defensa Gómez Ulla - C.S.V.E. CONTACTO Tlf.: (34) 91 422 20 00 Email.: hcdgomezulla@oc.mde.es",
+     "checkedOn": "2026-10-06",
+     "confidence": "low"
+    }
+   ]
+  },
+  {
+   "id": "280745",
+   "name": "Hospital Universitario Príncipe de Asturias",
+   "website": "https://www.comunidad.madrid/hospital/principeasturias",
+   "notes": "VERIFIED 2026-10-06: both addresses appear verbatim on official comunidad.madrid pages. Both are role mailboxes, not personal ones. The gmail address is published on the hospital's own CEIm page, but because it is a consumer domain its confidence was LOWERED to low and the description flags it. The salud.madrid.org address should be preferred.",
+   "contacts": [
+    {
+     "email": "fundacion.hupa@salud.madrid.org",
+     "phone": "91 887 81 00 ext. 2605",
+     "kind": "research_foundation",
+     "label_es": "Fundación para la Investigación Biomédica",
+     "label_en": "Biomedical Research Foundation",
+     "description_es": "Fundación que gestiona los ensayos clínicos y proyectos de investigación del hospital.",
+     "description_en": "Foundation that manages the hospital's clinical trials and research projects.",
+     "sourceUrl": "https://www.comunidad.madrid/transparencia/unidad-organizativa-responsable/fundacion-investigacion-biomedica-del-hospital-universitario",
+     "sourceTitle": "Fundación para la Investigación Biomédica del Hospital Universitario Príncipe de Asturias - Portal de Transparencia",
+     "evidenceQuote": "Ctra. Alcalá-Meco, s/n 28805 Alcalá de Henares Email: fundacion.hupa@salud.madrid.org Teléfono: 918878100 Ext.: 2605",
+     "checkedOn": "2026-10-06",
+     "confidence": "medium"
+    },
+    {
+     "email": "fundacion.hupa@gmail.com",
+     "phone": "918 87 81 00 ext. 402605",
+     "kind": "research_foundation",
+     "label_es": "Fundación – Secretaría (gestión administrativa y contratos)",
+     "label_en": "Foundation secretariat (admin and contracts)",
+     "description_es": "Secretaría de la fundación indicada en la web del hospital para la gestión administrativa y de contrato de los estudios; es una dirección de Gmail, así que conviene preferir la institucional.",
+     "description_en": "Foundation secretariat listed on the hospital website for study administration and contracts; it is a Gmail address, so the institutional one should be preferred.",
+     "sourceUrl": "https://www.comunidad.madrid/hospital/principeasturias/profesionales/comite-etica-investigacion-medicamentos",
+     "sourceTitle": "Comité de Ética de la Investigación con medicamentos | Hospital Universitario Príncipe de Asturias",
+     "evidenceQuote": "Para contactar por teléfono, puede llamar al 918 87 81 00 (extensión 402605) o mandar un correo a fundacion.hupa@gmail.com",
+     "checkedOn": "2026-10-06",
+     "confidence": "low"
+    }
+   ]
+  },
+  {
+   "id": "280761",
+   "name": "Hospital de la Fuenfría",
+   "website": "https://www.comunidad.madrid/hospital/lafuenfria/",
+   "contacts": [
+    {
+     "email": "buzgen.hlff@salud.madrid.org",
+     "phone": "91 852 03 00",
+     "kind": "hospital_general",
+     "label_es": "Buzón general del hospital",
+     "label_en": "Hospital general mailbox",
+     "description_es": "Buzón general del hospital; no es de investigación, solo como último recurso para que lo deriven.",
+     "description_en": "General hospital mailbox, not a research one; use only as a last resort and ask for it to be forwarded.",
+     "sourceUrl": "https://www.comunidad.madrid/centros/hospital-universitario-fuenfria",
+     "sourceTitle": "Hospital Universitario La Fuenfría | Comunidad de Madrid",
+     "evidenceQuote": "Teléfono: 91 852 03 00 Fax: 91 852 15 67 Correo electrónico buzgen.hlff@salud.madrid.org",
+     "checkedOn": "2026-10-06",
+     "confidence": "low"
+    }
+   ],
+   "notes": "VERIFIED: the email appears on the official Comunidad de Madrid page. No changes. Medium-/long-stay public hospital whose 'Docencia e Investigación' page covers training only."
+  },
+  {
+   "id": "280777",
+   "name": "Complejo Asistencial Benito Menni",
+   "website": "https://fundacionhospitalariasciempozuelos.org/",
+   "contacts": [],
+   "notes": "Verified: no contacts to check. Psychiatric/psychogeriatric centre of Hermanas Hospitalarias (Fundación Hospitalarias Ciempozuelos). Its contact page (https://fundacionhospitalariasciempozuelos.org/contacto/) shows only the switchboard 918 930 150 and no email. The research page (https://fundacionhospitalariasciempozuelos.org/que-hacemos/investigacion-cabm/) describes a Comisión de Docencia, Formación Continuada e Investigación but publishes no mailbox. The data-protection officer address (dpd.cabm@hospitalarias.es) was excluded. A further search on 2026-10-06 found only LinkedIn and directory results, plus a search-summary mention of info@hospitalarias.es that was not seen on an opened official page, so nothing was added. Best route: call the switchboard on 918 930 150 and ask for the research commission."
+  },
+  {
+   "id": "280783",
+   "name": "Centro San Juan de Dios Ciempozuelos",
+   "website": "https://www.csjd.es/",
+   "contacts": [
+    {
+     "email": "ciempozuelos@sjd.es",
+     "phone": "918930001",
+     "kind": "hospital_general",
+     "label_es": "Contacto general del centro",
+     "label_en": "Centre general contact",
+     "description_es": "Buzón general del Centro San Juan de Dios de Ciempozuelos (salud mental, discapacidad intelectual, psicogeriatría); no consta unidad de investigación.",
+     "description_en": "General mailbox of Centro San Juan de Dios Ciempozuelos (mental health, intellectual disability, psychogeriatrics); no research unit is published.",
+     "sourceUrl": "https://sjd.es/location/centro-san-juan-de-dios-ciempozuelos/",
+     "sourceTitle": "Centro San Juan de Dios - Ciempozuelos - San Juan de Dios",
+     "evidenceQuote": "http://www.csjd.es ciempozuelos@sjd.es 918930001 Avda./ San Juan de Dios, 1. 28350, Ciempozuelos.",
+     "checkedOn": "2026-10-06",
+     "confidence": "low"
+    }
+   ],
+   "notes": "Verified 2026-10-06: a direct curl got 403, but the web fetcher confirmed that ciempozuelos@sjd.es and 918930001 appear on the source page. No changes."
+  },
+  {
+   "id": "280796",
+   "name": "Hospital Asepeyo Madrid",
+   "website": "https://www.asepeyo.es/en/centro/hospital-coslada/",
+   "contacts": [
+    {
+     "email": "hospitalcoslada@asepeyo.es",
+     "phone": "916 735 011",
+     "kind": "hospital_general",
+     "label_es": "Contacto general del hospital",
+     "label_en": "Hospital general contact",
+     "description_es": "Buzón general del Hospital Asepeyo Madrid (Coslada); no consta que gestione ensayos clínicos, habría que pedir que lo deriven al responsable de investigación.",
+     "description_en": "General mailbox of Hospital Asepeyo Madrid (Coslada); not stated to handle clinical trials, so the enquiry would need to be forwarded to whoever leads research.",
+     "sourceUrl": "https://www.asepeyo.es/en/centro/hospital-coslada/",
+     "sourceTitle": "Hospital Asepeyo Madrid en Coslada",
+     "evidenceQuote": "Asepeyo Hospital Madrid Joaquín de Cárdenas, 2 28823 Coslada (Madrid) Tel. 916 735 011 Fax 916 693 393 hospitalcoslada@asepeyo.es",
+     "checkedOn": "2026-10-06",
+     "confidence": "low"
+    }
+   ],
+   "notes": "Verified 2026-10-06: the email, phone and quote appear verbatim on the source page. No changes. This is an occupational-health mutual hospital (trauma). No research or clinical-trials mailbox was found on asepeyo.es."
+  },
+  {
+   "id": "280800",
+   "name": "Hospital Asociado Universitario Guadarrama",
+   "website": "https://www.comunidad.madrid/hospital/guadarrama/",
+   "contacts": [
+    {
+     "email": "gerencia.hgua@salud.madrid.org",
+     "phone": "91 856 19 23",
+     "kind": "hospital_general",
+     "label_es": "Gerencia del hospital",
+     "label_en": "Hospital management office",
+     "description_es": "Buzón de la gerencia del hospital; no es de investigación, solo como último recurso para que lo deriven.",
+     "description_en": "Hospital management mailbox, not a research one; use only as a last resort and ask for it to be forwarded.",
+     "sourceUrl": "https://www.comunidad.madrid/hospital/guadarrama/comunicacion/contacto",
+     "sourceTitle": "Contacto | Hospital Asociado Universitario Guadarrama",
+     "evidenceQuote": "Correos: comunicacionhguadarrama@salud.madrid.org [...] gerencia.hgua@salud.madrid.org Teléfonos: 91 856 19 23 -91 856 20 03",
+     "checkedOn": "2026-10-06",
+     "confidence": "low"
+    }
+   ],
+   "notes": "VERIFIED: the email appears on the official contact page. A personal mailbox listed between the two role addresses was correctly excluded and is shown as [...] in the quote. No changes. No research foundation or IIS link was found."
+  },
+  {
+   "id": "280838",
+   "name": "Hospital Universitario Severo Ochoa",
+   "website": "https://www.comunidad.madrid/hospital/severoochoa",
+   "notes": "VERIFIED 2026-10-06: both addresses appear on the IDIPHISA Ensayos Clínicos page. The page has a 'HOSPITAL UNIVERSITARIO severo ochoa' section, which confirms the Puerta de Hierro foundation handles trial paperwork for this hospital. contratos.eecc@ appears in the general FAQ, not in the Severo Ochoa section itself. No changes.",
+   "contacts": [
+    {
+     "email": "contratos.eecc@idiphim.org",
+     "kind": "research_foundation",
+     "label_es": "Fundación IDIPHISA – Contratos de ensayos clínicos",
+     "label_en": "IDIPHISA foundation – Clinical trial contracts",
+     "description_es": "Departamento de contratos de la fundación de Puerta de Hierro, que tramita los contratos de ensayos también para Severo Ochoa; no se indica que gestione viabilidad.",
+     "description_en": "Contracts department of the Puerta de Hierro foundation, which also handles trial contracts for Severo Ochoa; not stated to handle feasibility.",
+     "sourceUrl": "https://investigacionpuertadehierro.com/fundacion-para-la-investigacion-biomedica-del-hospital-puerta-de-hierro/ensayos-clinicos/",
+     "sourceTitle": "Ensayos Clinicos - Instituto Investigación Sanitaria Puerta de Hierro - Segovia de Arana",
+     "evidenceQuote": "¿Dónde tengo que mandar la documentación? Cuando se disponga de toda la documentación se enviará a la dirección de correo contratos.eecc@idiphim.org , acusaremos recibo del mismo.",
+     "checkedOn": "2026-10-06",
+     "confidence": "medium"
+    },
+    {
+     "email": "cetico.hsvo@salud.madrid.org",
+     "kind": "ceim_secretariat",
+     "label_es": "Comité ético HU Severo Ochoa (idoneidad de instalaciones)",
+     "label_en": "Severo Ochoa ethics committee (site suitability)",
+     "description_es": "Buzón del comité ético del hospital, indicado para gestionar la idoneidad de las instalaciones; para trámites regulatorios, no para viabilidad.",
+     "description_en": "Hospital ethics committee mailbox, listed for site-suitability paperwork; for regulatory steps, not feasibility.",
+     "sourceUrl": "https://investigacionpuertadehierro.com/fundacion-para-la-investigacion-biomedica-del-hospital-puerta-de-hierro/ensayos-clinicos/",
+     "sourceTitle": "Ensayos Clinicos - Instituto Investigación Sanitaria Puerta de Hierro - Segovia de Arana",
+     "evidenceQuote": "HOSPITAL UNIVERSITARIO severo ochoa Detalle Descarga de documentos Ensayos Clínicos con Medicamentos [...] Idoneidad de las instalaciones (a gestionar con cetico.hsvo@salud.madrid.org)",
+     "checkedOn": "2026-10-06",
+     "confidence": "medium"
+    }
+   ]
+  },
+  {
+   "id": "280843",
+   "name": "Hospital Universitario José Germain",
+   "website": "https://www.comunidad.madrid/hospital/josegermain/",
+   "contacts": [],
+   "notes": "Verified: no contacts to check. This is the same hospital as id 281438 (a second CNH registry entry), with the same findings. No research or trials mailbox is published. Only the library (biblioteca.ipjg@salud.madrid.org) and resident-teaching (docencia.ipjg@salud.madrid.org) addresses exist on https://www.comunidad.madrid/hospital/josegermain/profesionales/gestion-conocimiento, and both were excluded. The switchboard is 91 586 65 00."
+  },
+  {
+   "id": "280856",
+   "name": "Hospital Fremap Majadahonda",
+   "website": "https://www.fremap.es/es/inicio/asistencia-sanitaria/red-de-centros?idCentro=132",
+   "notes": "Re-checked 2026-10-06: the old FREMAP centre URL now redirects to fremap.es/es/inicio/asistencia-sanitaria/red-de-centros?idCentro=132, so the website was updated. The fetched page has no email address. The centre lists only phones (900 61 00 61; +34 91 919 61 61). An admissions address seen only on third-party directories was not recorded. This is an occupational-injury mutual hospital with no research unit found. No contacts recorded.",
+   "contacts": []
+  },
+  {
+   "id": "280894",
+   "name": "Hospital Universitario de Móstoles",
+   "website": "https://www.comunidad.madrid/hospital/mostoles/",
+   "notes": "VERIFIED 2026-10-06, still no suitable contact. The Comisión de Investigación page has only ajuridica.hmtl@salud.madrid.org (Asesoría Jurídica). Its context confirms it is for internal researchers' doubts about project submissions, not a feasibility or trials inbox, so it was not recorded. I also checked the hospital home page, the location/contact page and the /profesionales/investigacion page, and none shows an email. A web search turned up only the library mailbox (not appropriate) and a named person's mailbox (excluded). There is no foundation or IIS page for this hospital. BIOSUR, the planned south-Madrid research foundation, has published no contacts yet. Re-check later.",
+   "contacts": []
+  },
+  {
+   "id": "280920",
+   "name": "Hospital El Escorial",
+   "website": "https://www.comunidad.madrid/hospital/elescorial/",
+   "contacts": [
+    {
+     "email": "contratos.eecc@idiphim.org",
+     "kind": "research_foundation",
+     "label_es": "Contratos de ensayos clínicos (FIB Puerta de Hierro)",
+     "label_en": "Clinical trial contracts (FIB Puerta de Hierro)",
+     "description_es": "Buzón de contratos de ensayos clínicos de la Fundación de Investigación Biomédica del H. Puerta de Hierro, que gestiona los contratos del H. U. El Escorial. Sirve para enviar la documentación del contrato; no consta que se ocupe de la viabilidad.",
+     "description_en": "Clinical-trial contracts mailbox of the Puerta de Hierro research foundation, which handles contracts for H. U. El Escorial. It is for sending contract documents; it is not stated to handle feasibility.",
+     "sourceUrl": "https://investigacionpuertadehierro.com/fundacion-para-la-investigacion-biomedica-del-hospital-puerta-de-hierro/ensayos-clinicos/",
+     "sourceTitle": "Ensayos Clinicos - Instituto Investigación Sanitaria Puerta de Hierro - Segovia de Arana",
+     "evidenceQuote": "Cuando se disponga de toda la documentación se enviará a la dirección de correo contratos.eecc@idiphim.org , acusaremos recibo del mismo.",
+     "checkedOn": "2026-10-06",
+     "confidence": "medium"
+    },
+    {
+     "email": "hospitalelescorial@salud.madrid.org",
+     "phone": "91 897 30 00",
+     "kind": "hospital_general",
+     "label_es": "Contacto general del hospital",
+     "label_en": "Hospital general contact",
+     "description_es": "Correo general del hospital; solo como último recurso para que lo deriven.",
+     "description_en": "General hospital email; use only as a last resort and ask for it to be forwarded.",
+     "sourceUrl": "https://www.comunidad.madrid/hospital/elescorial/ciudadanos/informacion-general",
+     "sourceTitle": "Información General | Hospital Universitario El Escorial",
+     "evidenceQuote": "Teléfono: 91 897 30 00 e-mail: hospitalelescorial@salud.madrid.org",
+     "checkedOn": "2026-10-06",
+     "confidence": "low"
+    }
+   ],
+   "notes": "VERIFIED: both emails appear on their source pages. The FIB Puerta de Hierro clinical-trials page has a separate 'HOSPITAL UNIVERSITARIO EL ESCORIAL' tab with its own contract documents, which confirms the foundation serves El Escorial. No changes."
+  },
+  {
+   "id": "280936",
+   "name": "Hospital Virgen de la Poveda",
+   "website": "https://www.comunidad.madrid/hospital/virgenpoveda/",
+   "notes": "VERIFIED 2026-10-06: hvirgen.poveda@madrid.org appears on the official 'Nosotros' page. Corrected the source title to the actual page title. This is a public SERMAS medium/long-stay hospital with no research foundation or trials unit published.",
+   "contacts": [
+    {
+     "email": "hvirgen.poveda@madrid.org",
+     "phone": "91 860 80 00",
+     "kind": "hospital_general",
+     "label_es": "Contacto general del hospital",
+     "label_en": "Hospital general contact",
+     "description_es": "Buzón general del hospital; no hay unidad de investigación publicada, así que la consulta tendría que derivarse a la dirección médica.",
+     "description_en": "General hospital mailbox; no research unit is published, so the enquiry would need forwarding to medical management.",
+     "sourceUrl": "https://www.comunidad.madrid/hospital/virgenpoveda/nosotros",
+     "sourceTitle": "Nosotros | Hospital Asociado Universitario Virgen de la Poveda",
+     "evidenceQuote": "Hospital Virgen de La Poveda Ctra. del Hospital, km. 5 28630 - Villa del Prado Teléfono: 91 860 80 00 Correo: hvirgen.poveda@madrid.org",
+     "checkedOn": "2026-10-06",
+     "confidence": "low"
+    }
+   ]
+  },
+  {
+   "id": "280954",
+   "name": "Hospital Universitario HM Madrid",
+   "website": "https://www.fundacionhm.com/",
+   "notes": "Checked. Both pages hide addresses behind Cloudflare email protection. I decoded them and both addresses are present: secretaria@mail.fundacionhm.com on the Secretaría page, and secretariaceic@mail.hmhospitales.com next to ext. 12588 on the CEIm page. Nothing changed. Excluded from the CEIm page: named people's mailboxes, and oficinadeproyectos@fundacionhm.com, which is the CEIDI/projects contact. Research for the whole HM group is handled by Fundación de Investigación HM Hospitales. Its UCEC page lists only a named person's mailbox.",
+   "contacts": [
+    {
+     "email": "secretaria@mail.fundacionhm.com",
+     "kind": "research_foundation",
+     "label_es": "Secretaría técnica – Fundación de Investigación HM",
+     "label_en": "Technical Secretariat – HM Research Foundation",
+     "description_es": "Secretaría técnica de la fundación de investigación de HM Hospitales. Según su web, gestiona los ensayos clínicos y las relaciones con empresas farmacéuticas.",
+     "description_en": "Technical secretariat of the HM Hospitales research foundation. Its page says it handles clinical trial management and relations with pharma companies.",
+     "sourceUrl": "https://www.fundacionhm.com/con%C3%B3cenos/secretaria/contacto",
+     "sourceTitle": "Secretaría y Gestión Institucional | Fundación HM",
+     "evidenceQuote": "Gestión de Ensayos Clínicos, dando cobertura al control de idoneidad de desarrollo de estos y su puesta en marcha. ... Gestión de las relaciones bilaterales con Empresas biotecnológicas y farmacéuticas. ... Contacto secretaria@mail.fundacionhm.com",
+     "checkedOn": "2026-10-06",
+     "confidence": "high"
+    },
+    {
+     "email": "secretariaceic@mail.hmhospitales.com",
+     "kind": "ceim_secretariat",
+     "phone": "91 708 99 00 ext. 12588",
+     "label_es": "Secretaría del CEIm HM Hospitales",
+     "label_en": "HM Hospitales Ethics Committee (CEIm) Secretariat",
+     "description_es": "Secretaría del comité de ética de la investigación con medicamentos. Sirve para consultas regulatorias y de evaluación, no para viabilidad.",
+     "description_en": "Secretariat of the drug research ethics committee. Use it for regulatory and review questions, not for feasibility.",
+     "sourceUrl": "https://www.fundacionhm.com/comite-etico-de-investigacion-con-medicamentos-ceim/",
+     "sourceTitle": "Comité CEIM | Fundación HM",
+     "evidenceQuote": "Contacto secretariaceic@mail.hmhospitales.com Teléfono: 91 708 99 00, ext. 12588.",
+     "checkedOn": "2026-10-06",
+     "confidence": "medium"
+    }
+   ]
+  },
+  {
+   "id": "280989",
+   "name": "Hospital Universitario de Getafe",
+   "website": "https://iisgetafe.es/",
+   "notes": "VERIFIED 2026-10-06: all four mailboxes and quotes appear on their source pages. IIS Getafe is the hospital's own research institute. CHANGED: the cei.hugf@ description now mentions that the hospital's Investigación page also names this mailbox as the Comisión de Viabilidad secretariat for studies that do not need CEIm approval. The IIS Getafe Comisión de Viabilidad page instead gives coordinaciondeestudiosclinicos@iisgetafe.com, so routing may have moved; the IIS page should be preferred. A named secretary on the hospital page was not recorded.",
+   "contacts": [
+    {
+     "email": "coordinaciondeestudiosclinicos@iisgetafe.com",
+     "kind": "clinical_trials_unit",
+     "label_es": "Secretaría de la Comisión de Viabilidad",
+     "label_en": "Feasibility Committee Secretariat",
+     "description_es": "Secretaría de la comisión que evalúa la viabilidad de los estudios clínicos del hospital; dirección indicada para enviar la documentación.",
+     "description_en": "Secretariat of the committee that assesses the feasibility of clinical studies at the hospital; the address given for submitting documentation.",
+     "sourceUrl": "https://iisgetafe.es/investigacion/rincon-del-investigador/comision-de-viabilidad/",
+     "sourceTitle": "Comisión de Viabilidad - Instituto de Investigación Sanitaria Getafe",
+     "evidenceQuote": "a la dirección de la Secretaría de la Comisión de Viabilidad ( coordinaciondeestudiosclinicos@iisgetafe.com ) y Responsable de Contratación de la Fundación",
+     "checkedOn": "2026-10-06",
+     "confidence": "high"
+    },
+    {
+     "email": "contratosinvestigacion@iisgetafe.com",
+     "kind": "research_foundation",
+     "label_es": "Fundación – Contratación",
+     "label_en": "Foundation – Contracts",
+     "description_es": "Responsable de contratación de la fundación de investigación; gestiona los contratos de estudios.",
+     "description_en": "Contracts officer of the research foundation; handles study contracts.",
+     "sourceUrl": "https://iisgetafe.es/investigacion/rincon-del-investigador/comision-de-viabilidad/",
+     "sourceTitle": "Comisión de Viabilidad - Instituto de Investigación Sanitaria Getafe",
+     "evidenceQuote": "y Responsable de Contratación de la Fundación ( contratosinvestigacion@iisgetafe.com )",
+     "checkedOn": "2026-10-06",
+     "confidence": "high"
+    },
+    {
+     "email": "info@iisgetafe.com",
+     "phone": "(+34) 91 624 72 25",
+     "kind": "research_institute",
+     "label_es": "Instituto de Investigación Sanitaria Getafe",
+     "label_en": "Getafe Health Research Institute",
+     "description_es": "Contacto general del instituto de investigación del hospital.",
+     "description_en": "General contact of the hospital's research institute.",
+     "sourceUrl": "https://iisgetafe.es/en/contact/",
+     "sourceTitle": "Contacto - Instituto de Investigación Sanitaria Getafe",
+     "evidenceQuote": "Instituto de Investigación Sanitaria de Getafe Carretera de Toledo, Km. 12 28905 Getafe, Madrid E-mail : info@iisgetafe.com Teléfono : (+34) 91 624 72 25",
+     "checkedOn": "2026-10-06",
+     "confidence": "medium"
+    },
+    {
+     "email": "cei.hugf@salud.madrid.org",
+     "phone": "+34 91 683 93 60",
+     "kind": "ceim_secretariat",
+     "label_es": "Secretaría del CEIm",
+     "label_en": "Ethics committee (CEIm) secretariat",
+     "description_es": "Secretaría del comité de ética, para cuestiones regulatorias; la página del hospital también la indica como secretaría de la Comisión de Viabilidad para estudios sin CEIm, aunque el IIS da otra dirección para viabilidad.",
+     "description_en": "Ethics committee secretariat for regulatory questions; the hospital page also lists it as the feasibility committee secretariat for non-CEIm studies, though the IIS gives a different feasibility address.",
+     "sourceUrl": "https://www.comunidad.madrid/hospital/getafe/profesionales/investigacion",
+     "sourceTitle": "Investigación | Hospital Universitario de Getafe",
+     "evidenceQuote": "Teléfono: +34 91 683 93 60. Extensiones 462397 (Secretaría técnica) y 462578 (Aux. Administrativa). E-mail: cei.hugf@salud.madrid.org",
+     "checkedOn": "2026-10-06",
+     "confidence": "medium"
+    }
+   ]
+  },
+  {
+   "id": "281034",
+   "name": "Clínica Isadora",
+   "website": "https://clinicaisadora.es/",
+   "contacts": [
+    {
+     "email": "clinica-isadora@clinica-isadora.es",
+     "phone": "913 111 000",
+     "kind": "hospital_general",
+     "label_es": "Contacto general de la clínica",
+     "label_en": "Clinic general contact",
+     "description_es": "Único buzón institucional publicado, que la página da para ejercer derechos de datos; no hay unidad de investigación, solo útil para pedir derivación.",
+     "description_en": "Only institutional mailbox published, given on the page for data-rights requests; there is no research unit, so it is only useful to ask for a referral.",
+     "sourceUrl": "https://clinicaisadora.es/contacto/",
+     "sourceTitle": "Contacto | Hospital Clínica Isadora",
+     "evidenceQuote": "dirigiendo su petición a la dirección postal PIRINEOS 7 28040, MADRID o al correo electrónico CLINICA-ISADORA@CLINICA-ISADORA.ES.",
+     "checkedOn": "2026-10-06",
+     "confidence": "low"
+    }
+   ],
+   "notes": "Verified 2026-10-06 via the web fetcher (a direct curl got 403): the email and phone 913 111 000 appear on the page. The evidence quote was lengthened with the verbatim data-rights sentence. The external DPO mailbox (dpd.cliente@conversia.es) stays excluded."
+  },
+  {
+   "id": "281049",
+   "name": "Hospital Universitario HLA Moncloa",
+   "website": "https://www.grupohla.com/hlahospitalmoncloa",
+   "notes": "No suitable contact found, so the list stays empty. I searched again. hlauniversitariomoncloa.com (home page and 'Tu cita' page) publishes only uat.moncloa@grupohla.com. That address is for private patients and traffic-accident patients, not research, so it was not added. hlauniversitariomoncloa.com/contacto returns a 404. The researcher saw only the DPO address on grupohla.com; I did not reopen grupohla.com. hospital.moncloa@grupohla.com appears only on third-party directories (search snippets), so it was not included.",
+   "contacts": []
+  },
+  {
+   "id": "281071",
+   "name": "Hospital Universitario Fundación Alcorcón",
+   "website": "https://www.comunidad.madrid/hospital/fundacionalcorcon/",
+   "notes": "VERIFIED 2026-10-06: unidadinvestigacion.hufa@salud.madrid.org and 916 219 529 appear in the Contacto block of the official comunidad.madrid Investigación page. No changes. Named staff were not recorded.",
+   "contacts": [
+    {
+     "email": "unidadinvestigacion.hufa@salud.madrid.org",
+     "phone": "916 219 529",
+     "kind": "research_support_office",
+     "label_es": "Unidad de Investigación",
+     "label_en": "Research Unit",
+     "description_es": "Unidad de Investigación del hospital, que gestiona proyectos y estudios clínicos e incluye la secretaría técnica del CEIm; probable entrada para promotores.",
+     "description_en": "The hospital's Research Unit, which manages projects and clinical studies and includes the CEIm technical secretariat. The likely entry point for sponsors.",
+     "sourceUrl": "https://www.comunidad.madrid/hospital/fundacionalcorcon/profesionales/investigacion",
+     "sourceTitle": "Investigación | Hospital Universitario Fundación Alcorcón",
+     "evidenceQuote": "Contacto Dirección: C/ Budapest, nº 1. Planta sótano 28922 Alcorcón (Madrid) Contacto: Telefono: 916 219 529 unidadinvestigacion.hufa@salud.madrid.org",
+     "checkedOn": "2026-10-06",
+     "confidence": "medium"
+    }
+   ]
+  },
+  {
+   "id": "281087",
+   "name": "Clínica Cemtro",
+   "website": "https://www.clinicacemtro.com/",
+   "notes": "Checked. The address appears on the official contact page. Nothing changed. That page also lists patient-care, press and named doctors' consultation mailboxes, which were excluded. The general clinic mailbox is a last resort.",
+   "contacts": [
+    {
+     "email": "clinica.cemtro@clinicacemtro.com",
+     "kind": "hospital_general",
+     "phone": "91 735 57 57",
+     "label_es": "Contacto general de la clínica",
+     "label_en": "Clinic general contact",
+     "description_es": "Buzón general de la clínica. No es específico de investigación; habría que pedir que lo reenvíen al responsable de estudios clínicos.",
+     "description_en": "Clinic's general mailbox. It is not research-specific; ask them to forward it to whoever handles clinical studies.",
+     "sourceUrl": "https://www.clinicacemtro.com/contacto/",
+     "sourceTitle": "Contacto CEMTRO - Clínica CEMTRO",
+     "evidenceQuote": "Teléfonos y Contactos de Interés: Centralita 91 735 57 57 clinica.cemtro@clinicacemtro.com",
+     "checkedOn": "2026-10-06",
+     "confidence": "low"
+    }
+   ]
+  },
+  {
+   "id": "281090",
+   "name": "Hospital Universitario HM Montepríncipe",
+   "website": "https://www.fundacionhm.com/",
+   "notes": "VERIFIED 2026-10-06: the Cloudflare-obfuscated emails were decoded and all three appear on their pages. The UCEC page says any trial proposal in the HM group is assessed for viability by the UCEC. The CEIm phone (91 708 99 00, ext. 12588) is confirmed. No changes. Excluded: personal addresses of the UCEC head and of two CEIm staff. These are group-level contacts shared by all HM hospitals.",
+   "contacts": [
+    {
+     "email": "StartUpFiHM@fundacionhm.com",
+     "kind": "clinical_trials_unit",
+     "label_es": "Unidad Central de Ensayos Clínicos – Start-up",
+     "label_en": "Central Clinical Trials Unit – Start-up",
+     "description_es": "Área de puesta en marcha de la unidad central de ensayos del grupo HM, que evalúa la viabilidad de toda propuesta de ensayo en sus hospitales.",
+     "description_en": "Start-up area of the HM group's central trials unit, which assesses the viability of every trial proposal across its hospitals.",
+     "sourceUrl": "https://www.fundacionhm.com/unidad-central-de-ensayos-clinicos-ucec/",
+     "sourceTitle": "Unidad Central de Ensayos Clínicos | Fundación HM",
+     "evidenceQuote": "Contacta con nosotros [...] Área de StartUp [...] StartUpFiHM@fundacionhm.com",
+     "checkedOn": "2026-10-06",
+     "confidence": "high"
+    },
+    {
+     "email": "secretaria@mail.fundacionhm.com",
+     "kind": "research_foundation",
+     "label_es": "Fundación HM – Secretaría y Gestión Institucional",
+     "label_en": "HM Foundation – Secretariat",
+     "description_es": "Secretaría de la fundación de investigación de HM, que gestiona las relaciones con empresas farmacéuticas y biotecnológicas.",
+     "description_en": "Secretariat of the HM research foundation, which manages relations with pharma and biotech companies.",
+     "sourceUrl": "https://www.fundacionhm.com/con%C3%B3cenos/secretaria/contacto",
+     "sourceTitle": "Secretaría y Gestión Institucional | Fundación HM",
+     "evidenceQuote": "Gestión de las relaciones bilaterales con Empresas biotecnológicas y farmacéuticas. Preparación de informes anuales y mensuales con las actividades desarrolladas. Contacto secretaria@mail.fundacionhm.com",
+     "checkedOn": "2026-10-06",
+     "confidence": "medium"
+    },
+    {
+     "email": "secretariaceic@mail.hmhospitales.com",
+     "phone": "91 708 99 00 ext. 12588",
+     "kind": "ceim_secretariat",
+     "label_es": "Secretaría del CEIm HM Hospitales",
+     "label_en": "HM Hospitales ethics committee (CEIm) secretariat",
+     "description_es": "Secretaría del comité de ética del grupo HM; para cuestiones regulatorias y tasas, no para viabilidad.",
+     "description_en": "HM group ethics committee secretariat; for regulatory questions and fees, not feasibility.",
+     "sourceUrl": "https://www.fundacionhm.com/lineas-de-investigaci%C3%B3n/unidades/ceim",
+     "sourceTitle": "Comité CEIM | Fundación HM",
+     "evidenceQuote": "Contacto secretariaceic@mail.hmhospitales.com Teléfono: 91 708 99 00, ext. 12588.",
+     "checkedOn": "2026-10-06",
+     "confidence": "medium"
+    }
+   ]
+  },
+  {
+   "id": "281113",
+   "name": "Hospital MD Anderson Cancer Center Madrid",
+   "website": "https://mdandersonhospiten.es/",
+   "notes": "VERIFIED 2026-10-06: info@fundacionmdandersonhospiten.es with 917 878 625 appears on the foundation's Phase I unit page, and info@mdanderson.es with 912 77 72 20 appears on the hospital's clinical-trials page. Both are official MD Anderson / Hospiten sites. No changes. Neither address is a dedicated trials or feasibility inbox.",
+   "contacts": [
+    {
+     "email": "info@fundacionmdandersonhospiten.es",
+     "phone": "917 878 625",
+     "kind": "research_foundation",
+     "label_es": "Fundación MD Anderson (Unidad de Ensayos Fase I)",
+     "label_en": "MD Anderson Foundation (Phase I Trials Unit)",
+     "description_es": "Buzón general de la fundación que alberga la Unidad de Ensayos Clínicos Fase I; no es un buzón exclusivo de ensayos, pero es la vía publicada más cercana.",
+     "description_en": "General mailbox of the foundation that hosts the Phase I Clinical Trials Unit. It isn't trial-specific, but it is the closest published route.",
+     "sourceUrl": "https://fundacionmdandersonhospiten.es/investigacion/unidad-de-ensayos-clinicos-fase-i",
+     "sourceTitle": "Unidad de Ensayos Clínicos Fase I",
+     "evidenceQuote": "Inscrita en el Registro de Fundaciones Nº573. Las donaciones están exentas de impuestos para los donantes. 917 878 625 info@fundacionmdandersonhospiten.es C/ Arturo Soria, 270 28033 Madrid",
+     "checkedOn": "2026-10-06",
+     "confidence": "medium"
+    },
+    {
+     "email": "info@mdanderson.es",
+     "phone": "912 77 72 20",
+     "kind": "hospital_general",
+     "label_es": "Contacto general del hospital",
+     "label_en": "Hospital general contact",
+     "description_es": "Buzón general del hospital, publicado en su página de ensayos clínicos; orientado a pacientes, habría que pedir derivación a investigación.",
+     "description_en": "The hospital's general mailbox, shown on its clinical-trials page. It is aimed at patients, so ask for the enquiry to be passed to research.",
+     "sourceUrl": "https://mdandersonhospiten.es/investigacion/ensayos-clinicos",
+     "sourceTitle": "Ensayos clínicos cáncer | MD Anderson Cancer Center Madrid – Hospiten",
+     "evidenceQuote": "912 77 72 20 info@mdanderson.es Calle de Arturo Soria, 270 28033 Madrid",
+     "checkedOn": "2026-10-06",
+     "confidence": "low"
+    }
+   ]
+  },
+  {
+   "id": "281124",
+   "name": "Hospital Quirónsalud Sur",
+   "website": "https://www.quironsalud.com/hospital-sur",
+   "contacts": [
+    {
+     "email": "qs.investigacion@quironsalud.es",
+     "kind": "research_support_office",
+     "label_es": "Quirónsalud Investigación e Innovación (ventanilla única para promotores)",
+     "label_en": "Quirónsalud Research & Innovation (sponsor single entry point)",
+     "description_es": "Entidad del Grupo Quirónsalud que gestiona la investigación de sus centros y atiende a los promotores que quieran hacer ensayos clínicos en sus hospitales.",
+     "description_en": "Quirónsalud group body that manages research at its centres and is the single entry point for sponsors wanting to run clinical trials at its hospitals.",
+     "sourceUrl": "https://www.quironsalud.com/es/investigacion/ensayos-clinicos-acceso-precoz-nuevas-terapias",
+     "sourceTitle": "Ensayos clínicos, un acceso precoz a nuevas terapias | Quirónsalud",
+     "evidenceQuote": "Quirónsalud Investigación e Innovación es la entidad de gestión de la investigación realizada en los centros del Grupo Quirónsalud y actúa como ventanilla única para todos aquellos promotores que quieran dirigirse a nuestros hospitales para desarrollar ensayos clínicos ... qs.investigacion@quironsalud.es",
+     "checkedOn": "2026-10-06",
+     "confidence": "high"
+    },
+    {
+     "email": "hospital.sur@quironsalud.es",
+     "phone": "91 649 66 00",
+     "kind": "hospital_general",
+     "label_es": "Contacto general del hospital",
+     "label_en": "Hospital general contact",
+     "description_es": "Buzón general del hospital; no es de investigación. Los ensayos oncológicos se coordinan con el Hospital Universitario Quirónsalud Madrid, así que conviene pedir que lo deriven.",
+     "description_en": "General hospital mailbox, not a research one. Oncology trials are run in alliance with Hospital Universitario Quirónsalud Madrid, so ask for it to be forwarded there.",
+     "sourceUrl": "https://www.quironsalud.com/hospital-sur/es/informacion-contacto",
+     "sourceTitle": "Información de contacto | Hospital Quirónsalud Sur",
+     "evidenceQuote": "Hospital Quirónsalud Sur Dirección: C/ Estambul, 30 28922 Alcorcón Madrid Citas - 91 649 66 00 Cómo llegar Correo electrónico: hospital.sur@quironsalud.es",
+     "checkedOn": "2026-10-06",
+     "confidence": "low"
+    }
+   ],
+   "notes": "VERIFIED with curl: the email appears on the official Quirónsalud contact page. No changes. Researcher notes: neither the hospital's 'Investigación' page nor the group research page publishes a research mailbox. Oncology trials run through an alliance with Hospital Quirónsalud Madrid. QA 2026-10-06: added the Quirónsalud group sponsor single-entry mailbox (qs.investigacion@quironsalud.es), the same contact already listed for La Luz, San José and San Camilo; its source page says it is the single entry point for sponsors at all Quirónsalud group hospitals, and this hospital is a group centre (quironsalud.com site)."
+  },
+  {
+   "id": "281146",
+   "name": "Hospital Universitario de Fuenlabrada",
+   "website": "https://www.comunidad.madrid/hospital/fuenlabrada",
+   "notes": "VERIFIED 2026-10-06: both mailboxes and quotes appear verbatim on the hospital pages. No changes. The named CEIm secretaries on the CEIm page were not recorded. There is no separate public clinical trials unit mailbox.",
+   "contacts": [
+    {
+     "email": "investigacion.hflr@salud.madrid.org",
+     "phone": "+34 91 600 66 00 / 600 65 05",
+     "kind": "research_support_office",
+     "label_es": "Área de Investigación",
+     "label_en": "Research Office",
+     "description_es": "Área de investigación del hospital, que da apoyo a estudios y ensayos clínicos; probablemente deriva las consultas de viabilidad.",
+     "description_en": "Hospital research office supporting studies and clinical trials; likely routes feasibility enquiries.",
+     "sourceUrl": "https://www.comunidad.madrid/hospital/fuenlabrada/profesionales/investigacion",
+     "sourceTitle": "Investigación | Hospital Universitario de Fuenlabrada",
+     "evidenceQuote": "Área de Investigación Hospital Universitario de Fuenlabrada Camino del Molino nº 2 2ª Planta Edificio Oncológico 28942 Fuenlabrada - Madrid Telf: +34 (91) 600 66 00 600 65 05 Correo electrónico: investigacion.hflr@salud.madrid.org",
+     "checkedOn": "2026-10-06",
+     "confidence": "medium"
+    },
+    {
+     "email": "ceic.hflr@salud.madrid.org",
+     "phone": "+34 91 600 66 00",
+     "kind": "ceim_secretariat",
+     "label_es": "Secretaría del CEIm",
+     "label_en": "Ethics committee (CEIm) secretariat",
+     "description_es": "Secretaría del comité de ética; para cuestiones regulatorias, no para viabilidad.",
+     "description_en": "Ethics committee secretariat; for regulatory questions, not feasibility.",
+     "sourceUrl": "https://www.comunidad.madrid/hospital/fuenlabrada/profesionales/comite-etica-investigacion-medicamentos-ceim",
+     "sourceTitle": "Comité de Ética de la Investigación con medicamentos (CEIm) | Hospital Universitario de Fuenlabrada",
+     "evidenceQuote": "Edificio Oncológico - 2ª Planta 28942 Fuenlabrada - Madrid Telf.: +34 (91) 600 66 00 Correo electrónico: ceic.hflr@salud.madrid.org",
+     "checkedOn": "2026-10-06",
+     "confidence": "medium"
+    }
+   ]
+  },
+  {
+   "id": "281157",
+   "name": "Hospital Universitario HM Torrelodones",
+   "website": "https://www.fundacionhm.com/",
+   "notes": "Checked. It uses the same group foundation contacts as HM Madrid, and both addresses are confirmed on their pages after decoding Cloudflare email protection. Nothing changed. The UCEC page lists only a named person's mailbox.",
+   "contacts": [
+    {
+     "email": "secretaria@mail.fundacionhm.com",
+     "kind": "research_foundation",
+     "label_es": "Secretaría técnica – Fundación de Investigación HM",
+     "label_en": "Technical Secretariat – HM Research Foundation",
+     "description_es": "Secretaría técnica de la fundación de investigación de HM Hospitales. Según su web, gestiona los ensayos clínicos y las relaciones con empresas farmacéuticas.",
+     "description_en": "Technical secretariat of the HM Hospitales research foundation. Its page says it handles clinical trial management and relations with pharma companies.",
+     "sourceUrl": "https://www.fundacionhm.com/con%C3%B3cenos/secretaria/contacto",
+     "sourceTitle": "Secretaría y Gestión Institucional | Fundación HM",
+     "evidenceQuote": "Gestión de Ensayos Clínicos, dando cobertura al control de idoneidad de desarrollo de estos y su puesta en marcha. ... Contacto secretaria@mail.fundacionhm.com",
+     "checkedOn": "2026-10-06",
+     "confidence": "high"
+    },
+    {
+     "email": "secretariaceic@mail.hmhospitales.com",
+     "kind": "ceim_secretariat",
+     "phone": "91 708 99 00 ext. 12588",
+     "label_es": "Secretaría del CEIm HM Hospitales",
+     "label_en": "HM Hospitales Ethics Committee (CEIm) Secretariat",
+     "description_es": "Secretaría del comité de ética de la investigación con medicamentos. Sirve para consultas regulatorias, no para viabilidad.",
+     "description_en": "Secretariat of the drug research ethics committee. Use it for regulatory questions, not feasibility.",
+     "sourceUrl": "https://www.fundacionhm.com/comite-etico-de-investigacion-con-medicamentos-ceim/",
+     "sourceTitle": "Comité CEIM | Fundación HM",
+     "evidenceQuote": "Contacto secretariaceic@mail.hmhospitales.com Teléfono: 91 708 99 00, ext. 12588.",
+     "checkedOn": "2026-10-06",
+     "confidence": "medium"
+    }
+   ]
+  },
+  {
+   "id": "281179",
+   "name": "Hospital Universitario La Moraleja",
+   "website": "https://www.hospitallamoraleja.es",
+   "notes": "VERIFIED 2026-10-06. fundacionsh@sanitas.es appears on the Fundación Sanitas Hospitales page, which names La Moraleja. No changes.",
+   "contacts": [
+    {
+     "email": "fundacionsh@sanitas.es",
+     "kind": "research_foundation",
+     "label_es": "Fundación Sanitas Hospitales – ensayos clínicos",
+     "label_en": "Sanitas Hospitals Foundation – clinical trials",
+     "description_es": "Fundación del grupo Sanitas que gestiona los ensayos clínicos en sus hospitales; los promotores envían aquí el contrato.",
+     "description_en": "Sanitas group foundation that manages clinical trials across its hospitals; sponsors send the trial contract here.",
+     "sourceUrl": "https://fundacionsanitashospitales.sanitas.es/",
+     "sourceTitle": "Fundación Sanitas",
+     "evidenceQuote": "facilitar la gestión de los ensayos clínicos en nuestros Centros, los promotores de dichos estudios pueden descargar aquí el contrato de ensayo clínico que utilizamos, cumplimentando los apartados específicos, y enviarlo a fundacionsh@sanitas.es",
+     "checkedOn": "2026-10-06",
+     "confidence": "high"
+    }
+   ]
+  },
+  {
+   "id": "281180",
+   "name": "Hospital Los Madroños",
+   "website": "https://hospitallosmadronos.es/",
+   "contacts": [
+    {
+     "email": "info@lmh.es",
+     "phone": "+34 918 163 526",
+     "kind": "hospital_general",
+     "label_es": "Contacto general del hospital",
+     "label_en": "Hospital general contact",
+     "description_es": "Correo general del hospital; no hay unidad de investigación publicada, habría que pedir que lo deriven.",
+     "description_en": "General hospital email; no research unit is published, so ask for it to be forwarded.",
+     "sourceUrl": "https://hospitallosmadronos.es/contacto/",
+     "sourceTitle": "Contacto - Hospital Los Madroños",
+     "evidenceQuote": "TELÉFONO +34 918 163 526 EMAIL info@lmh.es DIRECCIÓN M-501 Km 17, 900 – 28690 Brunete, Madrid",
+     "checkedOn": "2026-10-06",
+     "confidence": "low"
+    },
+    {
+     "email": "info@hospitallosmadronos.es",
+     "phone": "+34 918 163 526",
+     "kind": "hospital_general",
+     "label_es": "Contacto general (alternativo)",
+     "label_en": "General contact (alternative)",
+     "description_es": "Segundo correo general que aparece en el pie de la web del hospital; tampoco es de investigación.",
+     "description_en": "Second general email shown in the hospital website footer; also not a research mailbox.",
+     "sourceUrl": "https://hospitallosmadronos.es/contacto/",
+     "sourceTitle": "Contacto - Hospital Los Madroños",
+     "evidenceQuote": "Contacto M-501, Km 17, 900, 28690 Brunete, Madrid info@hospitallosmadronos.es +34 918 163 526",
+     "checkedOn": "2026-10-06",
+     "confidence": "low"
+    }
+   ],
+   "notes": "VERIFIED: both emails appear on the official contact page. No changes. Private hospital with no published research or clinical-trials page. The data-protection addresses were left out."
+  },
+  {
+   "id": "281203",
+   "name": "Hospital Universitario Quirónsalud Madrid",
+   "website": "https://www.quironsalud.com/hospital-madrid/",
+   "notes": "VERIFIED 2026-10-06: info.madrid@quironsalud.es and 914 521 900 appear on the official contact page. The hospital now appears on its site as 'Hospital Universitario Quirónsalud Pozuelo'. No changes. This is a last-resort general mailbox because no research or trials mailbox was found. DPO@quironsalud.es was excluded. QA 2026-10-06: added the Quirónsalud group sponsor single-entry mailbox (qs.investigacion@quironsalud.es), the same contact already listed for La Luz, San José and San Camilo; its source page says it is the single entry point for sponsors at all Quirónsalud group hospitals, and this hospital is a group centre (quironsalud.com site).",
+   "contacts": [
+    {
+     "email": "qs.investigacion@quironsalud.es",
+     "kind": "research_support_office",
+     "label_es": "Quirónsalud Investigación e Innovación (ventanilla única para promotores)",
+     "label_en": "Quirónsalud Research & Innovation (sponsor single entry point)",
+     "description_es": "Entidad del Grupo Quirónsalud que gestiona la investigación de sus centros y atiende a los promotores que quieran hacer ensayos clínicos en sus hospitales.",
+     "description_en": "Quirónsalud group body that manages research at its centres and is the single entry point for sponsors wanting to run clinical trials at its hospitals.",
+     "sourceUrl": "https://www.quironsalud.com/es/investigacion/ensayos-clinicos-acceso-precoz-nuevas-terapias",
+     "sourceTitle": "Ensayos clínicos, un acceso precoz a nuevas terapias | Quirónsalud",
+     "evidenceQuote": "Quirónsalud Investigación e Innovación es la entidad de gestión de la investigación realizada en los centros del Grupo Quirónsalud y actúa como ventanilla única para todos aquellos promotores que quieran dirigirse a nuestros hospitales para desarrollar ensayos clínicos ... qs.investigacion@quironsalud.es",
+     "checkedOn": "2026-10-06",
+     "confidence": "high"
+    },
+    {
+     "email": "info.madrid@quironsalud.es",
+     "phone": "914 521 900",
+     "kind": "hospital_general",
+     "label_es": "Contacto general del hospital",
+     "label_en": "Hospital general contact",
+     "description_es": "Buzón general de información del hospital; no es específico de investigación, habría que pedir que lo deriven a la unidad de ensayos clínicos.",
+     "description_en": "The hospital's general information mailbox. It isn't for research, so ask them to forward the enquiry to the clinical trials unit.",
+     "sourceUrl": "https://www.quironsalud.com/hospital-madrid/es/contactar",
+     "sourceTitle": "Hospital Universitario Quirónsalud Pozuelo – Contactar",
+     "evidenceQuote": "Dirección: c/ Diego de Velázquez, 1 28223 Pozuelo de Alarcón Madrid Citas - 914 521 900 ¿Cómo llegar? Correo electrónico: info.madrid@quironsalud.es",
+     "checkedOn": "2026-10-06",
+     "confidence": "low"
+    }
+   ]
+  },
+  {
+   "id": "281214",
+   "name": "Hospital Centro de Cuidados Laguna",
+   "website": "https://www.lagunacuida.org",
+   "notes": "VERIFIED 2026-10-06: informa@lagunacuida.org appears on the official contact page. No changes. This is a palliative and geriatric hospital run by Fundación Vianorte-Laguna, with no trials or research office mailbox. formacion@ (training and room hire) and dpo@ were left out.",
+   "contacts": [
+    {
+     "email": "informa@lagunacuida.org",
+     "phone": "(+34) 91 509 91 37",
+     "kind": "hospital_general",
+     "label_es": "Contacto general del hospital",
+     "label_en": "Hospital general contact",
+     "description_es": "Buzón general de información de la Fundación Vianorte-Laguna; no hay unidad de ensayos publicada, así que la consulta tendría que derivarse internamente.",
+     "description_en": "General information mailbox of Fundación Vianorte-Laguna; no trials unit is published, so the enquiry would need internal forwarding.",
+     "sourceUrl": "https://www.lagunacuida.org/contactanos/",
+     "sourceTitle": "FVN-Laguna - Fundación Vianorte-Laguna (Contáctanos)",
+     "evidenceQuote": "Télefono: (+34) 91 509 91 37 Correo: informa@lagunacuida.org C/ Concejal Francisco José Jímenez Martín 128, 28047 – Madrid",
+     "checkedOn": "2026-10-06",
+     "confidence": "low"
+    }
+   ]
+  },
+  {
+   "id": "281225",
+   "name": "Hospital Universitario HM Sanchinarro",
+   "website": "https://www.fundacionhm.com/",
+   "notes": "VERIFIED 2026-10-06: the official Fundación HM UCEC page contains mailto:StartUpFiHM@fundacionhm.com, shown under 'Área de StartUp'. The visible text is Cloudflare-obfuscated, so the address was confirmed from the mailto link. It is shown next to a named person but is a team (role) mailbox. The UCEC head's personal mailbox (@hmhospitales.com) was excluded and no names are recorded. No changes. This central unit serves all HM hospitals.",
+   "contacts": [
+    {
+     "email": "StartUpFiHM@fundacionhm.com",
+     "kind": "clinical_trials_unit",
+     "label_es": "UCEC Fundación HM – Área de StartUp",
+     "label_en": "HM Foundation Central Clinical Trials Unit – Start-up Area",
+     "description_es": "Área de puesta en marcha de la Unidad Central de Ensayos Clínicos de la Fundación HM, que evalúa la viabilidad de cualquier propuesta de ensayo en el grupo HM.",
+     "description_en": "Start-up area of the HM Foundation's Central Clinical Trials Unit, which assesses the feasibility of every trial proposal across HM Hospitales.",
+     "sourceUrl": "https://www.fundacionhm.com/unidad-central-de-ensayos-clinicos-ucec/",
+     "sourceTitle": "Unidad Central de Ensayos Clínicos | Fundación HM",
+     "evidenceQuote": "Cualquier propuesta de ensayo clínico dentro del Grupo HM Hospitales es gestionada por la Dirección Operacional de la UCEC, que evalúa su viabilidad ... Contacta con nosotros ... Área de StartUp",
+     "checkedOn": "2026-10-06",
+     "confidence": "high"
+    }
+   ]
+  },
+  {
+   "id": "281236",
+   "name": "Hospital Universitario Infanta Elena",
+   "website": "https://www.hospitalinfantaelena.es",
+   "notes": "VERIFIED 2026-10-06. investigacion@fjd.es and ceic@fjd.es and their phones appear on the IIS-FJD pages. The pages explicitly name Hospital Universitario Infanta Elena (4-hospital contract model) and HIE (CEIm scope). No changes. Background: named-person feasibility and contract mailboxes were excluded, and the hospital's contact page has no email.",
+   "contacts": [
+    {
+     "email": "investigacion@fjd.es",
+     "phone": "91 550 48 97",
+     "kind": "research_institute",
+     "label_es": "Instituto de Investigación Sanitaria FJD",
+     "label_en": "IIS-FJD Research Institute",
+     "description_es": "Buzón general del instituto de investigación (IIS-FJD) que gestiona los ensayos clínicos de sus 4 hospitales, incluido Infanta Elena; no consta como buzón específico de viabilidad.",
+     "description_en": "General mailbox of the IIS-FJD research institute, which manages clinical trials for its 4 hospitals including Infanta Elena; not stated to be a dedicated feasibility inbox.",
+     "sourceUrl": "https://www.fjd.es/iis-fjd/es/unidades-apoyo/ensayos-clinicos",
+     "sourceTitle": "Ensayos clínicos | Instituto de Investigación Sanitaria. FJD",
+     "evidenceQuote": "es común a los 4 hospitales del IISFJD (Hospital Universitario Fundación Jiménez Díaz, Hospital Universitario Infanta Elena, ...) ... 91 550 48 97 investigacion@fjd.es",
+     "checkedOn": "2026-10-06",
+     "confidence": "medium"
+    },
+    {
+     "email": "ceic@fjd.es",
+     "phone": "91 544 37 20",
+     "kind": "ceim_secretariat",
+     "label_es": "Secretaría del CEIm FJD",
+     "label_en": "CEIm FJD Secretariat",
+     "description_es": "Secretaría técnica del CEIm que cubre Infanta Elena; para consultas regulatorias, no para viabilidad.",
+     "description_en": "Technical secretariat of the CEIm covering Infanta Elena; for regulatory questions, not feasibility.",
+     "sourceUrl": "https://www.fjd.es/iis-fjd/es/estructura-organizativa/comite-etica-investigacion",
+     "sourceTitle": "Comité de Ética de la Investigación | Instituto de Investigación Sanitaria. FJD",
+     "evidenceQuote": "Hospital Infanta Elena de Valdemoro (HIE) ... Contacto Secretaría Técnica: ... Teléfono: 91 544 37 20. E-mail: ceic@fjd.es",
+     "checkedOn": "2026-10-06",
+     "confidence": "medium"
+    }
+   ]
+  },
+  {
+   "id": "281247",
+   "name": "Hospital Pardo de Aravaca",
+   "website": "https://vithas.es/centro/vithas-hospital-universitario-madrid-aravaca/",
+   "contacts": [
+    {
+     "email": "secretaria.fundacion@vithas.es",
+     "kind": "research_foundation",
+     "label_es": "Secretaría de la Fundación Vithas",
+     "label_en": "Vithas Foundation secretariat",
+     "description_es": "Secretaría de la Fundación Vithas, que gestiona la investigación y los ensayos de los hospitales Vithas (incluido Madrid Aravaca). La página la publica para solicitudes de proyectos internos, así que su uso para viabilidad no está confirmado.",
+     "description_en": "Secretariat of the Vithas Foundation, which manages research and trials across Vithas hospitals (including Madrid Aravaca). The page gives it for internal project requests, so its use for feasibility is unconfirmed.",
+     "sourceUrl": "https://vithas.es/fundacion/investigacion/proyectos-de-i-d-i-internos/",
+     "sourceTitle": "Proyectos de Investigación I+D+i internos - Fundación Vithas",
+     "evidenceQuote": "Las solicitudes se podrán enviar por correo electrónico a la dirección: secretaria.fundacion@vithas.es , haciendo constar en el titulo: “Solicitud de colaboración a Fundación Vithas: Proyecto de I+D+i interno”",
+     "checkedOn": "2026-10-06",
+     "confidence": "medium"
+    }
+   ],
+   "notes": "VERIFIED: the email appears on the official Fundación Vithas page. The quote was extended slightly so it shows the internal-project context. Hospital Pardo de Aravaca is now Hospital Universitario Vithas Madrid Aravaca. The Vithas Madrid clinical trials unit page (fundacion.vithas.es/uvec_madrid/) was re-checked and has no email. The confidence and caveat are kept."
+  },
+  {
+   "id": "281258",
+   "name": "Hospital Universitario Infanta Sofía",
+   "website": "https://www.comunidad.madrid/hospital/infantasofia",
+   "notes": "VERIFIED 2026-10-06: the mailbox and phone appear on the page. The page says the foundation 'realiza la gestión de los ensayos clínicos y de los proyectos de investigación' in the hospitals it serves. No changes. A named person's address listed beside it was excluded.",
+   "contacts": [
+    {
+     "email": "fundacion.huis.hhen@salud.madrid.org",
+     "phone": "91 191 53 98",
+     "kind": "research_foundation",
+     "label_es": "Fundación de investigación (FIIB HUIS-HHEN)",
+     "label_en": "Research foundation (FIIB HUIS-HHEN)",
+     "description_es": "Secretaría técnica de la fundación que gestiona los ensayos clínicos y proyectos de investigación del hospital.",
+     "description_en": "Technical secretariat of the foundation that manages the hospital's clinical trials and research projects.",
+     "sourceUrl": "https://www.comunidad.madrid/hospital/infantasofia/profesionales/fundacion-investigacion",
+     "sourceTitle": "Fundación para la Investigación | Hospital Universitario Infanta Sofía",
+     "evidenceQuote": "CONTACTO Y SUGERENCIAS SECRETARÍA TÉCNICA: [...] Teléfono: 91-1915398 Correo electrónico: fundacion.huis.hhen@salud.madrid.org",
+     "checkedOn": "2026-10-06",
+     "confidence": "medium"
+    }
+   ]
+  },
+  {
+   "id": "281269",
+   "name": "Hospital Universitario del Henares",
+   "website": "https://www.comunidad.madrid/hospital/henares/",
+   "notes": "VERIFIED 2026-10-06. The email and phone (91-1915398) appear on the Infanta Sofía foundation page, which names Henares among the hospitals whose trials it manages. No changes. Background: a personal mailbox and a REDCap vendor address on the Henares page were excluded.",
+   "contacts": [
+    {
+     "email": "fundacion.huis.hhen@salud.madrid.org",
+     "phone": "91 191 53 98",
+     "kind": "research_foundation",
+     "label_es": "Fundación de Investigación FIIB HUIS-HHEN",
+     "label_en": "FIIB HUIS-HHEN Research Foundation",
+     "description_es": "Secretaría técnica de la fundación que gestiona los ensayos clínicos y proyectos de Infanta Sofía, Henares y Tajo; buzón general, no específico de viabilidad.",
+     "description_en": "Technical secretariat of the foundation managing clinical trials and projects for Infanta Sofía, Henares and Tajo; general inbox, not feasibility-specific.",
+     "sourceUrl": "https://www.comunidad.madrid/hospital/infantasofia/profesionales/fundacion-investigacion",
+     "sourceTitle": "Fundación para la Investigación | Hospital Universitario Infanta Sofía",
+     "evidenceQuote": "realiza la gestión de los ensayos clínicos ... Hospital Universitario Infanta Sofía, Hospital Universitario del Henares y Hospital Universitario del Tajo ... Teléfono: 91-1915398 Correo electrónico: fundacion.huis.hhen@salud.madrid.org",
+     "checkedOn": "2026-10-06",
+     "confidence": "medium"
+    }
+   ]
+  },
+  {
+   "id": "281270",
+   "name": "Hospital Universitario Infanta Leonor",
+   "website": "https://www.comunidad.madrid/hospital/infantaleonor",
+   "notes": "VERIFIED 2026-10-06: both emails and the phone appear verbatim in the foundation contact block on the Investigación page. The FIIB serves Infanta Leonor and Hospital del Sureste. No changes, except that the phone is the foundation's general line, published in the block above both mailboxes, not a line specific to the unit. The dedicated 'unidad-ensayos-clinicos' page still redirects to comunidad.madrid/pagina-acceso-denegado. Excluded as before: a named person's address and facturacion@, innovacion@, protecciondedatos@, gestionproyectos@, and uami@pertica.net, which belongs to an external company.",
+   "contacts": [
+    {
+     "email": "unidadinvestigacionclinica@fiibhuilhuse.es",
+     "phone": "91 191 98 55 / 91 191 88 55",
+     "kind": "clinical_trials_unit",
+     "label_es": "Unidad de Investigación Clínica (FIIB)",
+     "label_en": "Clinical Research Unit (FIIB)",
+     "description_es": "Unidad de investigación clínica de la fundación FIIB Infanta Leonor–Sureste; probablemente el primer contacto para estudios clínicos, aunque la página no detalla si atiende viabilidad (el teléfono es el general de la fundación).",
+     "description_en": "Clinical research unit of the Infanta Leonor–Sureste FIIB foundation; likely first point of contact for clinical studies, though the page does not say explicitly that it handles feasibility (phone is the foundation's general line).",
+     "sourceUrl": "https://www.comunidad.madrid/hospital/infantaleonor/profesionales/investigacion",
+     "sourceTitle": "Investigación | Hospital Universitario Infanta Leonor",
+     "evidenceQuote": "Unidad de Apoyo Metodológico a la Investigación (UAMI) : uami@pertica.net Unidad de Investigación Clínica: unidadinvestigacionclinica@fiibhuilhuse.es",
+     "checkedOn": "2026-10-06",
+     "confidence": "medium"
+    },
+    {
+     "email": "fundacion@fiibhuilhuse.es",
+     "phone": "91 191 98 55 / 91 191 88 55",
+     "kind": "research_foundation",
+     "label_es": "Fundación de investigación – Contratos",
+     "label_en": "Research foundation – Contracts",
+     "description_es": "Departamento de contratos de la fundación de investigación, que tramita los contratos de ensayos y estudios del hospital.",
+     "description_en": "Contracts department of the research foundation, which handles contracts for trials and studies at the hospital.",
+     "sourceUrl": "https://www.comunidad.madrid/hospital/infantaleonor/profesionales/investigacion",
+     "sourceTitle": "Investigación | Hospital Universitario Infanta Leonor",
+     "evidenceQuote": "C/ Puerto Lumbreras, 5 - 2º planta 28031 Madrid Telf: 91 191 98 55 / 91 191 88 55 Departamento contratos : fundacion@fiibhuilhuse.es",
+     "checkedOn": "2026-10-06",
+     "confidence": "medium"
+    }
+   ]
+  },
+  {
+   "id": "281281",
+   "name": "Hospital Universitario del Sureste",
+   "website": "https://www.comunidad.madrid/hospital/sureste/profesionales/investigacion-0",
+   "notes": "Checked. All three addresses appear on the hospital's official comunidad.madrid research page, which confirms that FIIB HUIL-HUSE serves the Sureste hospital. Nothing changed. Excluded: a named person's mailbox. Also left out: facturacion@ (invoicing) and innovacion@ (innovation), which are not feasibility contacts.",
+   "contacts": [
+    {
+     "email": "unidadinvestigacionclinica@fiibhuilhuse.es",
+     "kind": "clinical_trials_unit",
+     "label_es": "Unidad de Investigación Clínica",
+     "label_en": "Clinical Research Unit",
+     "description_es": "Unidad de investigación clínica de la fundación que da servicio al Hospital del Sureste. Es el punto más probable para ensayos y viabilidad.",
+     "description_en": "Clinical research unit of the foundation serving Hospital del Sureste. It is the most likely point for trials and feasibility.",
+     "sourceUrl": "https://www.comunidad.madrid/hospital/sureste/profesionales/investigacion-0",
+     "sourceTitle": "Investigación | Hospital Universitario del Sureste",
+     "evidenceQuote": "E-mail: investigacion.hus@salud.madrid.org Unidad de Investigación Clínica : unidadinvestigacionclinica@fiibhuilhuse.es",
+     "checkedOn": "2026-10-06",
+     "confidence": "high"
+    },
+    {
+     "email": "fundacion@fiibhuilhuse.es",
+     "kind": "research_foundation",
+     "phone": "91 191 98 55 / 91 191 88 55",
+     "label_es": "Fundación de Investigación – Departamento de contratos",
+     "label_en": "Research Foundation – Contracts Department",
+     "description_es": "Departamento de contratos de la fundación de investigación (Infanta Leonor y Sureste). Gestiona los contratos de estudios con promotores.",
+     "description_en": "Contracts department of the research foundation (Infanta Leonor and Sureste). It handles study contracts with sponsors.",
+     "sourceUrl": "https://www.comunidad.madrid/hospital/sureste/profesionales/investigacion-0",
+     "sourceTitle": "Investigación | Hospital Universitario del Sureste",
+     "evidenceQuote": "H.U. Infanta Leonor y H.U. Sureste C/ Puerto Lumbreras, 5 – 2º planta 28031 Madrid Telf: 91 191 98 55 / 91 191 88 55 Departamento contratos: fundacion@fiibhuilhuse.es",
+     "checkedOn": "2026-10-06",
+     "confidence": "medium"
+    },
+    {
+     "email": "investigacion.hus@salud.madrid.org",
+     "kind": "research_support_office",
+     "phone": "+34 91 839 43 07",
+     "label_es": "Investigación – Hospital del Sureste",
+     "label_en": "Research Office – Hospital del Sureste",
+     "description_es": "Buzón de investigación dentro del propio hospital, en el Área de Docencia de Arganda. Es un contacto general de investigación, no específico de ensayos.",
+     "description_en": "Research mailbox inside the hospital itself, in the Arganda teaching area. It is a general research contact, not trial-specific.",
+     "sourceUrl": "https://www.comunidad.madrid/hospital/sureste/profesionales/investigacion-0",
+     "sourceTitle": "Investigación | Hospital Universitario del Sureste",
+     "evidenceQuote": "Hospital Universitario del Sureste . C/ Ronda del Sur, 10, 2ª planta (Área de Docencia) 28500- Arganda del Rey (Madrid) Teléfono: +34 91 839 43 07 E-mail: investigacion.hus@salud.madrid.org",
+     "checkedOn": "2026-10-06",
+     "confidence": "medium"
+    }
+   ]
+  },
+  {
+   "id": "281292",
+   "name": "Hospital Universitario del Tajo",
+   "website": "https://www.comunidad.madrid/hospital/tajo/",
+   "notes": "VERIFIED 2026-10-06. The email and phone appear on the Infanta Sofía foundation page, which names Hospital Universitario del Tajo among the hospitals whose clinical trials it manages. No changes.",
+   "contacts": [
+    {
+     "email": "fundacion.huis.hhen@salud.madrid.org",
+     "phone": "91 191 53 98",
+     "kind": "research_foundation",
+     "label_es": "Fundación de Investigación FIIB HUIS-HHEN",
+     "label_en": "FIIB HUIS-HHEN Research Foundation",
+     "description_es": "Secretaría técnica de la fundación que gestiona los ensayos clínicos de Infanta Sofía, Henares y Tajo; buzón general, no específico de viabilidad.",
+     "description_en": "Technical secretariat of the foundation managing clinical trials for Infanta Sofía, Henares and Tajo; general inbox, not feasibility-specific.",
+     "sourceUrl": "https://www.comunidad.madrid/hospital/infantasofia/profesionales/fundacion-investigacion",
+     "sourceTitle": "Fundación para la Investigación | Hospital Universitario Infanta Sofía",
+     "evidenceQuote": "realiza la gestión de los ensayos clínicos ... Hospital Universitario Infanta Sofía, Hospital Universitario del Henares y Hospital Universitario del Tajo ... Teléfono: 91-1915398 Correo electrónico: fundacion.huis.hhen@salud.madrid.org",
+     "checkedOn": "2026-10-06",
+     "confidence": "medium"
+    }
+   ]
+  },
+  {
+   "id": "281304",
+   "name": "Hospital Universitario Infanta Cristina",
+   "website": "https://www.comunidad.madrid/hospital/infantacristina/",
+   "notes": "VERIFIED 2026-10-06. contratos.eecc@idiphim.org appears on the FIB Puerta de Hierro / IDIPHISA clinical-trials page, which has a 'HOSPITAL UNIVERSITARIO INFANTA CRISTINA' documentation section. No changes. The mailbox is aimed at contract documentation and may not be the early feasibility channel; the description says so. Invoicing and CEIm mailboxes on that page were not recorded.",
+   "contacts": [
+    {
+     "email": "contratos.eecc@idiphim.org",
+     "kind": "research_foundation",
+     "label_es": "Contratos de Ensayos Clínicos (FIB Puerta de Hierro / IDIPHISA)",
+     "label_en": "Clinical Trial Contracts (FIB Puerta de Hierro / IDIPHISA)",
+     "description_es": "Oficina de la fundación que gestiona los contratos de ensayos clínicos, también para Infanta Cristina; orientada a la documentación del contrato, puede no ser el canal de viabilidad.",
+     "description_en": "Foundation office handling clinical trial contracts, including for Infanta Cristina; geared to contract documentation, may not be the feasibility channel.",
+     "sourceUrl": "https://investigacionpuertadehierro.com/fundacion-para-la-investigacion-biomedica-del-hospital-puerta-de-hierro/ensayos-clinicos/",
+     "sourceTitle": "Ensayos Clinicos - Instituto Investigación Sanitaria Puerta de Hierro - Segovia de Arana",
+     "evidenceQuote": "Cuando se disponga de toda la documentación se enviará a la dirección de correo contratos.eecc@idiphim.org , acusaremos recibo del mismo.",
+     "checkedOn": "2026-10-06",
+     "confidence": "high"
+    }
+   ]
+  },
+  {
+   "id": "281315",
+   "name": "Hospital Universitario Puerta de Hierro Majadahonda",
+   "website": "https://investigacionpuertadehierro.com/",
+   "notes": "VERIFIED 2026-10-06: contratos.eecc@idiphim.org and secreceic.hpth@salud.madrid.org both appear on the official IDIPHISA clinical-trials page. No changes. Researcher's notes: facturas.eecc@idiphim.org (invoicing) and cetico.hsvo@salud.madrid.org (Hospital Segovia, a different hospital) were excluded.",
+   "contacts": [
+    {
+     "email": "contratos.eecc@idiphim.org",
+     "kind": "research_foundation",
+     "label_es": "Contratos de Ensayos Clínicos (IDIPHISA)",
+     "label_en": "Clinical Trial Contracts (IDIPHISA)",
+     "description_es": "Buzón de la fundación de investigación del Puerta de Hierro al que se envía la documentación de los ensayos clínicos para el contrato; probable entrada para promotores.",
+     "description_en": "The Puerta de Hierro research foundation's mailbox for sending clinical-trial contract documents. The likely entry point for sponsors.",
+     "sourceUrl": "https://investigacionpuertadehierro.com/fundacion-para-la-investigacion-biomedica-del-hospital-puerta-de-hierro/ensayos-clinicos/",
+     "sourceTitle": "Ensayos Clinicos - Instituto Investigación Sanitaria Puerta de Hierro - Segovia de Arana",
+     "evidenceQuote": "¿Dónde tengo que mandar la documentación? Cuando se disponga de toda la documentación se enviará a la dirección de correo contratos.eecc@idiphim.org , acusaremos recibo del mismo.",
+     "checkedOn": "2026-10-06",
+     "confidence": "high"
+    },
+    {
+     "email": "secreceic.hpth@salud.madrid.org",
+     "kind": "ceim_secretariat",
+     "label_es": "Secretaría CEIm – idoneidad de instalaciones",
+     "label_en": "Ethics Committee (CEIm) secretariat – site suitability",
+     "description_es": "Secretaría del CEIm del Puerta de Hierro, con la que se gestiona la idoneidad de las instalaciones; trámite regulatorio, no viabilidad.",
+     "description_en": "Puerta de Hierro's CEIm secretariat, which handles facility-suitability certificates. A regulatory step, not feasibility.",
+     "sourceUrl": "https://investigacionpuertadehierro.com/fundacion-para-la-investigacion-biomedica-del-hospital-puerta-de-hierro/ensayos-clinicos/",
+     "sourceTitle": "Ensayos Clinicos - Instituto Investigación Sanitaria Puerta de Hierro - Segovia de Arana",
+     "evidenceQuote": "Idoneidad de las instalaciones (a gestionar con secreceic.hpth@salud.madrid.org)",
+     "checkedOn": "2026-10-06",
+     "confidence": "medium"
+    }
+   ]
+  },
+  {
+   "id": "281326",
+   "name": "Casta Guadarrama",
+   "website": "",
+   "contacts": [],
+   "notes": "Verified: no contacts to check. Psychiatric medium-stay hospital, now Mentalia Salud / Neural Mentalia (DomusVi). The old castasalud.es site does not resolve. The Mentalia centre page https://mentaliasalud.es/centro/guadarrama/ now returns a Neural Mentalia 404 page whose footer has only the brand-wide hola@neuralmentalia.es (not centre-specific, so not recorded). Search snippets (casta@domusvi.es, guadarrama@castasalud.com, direccion.guadarrama@mentaliasalud.es) came from directories or search summaries and were not seen on an opened official page, so they were not recorded. No research contact was found."
+  },
+  {
+   "id": "281337",
+   "name": "Hospital Universitario de Torrejón",
+   "website": "https://www.hospitaldetorrejon.es/",
+   "notes": "VERIFIED 2026-10-06 that no contact is suitable. hospitaldetorrejon.es/investigacion lists only a named person's mailbox for the Unidad de Investigación Clínica (ext. 7132), which was excluded. hospitaldetorrejon.es/contacto/ has only patient mailboxes (informacioncitas@, atencionalpaciente@). The comunidad.madrid Torrejón contact page has only a personal address. A web search found no role mailbox. CRO fallback: call 91 626 26 00 and ask for ext. 7132.",
+   "contacts": []
+  },
+  {
+   "id": "281348",
+   "name": "Hospital Universitario Rey Juan Carlos",
+   "website": "https://www.hospitalreyjuancarlos.es",
+   "notes": "VERIFIED 2026-10-06. I downloaded all 3 source pages, and each email and phone appears verbatim. The IIS-FJD page states its trial contract model is 'común a los 4 hospitales del IISFJD', including Rey Juan Carlos. The CEIm FJD page lists HRJC. Nothing was removed or changed. Background: IIS-FJD's named-person feasibility and contract mailboxes were excluded as personal addresses. The hospital general contact is kept as a last resort.",
+   "contacts": [
+    {
+     "email": "investigacion@fjd.es",
+     "phone": "91 550 48 97",
+     "kind": "research_institute",
+     "label_es": "Instituto de Investigación Sanitaria FJD",
+     "label_en": "IIS-FJD Research Institute",
+     "description_es": "Buzón general del instituto de investigación (IIS-FJD) que gestiona los ensayos clínicos de los 4 hospitales del grupo, incluido Rey Juan Carlos; no consta como buzón específico de viabilidad.",
+     "description_en": "General mailbox of the IIS-FJD research institute, which manages clinical trials for its 4 hospitals including Rey Juan Carlos; not stated to be a dedicated feasibility inbox.",
+     "sourceUrl": "https://www.fjd.es/iis-fjd/es/unidades-apoyo/ensayos-clinicos",
+     "sourceTitle": "Ensayos clínicos | Instituto de Investigación Sanitaria. FJD",
+     "evidenceQuote": "Instituto de Investigación Sanitaria de la Fundación Jiménez Díaz C/ del Maestro Ángel Llorca, 6. ... 91 550 48 97 investigacion@fjd.es",
+     "checkedOn": "2026-10-06",
+     "confidence": "medium"
+    },
+    {
+     "email": "ceic@fjd.es",
+     "phone": "91 544 37 20",
+     "kind": "ceim_secretariat",
+     "label_es": "Secretaría del CEIm FJD",
+     "label_en": "CEIm FJD Secretariat",
+     "description_es": "Secretaría técnica del comité de ética (CEIm) que cubre Rey Juan Carlos; para consultas regulatorias, no para viabilidad.",
+     "description_en": "Technical secretariat of the ethics committee (CEIm) covering Rey Juan Carlos; for regulatory questions, not feasibility.",
+     "sourceUrl": "https://www.fjd.es/iis-fjd/es/estructura-organizativa/comite-etica-investigacion",
+     "sourceTitle": "Comité de Ética de la Investigación | Instituto de Investigación Sanitaria. FJD",
+     "evidenceQuote": "Hospital Rey Juan Carlos de Móstoles (HRJC) ... Contacto Secretaría Técnica: ... Teléfono: 91 544 37 20. E-mail: ceic@fjd.es",
+     "checkedOn": "2026-10-06",
+     "confidence": "medium"
+    },
+    {
+     "email": "info@hospitalreyjuancarlos.es",
+     "phone": "91 481 62 25",
+     "kind": "hospital_general",
+     "label_es": "Contacto general del hospital",
+     "label_en": "Hospital general contact",
+     "description_es": "Correo general del hospital; última opción, no está orientado a investigación.",
+     "description_en": "Hospital general email; last resort, not research-specific.",
+     "sourceUrl": "https://www.hospitalreyjuancarlos.es/es/centro/informacion-contacto",
+     "sourceTitle": "Información de contacto | Hospital Universitario Rey Juan Carlos",
+     "evidenceQuote": "Teléfono: 91 481 62 25 / 900 606 056 Fax: 91 481 62 16 Email: info@hospitalreyjuancarlos.es",
+     "checkedOn": "2026-10-06",
+     "confidence": "low"
+    }
+   ]
+  },
+  {
+   "id": "281359",
+   "name": "Hospital General de Villalba",
+   "website": "https://www.hospitalgeneralvillalba.es",
+   "notes": "VERIFIED 2026-10-06. Both IIS-FJD emails and their phones appear on the source pages. The 4-hospital clause names Hospital Universitario General de Villalba, and the CEIm page lists HGV. No changes. Background: named-person mailboxes were excluded, and the hospital's own contact page returned no content during research.",
+   "contacts": [
+    {
+     "email": "investigacion@fjd.es",
+     "phone": "91 550 48 97",
+     "kind": "research_institute",
+     "label_es": "Instituto de Investigación Sanitaria FJD",
+     "label_en": "IIS-FJD Research Institute",
+     "description_es": "Buzón general del instituto de investigación (IIS-FJD) que gestiona los ensayos clínicos de sus 4 hospitales, incluido Villalba; no consta como buzón específico de viabilidad.",
+     "description_en": "General mailbox of the IIS-FJD research institute, which manages clinical trials for its 4 hospitals including Villalba; not stated to be a dedicated feasibility inbox.",
+     "sourceUrl": "https://www.fjd.es/iis-fjd/es/unidades-apoyo/ensayos-clinicos",
+     "sourceTitle": "Ensayos clínicos | Instituto de Investigación Sanitaria. FJD",
+     "evidenceQuote": "es común a los 4 hospitales del IISFJD (... Hospital Universitario Rey Juan Carlos y Hospital Universitario General de Villalba) ... 91 550 48 97 investigacion@fjd.es",
+     "checkedOn": "2026-10-06",
+     "confidence": "medium"
+    },
+    {
+     "email": "ceic@fjd.es",
+     "phone": "91 544 37 20",
+     "kind": "ceim_secretariat",
+     "label_es": "Secretaría del CEIm FJD",
+     "label_en": "CEIm FJD Secretariat",
+     "description_es": "Secretaría técnica del CEIm que cubre Villalba; para consultas regulatorias, no para viabilidad.",
+     "description_en": "Technical secretariat of the CEIm covering Villalba; for regulatory questions, not feasibility.",
+     "sourceUrl": "https://www.fjd.es/iis-fjd/es/estructura-organizativa/comite-etica-investigacion",
+     "sourceTitle": "Comité de Ética de la Investigación | Instituto de Investigación Sanitaria. FJD",
+     "evidenceQuote": "Hospital General de Villalba (HGV) ... Contacto Secretaría Técnica: ... Teléfono: 91 544 37 20. E-mail: ceic@fjd.es",
+     "checkedOn": "2026-10-06",
+     "confidence": "medium"
+    }
+   ]
+  },
+  {
+   "id": "281360",
+   "name": "Hospital Universitario HM Puerta del Sur",
+   "website": "https://www.fundacionhm.com/",
+   "notes": "VERIFIED 2026-10-06: these are the same group-level HM contacts as for HM Montepríncipe, and all three appear on their pages. The HM UCEC manages all clinical trial proposals across the HM Hospitales group, so these contacts are shared and not specific to this hospital. Personal addresses were excluded. No changes.",
+   "contacts": [
+    {
+     "email": "StartUpFiHM@fundacionhm.com",
+     "kind": "clinical_trials_unit",
+     "label_es": "Unidad Central de Ensayos Clínicos – Start-up",
+     "label_en": "Central Clinical Trials Unit – Start-up",
+     "description_es": "Área de puesta en marcha de la unidad central de ensayos del grupo HM, que evalúa la viabilidad de toda propuesta de ensayo en sus hospitales.",
+     "description_en": "Start-up area of the HM group's central trials unit, which assesses the viability of every trial proposal across its hospitals.",
+     "sourceUrl": "https://www.fundacionhm.com/unidad-central-de-ensayos-clinicos-ucec/",
+     "sourceTitle": "Unidad Central de Ensayos Clínicos | Fundación HM",
+     "evidenceQuote": "Contacta con nosotros [...] Área de StartUp [...] StartUpFiHM@fundacionhm.com",
+     "checkedOn": "2026-10-06",
+     "confidence": "high"
+    },
+    {
+     "email": "secretaria@mail.fundacionhm.com",
+     "kind": "research_foundation",
+     "label_es": "Fundación HM – Secretaría y Gestión Institucional",
+     "label_en": "HM Foundation – Secretariat",
+     "description_es": "Secretaría de la fundación de investigación de HM, que gestiona las relaciones con empresas farmacéuticas y biotecnológicas.",
+     "description_en": "Secretariat of the HM research foundation, which manages relations with pharma and biotech companies.",
+     "sourceUrl": "https://www.fundacionhm.com/con%C3%B3cenos/secretaria/contacto",
+     "sourceTitle": "Secretaría y Gestión Institucional | Fundación HM",
+     "evidenceQuote": "Gestión de las relaciones bilaterales con Empresas biotecnológicas y farmacéuticas. Preparación de informes anuales y mensuales con las actividades desarrolladas. Contacto secretaria@mail.fundacionhm.com",
+     "checkedOn": "2026-10-06",
+     "confidence": "medium"
+    },
+    {
+     "email": "secretariaceic@mail.hmhospitales.com",
+     "phone": "91 708 99 00 ext. 12588",
+     "kind": "ceim_secretariat",
+     "label_es": "Secretaría del CEIm HM Hospitales",
+     "label_en": "HM Hospitales ethics committee (CEIm) secretariat",
+     "description_es": "Secretaría del comité de ética del grupo HM; para cuestiones regulatorias y tasas, no para viabilidad.",
+     "description_en": "HM group ethics committee secretariat; for regulatory questions and fees, not feasibility.",
+     "sourceUrl": "https://www.fundacionhm.com/lineas-de-investigaci%C3%B3n/unidades/ceim",
+     "sourceTitle": "Comité CEIM | Fundación HM",
+     "evidenceQuote": "Contacto secretariaceic@mail.hmhospitales.com Teléfono: 91 708 99 00, ext. 12588.",
+     "checkedOn": "2026-10-06",
+     "confidence": "medium"
+    }
+   ]
+  },
+  {
+   "id": "281371",
+   "name": "Hospital HM Vallés",
+   "website": "https://www.hmhospitales.com/",
+   "contacts": [
+    {
+     "email": "StartUpFiHM@fundacionhm.com",
+     "kind": "clinical_trials_unit",
+     "label_es": "Área de Start-up – Unidad Central de Ensayos Clínicos (Fundación HM)",
+     "label_en": "Study Start-up – Central Clinical Trials Unit (HM Foundation)",
+     "description_es": "Área de puesta en marcha de estudios de la Unidad Central de Ensayos Clínicos de la Fundación HM, que coordina los ensayos de los hospitales del grupo HM. Es el buzón más adecuado para viabilidad y activación de centro.",
+     "description_en": "Study start-up desk of the HM Foundation's Central Clinical Trials Unit, which coordinates trials across HM group hospitals. The most suitable mailbox for feasibility and site activation.",
+     "sourceUrl": "https://www.fundacionhm.com/unidad-central-de-ensayos-clinicos-ucec/",
+     "sourceTitle": "Unidad Central de Ensayos Clínicos | Fundación HM",
+     "evidenceQuote": "Contacta con nosotros [...] Área de StartUp [...] StartUpFiHM@fundacionhm.com",
+     "checkedOn": "2026-10-06",
+     "confidence": "high"
+    },
+    {
+     "email": "secretaria@mail.fundacionhm.com",
+     "kind": "research_foundation",
+     "label_es": "Secretaría Técnica – Fundación HM",
+     "label_en": "Technical Secretariat – HM Foundation",
+     "description_es": "Secretaría de la Fundación de Investigación HM, que gestiona la I+D+i de todos los hospitales del grupo, incluidos los ensayos clínicos (idoneidad y puesta en marcha) y la relación con la industria farmacéutica.",
+     "description_en": "Secretariat of the HM research foundation, which manages R&D for all group hospitals, including clinical trials (suitability and start-up) and relations with pharma companies.",
+     "sourceUrl": "https://www.fundacionhm.com/con%C3%B3cenos/secretaria/contacto",
+     "sourceTitle": "Secretaría y Gestión Institucional | Fundación HM",
+     "evidenceQuote": "Gestión de Ensayos Clínicos, dando cobertura al control de idoneidad de desarrollo de estos y su puesta en marcha. [...] Contacto secretaria@mail.fundacionhm.com",
+     "checkedOn": "2026-10-06",
+     "confidence": "medium"
+    }
+   ],
+   "notes": "VERIFIED: same group-wide Fundación HM contacts as HM Nuevo Belén. Both emails were confirmed on the pages, the secretariat one through Cloudflare decoding. The Secretaría page says it serves all HM Hospitales group hospitals. CHANGED the secretariat description slightly so it says it covers all group hospitals. Personal addresses and names were excluded."
+  },
+  {
+   "id": "281383",
+   "name": "Fraternidad-Muprespa (Mutua Colaboradora con la Seguridad Social nº 275)",
+   "website": "https://www.fraternidad.com/",
+   "contacts": [],
+   "notes": "Verified: no contacts to check. Occupational-health mutual (Hospital Fraternidad-Muprespa Habana, trauma). The centre page https://www.fraternidad.com/es-ES/centro/hospital-fraternidad-muprespa-habana shows only phones (913 608 800). A further search on 2026-10-06 found a 2023 report noting a research lab being set up at Habana, but no research contact. emutua@fraternidad.com is a mutual-wide customer channel that appeared only in a search summary, so it was not recorded."
+  },
+  {
+   "id": "281393",
+   "name": "Clínica Universidad de Navarra",
+   "website": "https://www.cun.es/",
+   "notes": "VERIFIED 2026-10-06: cun@unav.es appears on the official Universidad de Navarra research portal page. CHANGED: I removed the phone +34 91 353 19 20 from this contact because it is not on the cited source page. I checked cun.es/investigacion/unidad-central-ensayos-clinicos: that number appears only as the general 'MADRID' switchboard in the site header, not as a Clinical Trials Unit number. I corrected the description accordingly. The cun.es trials pages publish no email (web form only). Sponsors can call the Madrid switchboard (+34 91 353 19 20) and ask for the Unidad Central de Ensayos Clínicos. ucicec@unav.es was not found on any official page and is not recorded.",
+   "contacts": [
+    {
+     "email": "cun@unav.es",
+     "kind": "hospital_general",
+     "label_es": "Contacto general de la Clínica",
+     "label_en": "Clinic general contact",
+     "description_es": "Buzón general de la Clínica Universidad de Navarra (no específico de Madrid ni de ensayos); habría que pedir que lo deriven a la Unidad Central de Ensayos Clínicos.",
+     "description_en": "General mailbox of Clínica Universidad de Navarra, not specific to Madrid or to trials. Ask for the enquiry to be forwarded to the Central Clinical Trials Unit.",
+     "sourceUrl": "https://portalcientifico.unav.edu/unidades/7602/detalle",
+     "sourceTitle": "Clínica Universidad de Navarra (CUN) | Universidad de Navarra – Portal científico",
+     "evidenceQuote": "Página web : https://www.cun.es/ Email : cun@unav.es",
+     "checkedOn": "2026-10-06",
+     "confidence": "low"
+    }
+   ]
+  },
+  {
+   "id": "281438",
+   "name": "Hospital Universitario José Germain",
+   "website": "https://www.comunidad.madrid/hospital/josegermain/",
+   "contacts": [],
+   "notes": "Verified: no contacts to check. Public psychiatric hospital (SERMAS), not part of an accredited IIS. Its Investigación page (https://www.comunidad.madrid/hospital/josegermain/profesionales/investigacion) lists research lines but no contact. The Gestión del Conocimiento page has only biblioteca.ipjg@salud.madrid.org (library) and docencia.ipjg@salud.madrid.org (resident teaching), and both were excluded as unsuitable. The switchboard is 91 586 65 00."
+  },
+  {
+   "id": "281445",
+   "name": "Hospital de Emergencias Enfermera Isabel Zendal",
+   "website": "https://www.comunidad.madrid/centros/hospital-emergencias-enfermera-isabel-zendal",
+   "notes": "No suitable email found, so the list stays empty. The official comunidad.madrid page lists only the regional data protection mailbox and the Comunidad's 012 citizen-service mailbox. I searched again: the only results with contact details give phone numbers only (24h line 91 799 63 00). No research foundation, trials unit, CEIm or research mailbox was found.",
+   "contacts": []
+  },
+  {
+   "id": "281456",
+   "name": "Hospital Quirónsalud Valle del Henares",
+   "website": "https://www.quironsalud.com/valle-henares",
+   "contacts": [
+    {
+     "email": "qs.investigacion@quironsalud.es",
+     "kind": "research_support_office",
+     "label_es": "Quirónsalud Investigación e Innovación (ventanilla única para promotores)",
+     "label_en": "Quirónsalud Research & Innovation (sponsor single entry point)",
+     "description_es": "Entidad del Grupo Quirónsalud que gestiona la investigación de sus centros y atiende a los promotores que quieran hacer ensayos clínicos en sus hospitales.",
+     "description_en": "Quirónsalud group body that manages research at its centres and is the single entry point for sponsors wanting to run clinical trials at its hospitals.",
+     "sourceUrl": "https://www.quironsalud.com/es/investigacion/ensayos-clinicos-acceso-precoz-nuevas-terapias",
+     "sourceTitle": "Ensayos clínicos, un acceso precoz a nuevas terapias | Quirónsalud",
+     "evidenceQuote": "Quirónsalud Investigación e Innovación es la entidad de gestión de la investigación realizada en los centros del Grupo Quirónsalud y actúa como ventanilla única para todos aquellos promotores que quieran dirigirse a nuestros hospitales para desarrollar ensayos clínicos ... qs.investigacion@quironsalud.es",
+     "checkedOn": "2026-10-06",
+     "confidence": "high"
+    },
+    {
+     "email": "torrejon.vallehenares@quironsalud.es",
+     "phone": "913 333 444",
+     "kind": "hospital_general",
+     "label_es": "Contacto general del hospital",
+     "label_en": "Hospital general contact",
+     "description_es": "Buzón general del hospital; no es de investigación, habría que pedir que lo deriven al responsable de ensayos clínicos.",
+     "description_en": "General hospital mailbox, not a research one; ask for it to be forwarded to whoever handles clinical trials.",
+     "sourceUrl": "https://www.quironsalud.com/valle-henares/es/informacion-contacto",
+     "sourceTitle": "Información de contacto | Hospital Quirónsalud Valle del Henares",
+     "evidenceQuote": "Hospital Quirónsalud Valle del Henares Dirección: Avda. de la Constitución, 249 28850 Torrejón de Ardoz Madrid Citas - 913 333 444 Cómo llegar Correo electrónico: torrejon.vallehenares@quironsalud.es",
+     "checkedOn": "2026-10-06",
+     "confidence": "low"
+    }
+   ],
+   "notes": "VERIFIED with curl: the email appears on the official page. No changes. Researcher notes: there is no hospital research page, and the group research page publishes no mailbox. QA 2026-10-06: added the Quirónsalud group sponsor single-entry mailbox (qs.investigacion@quironsalud.es), the same contact already listed for La Luz, San José and San Camilo; its source page says it is the single entry point for sponsors at all Quirónsalud group hospitals, and this hospital is a group centre (quironsalud.com site)."
+  },
+  {
+   "id": "281467",
+   "name": "HM Hospitales 1.989",
+   "website": "https://www.fundacionhm.com",
+   "notes": "VERIFIED 2026-10-06: oficinadeproyectos@fundacionhm.com appears in plain text on the Oficina de Proyectos page. secretariaceic@mail.hmhospitales.com appears on the CEIm page, Cloudflare-obfuscated in the HTML but shown on the rendered page; it was decoded to confirm the exact address. 'HM Hospitales 1.989, S.A.' is the HM group company; this entry is its Rivas-Vaciamadrid centre (Av. José Hierro 94), which is covered by group-level Fundación HM contacts. No changes. On the CEIm page, two named people's addresses in copy were left out, as was the UCEC manager's personal address. Sponsors also have a 'Colabora con nosotros' web form.",
+   "contacts": [
+    {
+     "email": "oficinadeproyectos@fundacionhm.com",
+     "kind": "research_foundation",
+     "label_es": "Oficina de Proyectos – Fundación HM",
+     "label_en": "Projects Office – HM Research Foundation",
+     "description_es": "Oficina general de proyectos de la Fundación de Investigación HM Hospitales; no es específica de ensayos, pero puede derivar a la Unidad Central de Ensayos Clínicos (para sponsors también hay un formulario web).",
+     "description_en": "General projects office of the HM Hospitales Research Foundation; not trial-specific, but can route to the Central Clinical Trials Unit (a web form for sponsors also exists).",
+     "sourceUrl": "https://www.fundacionhm.com/oficina-de-proyectos/",
+     "sourceTitle": "Oficina de Proyectos | Fundación HM",
+     "evidenceQuote": "Contacta con nosotros Oficina general oficinadeproyectos@fundacionhm.com",
+     "checkedOn": "2026-10-06",
+     "confidence": "medium"
+    },
+    {
+     "email": "secretariaceic@mail.hmhospitales.com",
+     "kind": "ceim_secretariat",
+     "label_es": "Secretaría del CEIm HM Hospitales",
+     "label_en": "HM Hospitales Ethics Committee (CEIm) secretariat",
+     "description_es": "Secretaría del comité de ética del grupo HM, para cuestiones regulatorias y de tasas; no es para viabilidad.",
+     "description_en": "Secretariat of the HM group ethics committee, for regulatory and fee questions; not for feasibility.",
+     "sourceUrl": "https://www.fundacionhm.com/comite-etico-de-investigacion-con-medicamentos-ceim/",
+     "sourceTitle": "Comité CEIM | Fundación HM",
+     "evidenceQuote": "Las tasas serán solicitadas por correo electrónico, a la dirección de la secretaría secretariaceic@mail.hmhospitales.com",
+     "checkedOn": "2026-10-06",
+     "confidence": "medium"
+    }
+   ]
+  },
+  {
+   "id": "281478",
+   "name": "ALM Univass",
+   "website": "https://www.clinicasanvicente.es",
+   "notes": "VERIFIED 2026-10-06: info@clinicasanvicente.es appears on the official contact page. No changes. ALM Univass S.L. is the operator of Hospital/Clínica San Vicente, a private neuro-rehabilitation hospital. It has no research or trials unit and no research mailbox. dpo@ and sugerencias@ were left out because they are not for enquiries. 0 registered trials.",
+   "contacts": [
+    {
+     "email": "info@clinicasanvicente.es",
+     "phone": "91 631 82 12",
+     "kind": "hospital_general",
+     "label_es": "Contacto general del hospital",
+     "label_en": "Hospital general contact",
+     "description_es": "Buzón general de información del Hospital San Vicente; no consta unidad de investigación, así que habría que pedir que lo deriven a dirección médica.",
+     "description_en": "General information mailbox of Hospital San Vicente; no research unit is listed, so the enquiry would need to be forwarded to medical management.",
+     "sourceUrl": "https://www.clinicasanvicente.es/contacto-2/",
+     "sourceTitle": "Contacto - Hospital Rehabilitación San Vicente",
+     "evidenceQuote": "Contacte con Nosotros info@clinicasanvicente.es Teléfono",
+     "checkedOn": "2026-10-06",
+     "confidence": "low"
+    }
+   ]
+  },
+  {
+   "id": "281491",
+   "name": "HM Hospitales 1989",
+   "website": "https://www.fundacionhm.com/",
+   "contacts": [
+    {
+     "email": "StartUpFiHM@fundacionhm.com",
+     "kind": "clinical_trials_unit",
+     "label_es": "Unidad Central de Ensayos Clínicos – Área de StartUp",
+     "label_en": "Central Clinical Trials Unit – Study Start-up",
+     "description_es": "Área de puesta en marcha de estudios de la Unidad Central de Ensayos Clínicos (Fundación HM), que evalúa la viabilidad de todo ensayo propuesto en el Grupo HM.",
+     "description_en": "Study start-up area of the HM Foundation's Central Clinical Trials Unit, which assesses feasibility of every trial proposed within the HM group.",
+     "sourceUrl": "https://www.fundacionhm.com/unidad-central-de-ensayos-clinicos-ucec/",
+     "sourceTitle": "Unidad Central de Ensayos Clínicos | Fundación HM",
+     "evidenceQuote": "Cualquier propuesta de ensayo clínico dentro del Grupo HM Hospitales es gestionada por la Dirección Operacional de la UCEC, que evalúa su viabilidad ... Área de StartUp ... StartUpFiHM@fundacionhm.com",
+     "checkedOn": "2026-10-06",
+     "confidence": "high"
+    },
+    {
+     "email": "secretariaceic@mail.hmhospitales.com",
+     "phone": "91 708 99 00, ext. 12588",
+     "kind": "ceim_secretariat",
+     "label_es": "Secretaría del CEIm HM Hospitales",
+     "label_en": "HM Hospitales Ethics Committee (CEIm) secretariat",
+     "description_es": "Secretaría del comité de ética (CEIm) de HM Hospitales; para cuestiones regulatorias y tasas, no para viabilidad.",
+     "description_en": "HM Hospitales ethics committee (CEIm) secretariat; for regulatory and fee questions, not for feasibility.",
+     "sourceUrl": "https://www.fundacionhm.com/comite-etico-de-investigacion-con-medicamentos-ceim/",
+     "sourceTitle": "Comité CEIM | Fundación HM",
+     "evidenceQuote": "Contacto secretariaceic@mail.hmhospitales.com Teléfono: 91 708 99 00, ext. 12588.",
+     "checkedOn": "2026-10-06",
+     "confidence": "medium"
+    }
+   ],
+   "notes": "Verified 2026-10-06. Both emails appear on their source pages as Cloudflare-protected links, which were decoded and match exactly. The StartUp address is also shown in the link title. The phone and ext. 12588 appear verbatim on the CEIm page. Named staff mailboxes on both pages stay excluded. This is the corporate entity of the HM group, served by the Fundación de Investigación HM Hospitales UCEC. No changes."
+  }
+ ]
+}

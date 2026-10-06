@@ -1,0 +1,86 @@
+/* Leaflet overrides for Solera maps (scoped to .solera-map). Tokens come from globals.css. */
+.solera-map.leaflet-container {
+  font-family: inherit;
+  font-size: 13px;
+  background: #eef1f4;
+  outline: none;
+}
+/* Calm the OSM palette so score markers stand out. */
+.solera-map .leaflet-tile-pane {
+  filter: saturate(0.45) brightness(1.04) contrast(0.92);
+}
+.solera-map .leaflet-control-attribution {
+  font-size: 10.5px;
+  background: rgb(255 255 255 / 0.85);
+  border-top-left-radius: 6px;
+  padding: 1px 6px;
+  color: var(--color-muted);
+}
+.solera-map .leaflet-control-attribution a {
+  color: var(--color-ink-2);
+}
+.solera-map .leaflet-bar {
+  border: 1px solid var(--color-line) !important;
+  border-radius: 10px !important;
+  box-shadow: var(--shadow-card) !important;
+  overflow: hidden;
+}
+.solera-map .leaflet-bar a {
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  color: var(--color-ink-2);
+  border-bottom-color: var(--color-line);
+}
+.solera-map .leaflet-bar a:hover {
+  background: var(--color-subtle);
+  color: var(--color-ink);
+}
+.solera-map .leaflet-popup-content-wrapper {
+  padding: 0;
+  border-radius: 14px;
+  box-shadow: var(--shadow-pop);
+  overflow: hidden;
+}
+.solera-map .leaflet-popup-content {
+  margin: 0;
+  width: 264px !important;
+  line-height: 1.4;
+  font-size: 13px;
+}
+.solera-map .leaflet-popup-content p {
+  margin: 0;
+}
+.solera-map .leaflet-popup-tip {
+  box-shadow: var(--shadow-card);
+}
+.solera-map a.leaflet-popup-close-button {
+  top: 6px;
+  right: 6px;
+  width: 26px;
+  height: 26px;
+  font-size: 18px;
+  line-height: 24px;
+  border-radius: 999px;
+  background: rgb(255 255 255 / 0.92);
+  color: var(--color-ink-2);
+  z-index: 2;
+}
+.solera-map .leaflet-tooltip.solera-tip {
+  padding: 6px 9px;
+  border: 1px solid var(--color-line);
+  border-radius: 10px;
+  box-shadow: var(--shadow-raised);
+  color: var(--color-ink);
+  font-size: 12.5px;
+  white-space: nowrap;
+}
+.solera-map .leaflet-tooltip.solera-tip::before {
+  display: none;
+}
+.solera-map path.leaflet-interactive {
+  transition: stroke-width 120ms ease;
+}
+.solera-map path.leaflet-interactive:focus {
+  outline: none;
+}

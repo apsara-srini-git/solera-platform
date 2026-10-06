@@ -1,0 +1,173 @@
+// SQLite for local development. Switch provider to "postgresql" for production.
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id           String    @id @default(cuid())
+  email        String    @unique
+  name         String
+  organisation String?
+  passwordHash String
+  plan         String    @default("free") // free | insights
+  createdAt    DateTime  @default(now())
+  sessions     Session[]
+  projects     Project[]
+}
+
+model Session {
+  id        String   @id // random token stored in an httpOnly cookie
+  userId    String
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  expiresAt DateTime
+}
+
+// A feasibility project = one set of trial criteria + its shortlist.
+// Anonymous projects (anonId set, userId null) are only reachable through a
+// browser-session cookie and are claimed by the user on sign-up / log-in.
+model Project {
+  id            String          @id @default(cuid())
+  userId        String?
+  user          User?           @relation(fields: [userId], references: [id], onDelete: Cascade)
+  anonId        String?
+  name          String
+  criteria      String // JSON: TrialCriteria (blinded, shareable with sites)
+  confidential  String          @default("{}") // JSON: drug name, sponsor, internal code — never shared
+  // Optional sponsor-name disclosure (default off). When on, sponsorDisplayName is shown to hospitals in the trial
+  // summary and the invitation email, and the leak check allows that name. Drug and protocol code always stay hidden.
+  showSponsorName    Boolean @default(false)
+  sponsorDisplayName String?
+  createdAt     DateTime        @default(now())
+  updatedAt     DateTime        @updatedAt
+  items         ShortlistItem[]
+  questionnaire Questionnaire?
+
+  @@index([anonId])
+  @@index([userId])
+}
+
+model ShortlistItem {
+  id          String      @id @default(cuid())
+  projectId   String
+  project     Project     @relation(fields: [projectId], references: [id], onDelete: Cascade)
+  siteId      String // CNH hospital code
+  publicScore Float
+  stage       String      @default("shortlisted") // shortlisted | invited | responded | approved | rejected
+  decidedAt   DateTime?
+  createdAt   DateTime    @default(now())
+  invitation  Invitation?
+
+  @@unique([projectId, siteId])
+}
+
+model Questionnaire {
+  id        String   @id @default(cuid())
+  projectId String   @unique
+  project   Project  @relation(fields: [projectId], references: [id], onDelete: Cascade)
+  questions String // JSON: Question[]
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model Invitation {
+  id              String        @id @default(cuid())
+  token           String        @unique
+  shortlistItemId String        @unique
+  shortlistItem   ShortlistItem @relation(fields: [shortlistItemId], references: [id], onDelete: Cascade)
+  recipientEmail  String
+  // JSON ContactRecord {kind, label_es, label_en, sourceUrl, sourceTitle, checkedOn} when recipientEmail is one of the
+  // hospital's listed public contacts (data/hospital_contacts.json) at send time; null when the sponsor typed it.
+  recipientContact String?
+  prefill        String // JSON: Prefill {v:2, answers:{qid:{value,source}}, hints} at send time (old rows: plain {qid:value})
+  consentAt       DateTime? // hospital agreed to reuse its confirmed answers (site/indication policy only)
+  sentAt          DateTime      @default(now())
+  openedAt        DateTime?
+  submittedAt     DateTime?
+  answers         String? // JSON
+  responseScore   Float?
+  matchScore      Float?
+  matchDetail     String? // JSON: reasons + flags
+}
+
+model EmailLog {
+  id        String   @id @default(cuid())
+  to        String
+  subject   String
+  body      String
+  kind      String // invitation | decision_approved | decision_rejected
+  projectId String?
+  status    String // sent | logged_only | suppressed | failed
+  createdAt DateTime @default(now())
+}
+
+// Do-not-contact list (LSSI / GDPR opt-out). Always checked before sending.
+model Suppression {
+  email     String   @id
+  createdAt DateTime @default(now())
+}
+
+// One row per protocol upload: the consent record, and the basis for anonymous rate limiting.
+// The file itself is stored only when keepDocument is true.
+model ProtocolUpload {
+  id            String   @id @default(cuid())
+  userId        String?
+  anonId        String?
+  projectId     String?
+  filename      String? // only kept with keepDocument consent (file names often contain protocol / compound codes)
+  mimeType      String
+  sizeBytes     Int
+  ipHash        String? // salted hash, abuse limiting only
+  agreedTermsAt DateTime
+  keepDocument  Boolean
+  keepConfidential Boolean @default(false)
+  storedPath    String?
+  status        String // pending | extracted | failed
+  createdAt     DateTime @default(now())
+
+  @@index([anonId, createdAt])
+  @@index([userId, createdAt])
+  @@index([ipHash, createdAt])
+}
+
+// Hospital answer memory (the pre-fill flywheel). One row per hospital × institutional email domain × question × scope:
+// the latest answer the hospital itself provided (a hospital-only question, or a public pre-fill it corrected), stored
+// only with the hospital's consent and only for reusable questions (policy "site" or "indication" — never trial-specific
+// answers). Unchanged public values (registries, catalogue, CEIm, ISCIII) are never stored. Rows are only pre-filled,
+// shown or edited for invitations sent to the same institutional domain; public webmail domains are never stored.
+// Sponsors never see stored values (only that a hospital answer will be pre-filled). Facts about the centre only.
+model SiteAnswer {
+  id                 String   @id @default(cuid())
+  siteId             String // CNH hospital code
+  domain             String // recipient's institutional email domain ("hospital.es"), lower-case
+  questionKey        String // stable key from the question library, e.g. "pharmacy", "criterion:egfr mutation"
+  scope              String   @default("") // "" for site facts; "indication|population" (+ "|phase") for indication answers
+  value              String
+  questionEs         String // question text as the hospital saw it (for the hospital's review page)
+  sourceInvitationId String
+  confirmedAt        DateTime
+  expiresAt          DateTime
+  updatedAt          DateTime @updatedAt
+
+  @@unique([siteId, domain, questionKey, scope])
+  @@index([siteId, domain, expiresAt])
+}
+
+// Custom questions added by sponsors. Private to their author: only suggested back to the sponsor who wrote them
+// (their wording may reveal the trial). "site" = the answer is about the hospital and may pre-fill the author's own
+// later questionnaires; "trial" = never reused. The built-in library (question-library.ts) is shared.
+model LibraryQuestion {
+  id              String   @id @default(cuid())
+  key             String   @unique // "lib:<id-ish>"
+  es              String
+  en              String
+  type            String // yesno | number | text
+  policy          String // site | trial
+  createdByUserId String?
+  uses            Int      @default(1)
+  createdAt       DateTime @default(now())
+}

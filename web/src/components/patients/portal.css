@@ -1,0 +1,61 @@
+/* Patient portal shell (/pacientes). The root layout skips the sponsor header/footer on these routes (RouteSwitch). */
+.patient-portal {
+  --portal-header-h: 60px;
+  background: #f7f8f7;
+}
+
+/* Long registry texts: comfortable reading width and spacing. */
+.patient-portal .registry-text {
+  white-space: pre-line;
+  line-height: 1.6;
+}
+
+/* details/summary disclosure marker */
+.patient-portal details > summary.portal-summary {
+  list-style: none;
+}
+.patient-portal details > summary.portal-summary::-webkit-details-marker {
+  display: none;
+}
+.patient-portal details[open] > summary .portal-chevron {
+  transform: rotate(180deg);
+}
+
+@media print {
+  .patient-portal {
+    background: #fff;
+  }
+  .portal-noprint,
+  .patient-portal .leaflet-container {
+    display: none !important;
+  }
+  .patient-portal details::details-content {
+    content-visibility: visible;
+    display: block;
+  }
+  .patient-portal a.print-url[href^="http"]::after {
+    content: " (" attr(href) ")";
+    font-size: 10px;
+    color: #3d4a52;
+    word-break: break-all;
+  }
+  .patient-portal .card,
+  .patient-portal .card-interactive {
+    box-shadow: none !important;
+    break-inside: avoid;
+  }
+  .portal-print-full {
+    grid-column: 1 / -1 !important;
+  }
+}
+
+/* Search filters: collapsed behind a button on phones, always open from sm up (see FilterDisclosure). */
+@media (min-width: 640px) {
+  .patient-portal .filters-disclosure > summary {
+    display: none;
+  }
+  .patient-portal .filters-disclosure::details-content {
+    content-visibility: visible;
+    display: contents;
+  }
+}

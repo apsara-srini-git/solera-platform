@@ -1,0 +1,5225 @@
+{
+ "builtOn": "2026-10-05",
+ "builtAt": "2026-10-05T16:28:13+00:00",
+ "sourceDetails": {
+  "reec": {
+   "fetchedAt": "2026-10-05T16:21:51+00:00",
+   "url": "https://reec.aemps.es/reec/public/web.html",
+   "datasetUrl": "https://reec.aemps.es/reec-services"
+  },
+  "ctgov": {
+   "fetchedAt": "2026-10-05T16:21:26+00:00",
+   "url": "https://clinicaltrials.gov/",
+   "datasetUrl": "https://clinicaltrials.gov/data-api/api"
+  },
+  "ctis": {
+   "fetchedAt": "2026-10-05T16:21:58+00:00",
+   "url": "https://euclinicaltrials.eu/search-for-clinical-trials/",
+   "datasetUrl": "https://euclinicaltrials.eu/"
+  },
+  "catalogue": {
+   "fetchedAt": "2026-10-03T13:37:11+00:00",
+   "url": "https://www.sanidad.gob.es/estadEstudios/estadisticas/sisInfSanSNS/ofertaRecursos/hospitales/home.htm",
+   "datasetUrl": "https://www.sanidad.gob.es/estadEstudios/estadisticas/sisInfSanSNS/ofertaRecursos/hospitales/home.htm"
+  },
+  "isciii": {
+   "fetchedAt": "2026-10-03T15:33:23+00:00",
+   "url": "https://www.isciii.es/",
+   "datasetUrl": "https://www.isciii.es/documents/d/guest/iis-acreditados_centros_feb_2026-1-?download=true"
+  },
+  "sermas": {
+   "fetchedAt": "2026-10-05T16:22:44+00:00",
+   "url": "https://www.comunidad.madrid/servicios/salud/memorias-e-informes-servicio-madrileno-salud",
+   "datasetUrl": "https://www.comunidad.madrid/servicios/salud/memorias-e-informes-servicio-madrileno-salud"
+  },
+  "ceim": {
+   "fetchedAt": "2026-10-05T16:22:45+00:00",
+   "url": "https://www.aemps.gob.es/medicines-for-human-use/research-with-medicines-for-human-use/ceim-committed-to-ctis-procedure/?lang=es",
+   "datasetUrl": "https://reec.aemps.es/reec-services/ceimbyccaa?ccaa=13"
+  },
+  "geo": {
+   "fetchedAt": "2026-10-05T16:22:00+00:00",
+   "url": "https://datos.comunidad.madrid/catalogo/dataset/centros_servicios_establecimientos_sanitarios",
+   "datasetUrl": "https://datos.comunidad.madrid/catalogo/dataset/centros_servicios_establecimientos_sanitarios"
+  },
+  "commons": {
+   "fetchedAt": "2026-10-05T16:28:11+00:00",
+   "url": "https://commons.wikimedia.org/",
+   "datasetUrl": "https://www.wikidata.org/wiki/Property:P18"
+  },
+  "osm": {
+   "fetchedAt": "2026-10-05T16:22:45+00:00",
+   "url": "https://www.openstreetmap.org/copyright",
+   "datasetUrl": "https://nominatim.openstreetmap.org/"
+  }
+ },
+ "sources": {
+  "hospitalCatalogue": "Catálogo Nacional de Hospitales 2025 (Ministerio de Sanidad), data as of 31 Dec 2024",
+  "trials": "ClinicalTrials.gov API v2, interventional studies with a Comunidad de Madrid site",
+  "reec": "REec (AEMPS) REST service: medicines trials authorised in Spain with a Madrid site",
+  "researchInstitutes": "ISCIII list of accredited Institutos de Investigación Sanitaria (updated May 2026)",
+  "geo": "https://datos.comunidad.madrid/catalogo/dataset/centros_servicios_establecimientos_sanitarios (UTM ETRS89 30N → WGS84), cross-checked with OpenStreetMap Nominatim",
+  "images": "Wikimedia Commons via Wikidata P18; free licences only (CC0 / CC BY / CC BY-SA / public domain)",
+  "activity": "SERMAS hospital annual reports, open data 2024 (https://www.comunidad.madrid/servicios/salud/memorias-e-informes-servicio-madrileno-salud)",
+  "ceim": "AEMPS directory of accredited CEIm (https://reec.aemps.es/reec-services), checked 2026-10-05"
+ },
+ "enrichment": {
+  "coverage": {
+   "geo": "91/91",
+   "image": "31/91",
+   "activity": "34/91 (42 public-funded in catalogue)",
+   "ceim": "28 sourced (own or complex committee) + 63 inferred CEIm Regional default, of 91"
+  },
+  "geo": {
+   "source": "https://datos.comunidad.madrid/catalogo/dataset/centros_servicios_establecimientos_sanitarios",
+   "crossCheck": "OpenStreetMap Nominatim geocode of the catalogue address (of the hospital name for points that come from the OSM fallback)",
+   "withGeo": 91,
+   "byMethod": {
+    "address": 81,
+    "manual": 6,
+    "fixed": 1,
+    "nominatimFallback": 1,
+    "sharedPointAdjusted": 2,
+    "none": 0
+   },
+   "crossChecked": 82,
+   "outliers": [
+    {
+     "id": "280761",
+     "name": "Hospital de La Fuenfria",
+     "address": "Carretera De Dehesas S/N",
+     "distanceKm": 2.45,
+     "nameGeocodeKm": 0.12,
+     "note": null,
+     "explained": true,
+     "registerAddress": "CTRA de Dehesas S/N, 28470 Cercedilla"
+    },
+    {
+     "id": "281326",
+     "name": "Casta Guadarrama",
+     "address": "Carretera De La Coruña KM.50,300",
+     "distanceKm": 7.11,
+     "nameGeocodeKm": null,
+     "note": "Casta Guadarrama: register point is the former Sanatorio Militar on the A-6 km 50, where the hospital is",
+     "explained": true,
+     "registerAddress": "CTRA de la Coruña KM.50,300, 28440 Guadarrama"
+    },
+    {
+     "id": "280604",
+     "name": "Hospital Universitario La Zarzuela",
+     "address": "Calle De Pléyades 25",
+     "distanceKm": 18.5,
+     "nameGeocodeKm": null,
+     "note": "La Zarzuela: OSM 'Hospital de la Zarzuela' (Pléyades, Aravaca) is 50 m from the register point",
+     "explained": true,
+     "registerAddress": "CALLE de Pléyades 25, 28023 Madrid"
+    },
+    {
+     "id": "280376",
+     "name": "Hospital Viamed Santa Elena, S.L",
+     "address": "Calle De Abtao 25",
+     "distanceKm": 5.66,
+     "nameGeocodeKm": null,
+     "note": "Viamed Santa Elena: catalogue address (Abtao 25) is an office; MANUAL → register CH0019 (C/ de la Granja 8), where OSM has 'Clínica Santa Elena'",
+     "explained": true,
+     "registerAddress": "CALLE de la Granja 8, 28003 Madrid"
+    },
+    {
+     "id": "280360",
+     "name": "Hospital Beata Maria Ana",
+     "address": "Calle Del Doctor Esquerdo 83",
+     "distanceKm": 1.59,
+     "nameGeocodeKm": 0.04,
+     "note": null,
+     "explained": true,
+     "registerAddress": "CALLE del Doctor Esquerdo 83, 28007 Madrid"
+    },
+    {
+     "id": "280409",
+     "name": "Clínica Nuestra Señora de La Paz",
+     "address": "Calle De López de Hoyos 259",
+     "distanceKm": 1.85,
+     "nameGeocodeKm": null,
+     "note": "Clínica N.S. de la Paz: register point is at the east end of López de Hoyos (no. 259); OSM resolves the address to the street's west half",
+     "explained": true,
+     "registerAddress": "CALLE de López de Hoyos 259, 28043 Madrid"
+    },
+    {
+     "id": "280323",
+     "name": "Sanatorio Nuestra Señora del Rosario",
+     "address": "Calle Del Cardenal Cisneros 7",
+     "distanceKm": 1.87,
+     "nameGeocodeKm": 0.04,
+     "note": "N.S. del Rosario: catalogue address is an office; MANUAL → register CH0068 (Príncipe de Vergara 53), 40 m from OSM 'Hospital Universitario Nuestra Señora del Rosario'",
+     "explained": true,
+     "registerAddress": "CALLE del Príncipe de Vergara 53, 28006 Madrid"
+    },
+    {
+     "id": "280029",
+     "name": "Hospital Universitario Ramon y Cajal",
+     "address": "Calle De Ayala 38",
+     "distanceKm": 6.73,
+     "nameGeocodeKm": 0.26,
+     "note": null,
+     "explained": true,
+     "registerAddress": "CTRA de Colmenar Viejo KM.9,1, 28034 Madrid"
+    },
+    {
+     "id": "280262",
+     "name": "Hospital Psiquiátrico Doctor Rodriguez Lafora",
+     "address": "Carretera De Colmenar Viejo K.13,8",
+     "distanceKm": 3.6,
+     "nameGeocodeKm": null,
+     "note": "Rodríguez Lafora: OSM 'Hospital Dr. Rodríguez Lafora' is 0.9 km away (large campus, same site)",
+     "explained": true,
+     "registerAddress": "CTRA de Colmenar Viejo K.13,8, 28049 Madrid"
+    },
+    {
+     "id": "280246",
+     "name": "Hospital General Universitario Gregorio Marañón",
+     "address": "Calle Del Doctor Esquerdo 46",
+     "distanceKm": 1.84,
+     "nameGeocodeKm": 0.13,
+     "note": null,
+     "explained": true,
+     "registerAddress": "CALLE del Doctor Esquerdo 46, 28007 Madrid"
+    },
+    {
+     "id": "280210",
+     "name": "Hospital de Cantoblanco",
+     "address": "Carretera De Colmenar Viejo K.14,500",
+     "distanceKm": 2.9,
+     "nameGeocodeKm": 1.17,
+     "note": null,
+     "explained": true,
+     "registerAddress": "CTRA de Colmenar Viejo K.14,500, 28049 Madrid"
+    },
+    {
+     "id": "280164",
+     "name": "Hospital Carlos III",
+     "address": "Calle De Sinesio Delgado 8-10",
+     "distanceKm": 1.75,
+     "nameGeocodeKm": 0.2,
+     "note": null,
+     "explained": true,
+     "registerAddress": "CALLE de Sinesio Delgado 8-10, 28029 Madrid"
+    }
+   ]
+  },
+  "images": {
+   "source": "Wikidata (P18 of the hospital's item) → Wikimedia Commons; free licences only",
+   "withImage": 31,
+   "wikidataItemWithoutPhoto": 40,
+   "noWikidataItem": 17,
+   "rejected": [
+    {
+     "id": "280246",
+     "file": "Hospital Gregorio Marañón - IMG659.jpg",
+     "reason": "checked by hand: taken during the 2012 general strike; protest banners on the facade"
+    },
+    {
+     "id": "281270",
+     "file": "(Hospital Universitario Infanta Leonor) Santa Eugenia, Infanta Leonor, Palomeras Sureste. 01 (cropped).JPG",
+     "reason": "checked by hand: district panorama of Santa Eugenia; the hospital is far in the background"
+    },
+    {
+     "id": "281315",
+     "file": "Puerta de Hierro Hospital.jpg",
+     "reason": "checked by hand: rooftop view at dusk over Majadahonda; mostly sky and park"
+    }
+   ],
+   "matches": [
+    {
+     "id": "281371",
+     "wikidata": "Q87762133",
+     "label": "Hospital HM Vallés",
+     "image": null
+    },
+    {
+     "id": "280745",
+     "wikidata": "Q5902957",
+     "label": "Hospital Universitario Príncipe de Asturias",
+     "image": "Alcalá de Henares (RPS 04-09-2011) Hospital Universitario Príncipe de Asturias.jpg"
+    },
+    {
+     "id": "281124",
+     "wikidata": "Q87762118",
+     "label": "Hospital Quironsalud Sur",
+     "image": null
+    },
+    {
+     "id": "281071",
+     "wikidata": "Q18350077",
+     "label": "Hospital Universitario Fundación Alcorcón",
+     "image": "Alcorcón - Hospital Universitario Fundación Alcorcón 2.jpg"
+    },
+    {
+     "id": "281292",
+     "wikidata": "Q5903194",
+     "label": "Hospital Universitario del Tajo",
+     "image": "Hospital del Tajo, Aranjuez.jpg"
+    },
+    {
+     "id": "281281",
+     "wikidata": "Q43896420",
+     "label": "Hospital Universitario del Sureste",
+     "image": "Hospital del Sureste, 2012.jpg"
+    },
+    {
+     "id": "281090",
+     "wikidata": "Q87762114",
+     "label": "Hospital Universitario Hm Montepríncipe",
+     "image": null
+    },
+    {
+     "id": "281180",
+     "wikidata": "Q87762121",
+     "label": "Hospital los Madroños",
+     "image": null
+    },
+    {
+     "id": "280761",
+     "wikidata": "Q87762066",
+     "label": "Hospital de la Fuenfría",
+     "image": "Atervaperdines Sierte de la Fuenfría.jpg"
+    },
+    {
+     "id": "280777",
+     "wikidata": "Q28733411",
+     "label": "Hh. Hh. Sgdo. C. de Jesús. Complejo Asistencial Benito Menni",
+     "image": "Ciempozuelos - Complejo Asistencial Benito Menni (Hermanas Hospitalarias del Sagrado Corazón de Jesús) 5.JPG"
+    },
+    {
+     "id": "281359",
+     "wikidata": "Q87762131",
+     "label": "Hospital General de Villalba",
+     "image": null
+    },
+    {
+     "id": "281269",
+     "wikidata": "Q5903185",
+     "label": "Hospital Universitario del Henares",
+     "image": "Coslada (RPS 15-11-2012) Hospital del Henares.png"
+    },
+    {
+     "id": "281146",
+     "wikidata": "Q30253911",
+     "label": "Hospital Universitario de Fuenlabrada",
+     "image": null
+    },
+    {
+     "id": "280989",
+     "wikidata": "Q5903026",
+     "label": "Hospital Universitario de Getafe",
+     "image": "HospitalUniversitarioDeGetafeEn2013.JPG"
+    },
+    {
+     "id": "281326",
+     "wikidata": "Q87762128",
+     "label": "Casta Guadarrama",
+     "image": null
+    },
+    {
+     "id": "280800",
+     "wikidata": "Q28735075",
+     "label": "Hospital Guadarrama",
+     "image": "Guadarrama hospital02.jpg"
+    },
+    {
+     "id": "281438",
+     "wikidata": "Q87762140",
+     "label": "Hospital Universitario José Germain",
+     "image": "Leganés - Instituto Psiquiátrico José Germain 2.jpg"
+    },
+    {
+     "id": "280843",
+     "wikidata": "Q87762140",
+     "label": "Hospital Universitario José Germain",
+     "image": "Leganés - Instituto Psiquiátrico José Germain 2.jpg"
+    },
+    {
+     "id": "280838",
+     "wikidata": "Q30253926",
+     "label": "Hospital Universitario Severo Ochoa",
+     "image": "Hospital Severo Ochoa.JPG"
+    },
+    {
+     "id": "281393",
+     "wikidata": "Q87827947",
+     "label": "Clínica Universidad de Navarra (Madrid)",
+     "image": null
+    },
+    {
+     "id": "281247",
+     "wikidata": "Q87762127",
+     "label": "Vithas Madrid Pardo de Aravaca",
+     "image": null
+    },
+    {
+     "id": "281034",
+     "wikidata": "Q87762109",
+     "label": "Clínica Isadora",
+     "image": null
+    },
+    {
+     "id": "280395",
+     "wikidata": "Q87762035",
+     "label": "Clínica San Miguel",
+     "image": null
+    },
+    {
+     "id": "280339",
+     "wikidata": "Q5902892",
+     "label": "Hospital San Rafael",
+     "image": "Hospital San Rafael, Madrid.JPG"
+    },
+    {
+     "id": "280604",
+     "wikidata": "Q87762057",
+     "label": "Hospital Universitario la Zarzuela",
+     "image": null
+    },
+    {
+     "id": "280534",
+     "wikidata": "Q30280196",
+     "label": "Clínica la Luz, S.L.",
+     "image": null
+    },
+    {
+     "id": "280549",
+     "wikidata": "Q87762051",
+     "label": "Fuensanta S.L. (Clínica Fuensanta)",
+     "image": null
+    },
+    {
+     "id": "281225",
+     "wikidata": "Q43896419",
+     "label": "Hospital Universitario Madrid Sanchinarro",
+     "image": null
+    },
+    {
+     "id": "281049",
+     "wikidata": "Q87762110",
+     "label": "Hospital HLA Universitario Moncloa",
+     "image": null
+    },
+    {
+     "id": "280382",
+     "wikidata": "Q87798347",
+     "label": "Hospital San Francisco de Asís",
+     "image": null
+    },
+    {
+     "id": "280421",
+     "wikidata": "Q10946560",
+     "label": "Hospital Universitario Fundación Jiménez Díaz",
+     "image": "Fundación Jiménez Díaz.jpg"
+    },
+    {
+     "id": "281179",
+     "wikidata": "Q64442889",
+     "label": "Hospital la Moraleja",
+     "image": null
+    },
+    {
+     "id": "280565",
+     "wikidata": "Q30254225",
+     "label": "Hospital Ruber Internacional",
+     "image": null
+    },
+    {
+     "id": "280587",
+     "wikidata": "Q87762055",
+     "label": "Clínica la Milagrosa",
+     "image": null
+    },
+    {
+     "id": "280360",
+     "wikidata": "Q87762029",
+     "label": "Hospital Beata María Ana de Hermanas Hospitalarias",
+     "image": null
+    },
+    {
+     "id": "281214",
+     "wikidata": "Q87762124",
+     "label": "Hospital Centro de Cuidados Laguna",
+     "image": null
+    },
+    {
+     "id": "281087",
+     "wikidata": "Q87762112",
+     "label": "Clínica CEMTRO",
+     "image": null
+    },
+    {
+     "id": "280679",
+     "wikidata": "Q87762065",
+     "label": "Sanatorio Esquerdo, S.A.",
+     "image": null
+    },
+    {
+     "id": "280626",
+     "wikidata": "Q87762059",
+     "label": "Hospital Universitario Hm Nuevo Belen",
+     "image": null
+    },
+    {
+     "id": "280552",
+     "wikidata": "Q87762054",
+     "label": "Hospital Ruber Juan Bravo 49",
+     "image": null
+    },
+    {
+     "id": "280474",
+     "wikidata": "Q87762048",
+     "label": "Hospital Vithas Nuestra Señora de América",
+     "image": null
+    },
+    {
+     "id": "280455",
+     "wikidata": "Q87762046",
+     "label": "Hospital Hestia Madrid",
+     "image": null
+    },
+    {
+     "id": "280442",
+     "wikidata": "Q87762042",
+     "label": "Hospital Virgen del Mar (Madrid)",
+     "image": null
+    },
+    {
+     "id": "280357",
+     "wikidata": "Q87762027",
+     "label": "Hospital Quirónsalud San José",
+     "image": "Hospital Quirónsalud San José.jpg"
+    },
+    {
+     "id": "280344",
+     "wikidata": "Q87762026",
+     "label": "Hospital de la Venerable Orden Tercera de San Francisco de Asís",
+     "image": null
+    },
+    {
+     "id": "280416",
+     "wikidata": "Q87762040",
+     "label": "Fundación Instituto San José",
+     "image": null
+    },
+    {
+     "id": "280323",
+     "wikidata": "Q87762024",
+     "label": "Sanatorio Nuestra Señora del Rosario",
+     "image": null
+    },
+    {
+     "id": "280724",
+     "wikidata": "Q5902561",
+     "label": "Hospital Central de la Defensa Gómez Ulla",
+     "image": "HCD GOMEZ ULLA.jpg"
+    },
+    {
+     "id": "280127",
+     "wikidata": "Q29024890",
+     "label": "edificio del Hospital Universitario de la Princesa",
+     "image": "Hospital de la Princesa (Madrid) 01.jpg"
+    },
+    {
+     "id": "280035",
+     "wikidata": "Q5902531",
+     "label": "Hospital Universitario 12 de Octubre",
+     "image": "El hospital público 12 de Octubre, entre los 50 mejores del mundo según una clasificación internacional.jpeg"
+    },
+    {
+     "id": "280029",
+     "wikidata": "Q5902966",
+     "label": "Hospital Universitario Ramón y Cajal",
+     "image": "Hospital Ramón y Cajal (Madrid, España) 02.jpg"
+    },
+    {
+     "id": "280133",
+     "wikidata": "Q5902707",
+     "label": "Hospital Infantil Universitario Niño Jesús",
+     "image": "Hospital del Niño Jesús (Madrid) 01.jpg"
+    },
+    {
+     "id": "280112",
+     "wikidata": "Q64442995",
+     "label": "Hospital de Santa Cristina, Madrid",
+     "image": null
+    },
+    {
+     "id": "280072",
+     "wikidata": "Q6673106",
+     "label": "Hospital Clínico San Carlos",
+     "image": "Hospital Clínico San Carlos (Madrid) 02.jpg"
+    },
+    {
+     "id": "280014",
+     "wikidata": "Q5902951",
+     "label": "Hospital Universitario la Paz",
+     "image": "Hospital Universitario La Paz (Madrid) 01.jpg"
+    },
+    {
+     "id": "280210",
+     "wikidata": "Q87762013",
+     "label": "Hospital Cantoblanco",
+     "image": null
+    },
+    {
+     "id": "280164",
+     "wikidata": "Q18200522",
+     "label": "Hospital Carlos III",
+     "image": "Hospital Carlos III.JPG"
+    },
+    {
+     "id": "280259",
+     "wikidata": "Q87762018",
+     "label": "Instituto Provincial de Rehabilitación",
+     "image": null
+    },
+    {
+     "id": "281445",
+     "wikidata": "Q103190997",
+     "label": "Hospital Enfermera Isabel Zendal",
+     "image": "Hospital enfermera Isabel Zendal -de cerca.png"
+    },
+    {
+     "id": "280091",
+     "wikidata": "Q30254322",
+     "label": "Hospital Virgen de la Torre",
+     "image": null
+    },
+    {
+     "id": "280148",
+     "wikidata": "Q12176313",
+     "label": "Hospital Central de la Cruz Roja San José y Santa Adela",
+     "image": "Central de la Cruz Roja de San José y Santa Adela, Madrid.JPG"
+    },
+    {
+     "id": "281360",
+     "wikidata": "Q43896364",
+     "label": "Hm Universitario Puerta del Sur",
+     "image": null
+    },
+    {
+     "id": "280894",
+     "wikidata": "Q120484359",
+     "label": "Hospital Universitario de Móstoles",
+     "image": "Hospital de Móstoles.jpg"
+    },
+    {
+     "id": "281348",
+     "wikidata": "Q30260497",
+     "label": "Hospital Rey Juan Carlos",
+     "image": "Móstoles - Hospital Universitario Rey Juan Carlos 13.jpg"
+    },
+    {
+     "id": "281304",
+     "wikidata": "Q30253923",
+     "label": "Hospital Universitario Infanta Cristina",
+     "image": null
+    },
+    {
+     "id": "281203",
+     "wikidata": "Q43896436",
+     "label": "Hospital Quirónsalud Madrid",
+     "image": null
+    },
+    {
+     "id": "280920",
+     "wikidata": "Q5688366",
+     "label": "Hospital El Escorial",
+     "image": null
+    },
+    {
+     "id": "281258",
+     "wikidata": "Q2892251",
+     "label": "Hospital Universitario Infanta Sofía",
+     "image": "Hospital y Metro Infanta Sofía-SSReyes.jpg"
+    },
+    {
+     "id": "281337",
+     "wikidata": "Q5903127",
+     "label": "Hospital Universitario de Torrejón",
+     "image": "Torrejón de Ardoz (RPS 06-12-2019) Hospital de Torrejón, entrada principal.png"
+    },
+    {
+     "id": "281157",
+     "wikidata": "Q5903040",
+     "label": "Hospital Universitario Hm Torrelodones",
+     "image": "Hospital de Madrid Torrelodones.jpg"
+    },
+    {
+     "id": "281236",
+     "wikidata": "Q5902699",
+     "label": "Hospital Universitario Infanta Elena",
+     "image": "Hospital Universitario Infanta Elena, Valdemoro 02.jpg"
+    }
+   ]
+  },
+  "activity": {
+   "source": "https://www.comunidad.madrid/servicios/salud/memorias-e-informes-servicio-madrileno-salud",
+   "year": 2024,
+   "hospitalsWithReport": 34,
+   "withFirstVisitsBySpecialty": 30,
+   "withDischarges": 34,
+   "withIndustryStudies": 23,
+   "missing": {
+    "firstVisits": [
+     "Hospital Asociado Universitario Guadarrama",
+     "Hospital de La Fuenfría",
+     "Hospital Universitario Dr. Rodriguez Lafora",
+     "Hospital Asociado Universitario Virgen de la Poveda",
+     "Hospital Enfermera Isabel Zendal"
+    ],
+    "discharges": [],
+    "industryStudies": [
+     "Hospital Central de la Cruz Roja",
+     "Hospital Central de la Defensa \"Gómez Ulla\"",
+     "Hospital de La Fuenfría",
+     "Hospital Universitario Dr. Rodriguez Lafora",
+     "Hospital El Escorial",
+     "Hospital Universitario de Fuenlabrada",
+     "Hospital Universitario de Getafe",
+     "Hospital Universitario La Paz, H Carlos III y H Cantoblanco",
+     "Hospital Universitario Puerta de Hierro Majadahonda",
+     "Hospital Universitario Santa Cristina",
+     "Hospital Asociado Universitario Virgen de la Poveda"
+    ]
+   }
+  },
+  "ceim": {
+   "source": "https://reec.aemps.es/reec-services (ceimbyccaa?ccaa=13, ceimstrabajactis, ceimsevaluacionrapida)",
+   "checkedOn": "2026-10-05",
+   "madridCommittees": 18,
+   "withCeim": 91,
+   "sourced": 28,
+   "defaultInferred": 63,
+   "byMapping": {
+    "own": 25,
+    "complex": 3,
+    "default": 63
+   },
+   "committeesNotMatchedToAHospital": [],
+   "mailboxesDropped": 0
+  }
+ },
+ "trialsBySource": {
+  "ctgov+reec": 5789,
+  "ctgov": 2188,
+  "reec": 3088
+ },
+ "reec": {
+  "madrid_site_rows": 22427,
+  "matched": 21866,
+  "unmatched": 420,
+  "non_hospital": 141,
+  "trials_without_attributable_site": 114,
+  "missing_detail": 0,
+  "sites_added_from_reec": 5251,
+  "merged_by_registry_id": 4426,
+  "status_from_reec": 76,
+  "merged_via_ctis_link": 344,
+  "merged_known_link": 3,
+  "merged_by_title": 1020,
+  "reec_only_trials": 3088,
+  "reec_duplicates_collapsed": 1
+ },
+ "reecTopUnmatched": [
+  [
+   "Futuremeds Spain S.L. [ORG-100050324]",
+   52
+  ],
+  [
+   "Grupo Dermatologico Y Estetico Pedro Jaen S.A. [ORG-100043486]",
+   19
+  ],
+  [
+   "Accellacare Espana S.L. [ORG-100045678]",
+   16
+  ],
+  [
+   "Icr Medical S.L. [ORG-100047288]",
+   14
+  ],
+  [
+   "Instituto De Investigaciones Del Sueno S.L. [ORG-100046692]",
+   13
+  ],
+  [
+   "IVI Madrid [ ]",
+   12
+  ],
+  [
+   "Hospital Blua Sanitas Valdebebas [ORG-100055326]",
+   12
+  ],
+  [
+   "Clinica Baviera S.A. [ORG-100044889]",
+   10
+  ],
+  [
+   "Instituto Palacios [ ]",
+   9
+  ],
+  [
+   "Instituto de Investigaciones del Sueño [ ]",
+   7
+  ],
+  [
+   "Ivi Madrid S.L. [ORG-100014567]",
+   6
+  ],
+  [
+   "Instituto Multidisciplinar De Oncologia S.A. [ORG-100051865]",
+   6
+  ],
+  [
+   "Clinica Baviera [ ]",
+   5
+  ],
+  [
+   "Clinica Palacios Madrid S.L. [ORG-100046807]",
+   5
+  ],
+  [
+   "Facultad de Odontología. Universidad Complutense de Madrid [ ]",
+   5
+  ],
+  [
+   "Clínica Baviera [ ]",
+   4
+  ],
+  [
+   "Ginefiv S.L. [ORG-100042870]",
+   4
+  ],
+  [
+   "Complutense University Of Madrid [ORG-100028628]",
+   4
+  ],
+  [
+   "Fundacion Vithas [ORG-100048224]",
+   4
+  ],
+  [
+   "Hospital de día Pio XII [ ]",
+   3
+  ],
+  [
+   "Clínica Ginefiv Madrid [ ]",
+   3
+  ],
+  [
+   "Instituto Bernabeu Madrid [ ]",
+   3
+  ],
+  [
+   "MeDiNova-Centro CETA-Leganes [ ]",
+   3
+  ],
+  [
+   "Instituto Palacios Salud y Medicina de la Mujer [ ]",
+   3
+  ],
+  [
+   "Centro Sanitario Sandoval [ ]",
+   3
+  ],
+  [
+   "INSTITUTO DE INVESTIGACIONES DEL SUEÑO [ ]",
+   3
+  ],
+  [
+   "Hm Hospitales 1989 S.A. [ORG-100047800]",
+   3
+  ],
+  [
+   "Hospital Vithas Madrid Arturo Soria [ ]",
+   3
+  ],
+  [
+   "Clínica Subiza [ ]",
+   3
+  ],
+  [
+   "Clínica de asma y alergia Dres. Ojeda [ORL-000009703]",
+   3
+  ],
+  [
+   "CETA Leganés [ ]",
+   2
+  ],
+  [
+   "Medinova Investigación y Desarrollo S.L. [ ]",
+   2
+  ],
+  [
+   "Centro Medico Instituto Palacios Salud de la Mujer [ ]",
+   2
+  ],
+  [
+   "Vissum Madrid [NR]",
+   2
+  ],
+  [
+   "Centro de Especialidades el Arroyo [ ]",
+   2
+  ],
+  [
+   "Universidad Complutense de Madrid [ ]",
+   2
+  ],
+  [
+   "Clínica Oftalvist Moncloa [ ]",
+   2
+  ],
+  [
+   "Policlínico HM Gabinete Velázquez [ ]",
+   2
+  ],
+  [
+   "Vissum Madrid [ ]",
+   2
+  ],
+  [
+   "Clínica Elgeadi [ ]",
+   2
+  ]
+ ],
+ "mergedByTitle": [
+  [
+   "2026-526139-20-00",
+   "NCT07771465"
+  ],
+  [
+   "2026-526116-36-00",
+   "NCT06270706"
+  ],
+  [
+   "2026-525933-22-00",
+   "NCT07507500"
+  ],
+  [
+   "2026-525922-39-00",
+   "NCT07577843"
+  ],
+  [
+   "2026-525566-21-00",
+   "NCT07701486"
+  ],
+  [
+   "2025-525088-34-00",
+   "NCT07491445"
+  ],
+  [
+   "2025-525036-34-00",
+   "NCT07109726"
+  ],
+  [
+   "2025-524816-13-00",
+   "NCT07586202"
+  ],
+  [
+   "2025-524575-22-00",
+   "NCT07440225"
+  ],
+  [
+   "2025-524542-10-00",
+   "NCT05548296"
+  ],
+  [
+   "2025-524322-18-00",
+   "NCT07067463"
+  ],
+  [
+   "2025-524209-34-00",
+   "NCT07286032"
+  ],
+  [
+   "2025-523923-22-00",
+   "NCT07359820"
+  ],
+  [
+   "2025-523815-12-00",
+   "NCT07518186"
+  ],
+  [
+   "2025-523686-15-00",
+   "NCT06784193"
+  ],
+  [
+   "2025-523630-59-00",
+   "NCT06638502"
+  ],
+  [
+   "2025-523576-23-00",
+   "NCT07361497"
+  ],
+  [
+   "2025-523533-25-00",
+   "NCT07112196"
+  ],
+  [
+   "2025-523495-23-00",
+   "NCT07252232"
+  ],
+  [
+   "2025-523431-19-00",
+   "NCT07194382"
+  ],
+  [
+   "2025-523238-17-00",
+   "NCT07507760"
+  ],
+  [
+   "2025-523160-20-00",
+   "NCT06823167"
+  ],
+  [
+   "2025-523158-15-00",
+   "NCT07704658"
+  ],
+  [
+   "2025-523087-20-00",
+   "NCT07587242"
+  ],
+  [
+   "2025-523086-22-00",
+   "NCT07204340"
+  ],
+  [
+   "2025-523083-21-00",
+   "NCT06982521"
+  ],
+  [
+   "2025-522946-37-00",
+   "NCT06950385"
+  ],
+  [
+   "2025-522878-36-00",
+   "NCT07256392"
+  ],
+  [
+   "2025-522835-32-00",
+   "NCT07215273"
+  ],
+  [
+   "2025-522818-23-00",
+   "NCT07218146"
+  ],
+  [
+   "2025-522775-29-00",
+   "NCT07172516"
+  ],
+  [
+   "2025-522774-36-00",
+   "NCT06898450"
+  ],
+  [
+   "2025-522701-38-00",
+   "NCT07403825"
+  ],
+  [
+   "2025-522680-14-00",
+   "NCT07138196"
+  ],
+  [
+   "2025-522553-19-00",
+   "NCT07210723"
+  ],
+  [
+   "2025-522552-20-00",
+   "NCT05066217"
+  ],
+  [
+   "2025-522532-14-00",
+   "NCT07519655"
+  ],
+  [
+   "2025-522523-96-00",
+   "NCT07192471"
+  ],
+  [
+   "2025-522440-41-00",
+   "NCT07287644"
+  ],
+  [
+   "2025-522421-36-00",
+   "NCT07476859"
+  ],
+  [
+   "2025-522338-30-00",
+   "NCT07186101"
+  ],
+  [
+   "2025-522288-13-00",
+   "NCT07203053"
+  ],
+  [
+   "2025-522263-14-00",
+   "NCT07378644"
+  ],
+  [
+   "2025-522074-37-00",
+   "NCT07175038"
+  ],
+  [
+   "2025-522015-42-00",
+   "NCT07454837"
+  ],
+  [
+   "2025-522012-16-00",
+   "NCT07007559"
+  ],
+  [
+   "2025-521903-28-00",
+   "NCT07387367"
+  ],
+  [
+   "2025-521878-33-00",
+   "NCT06996236"
+  ],
+  [
+   "2025-521849-25-00",
+   "NCT07124078"
+  ],
+  [
+   "2025-521816-20-00",
+   "NCT07559175"
+  ],
+  [
+   "2025-521756-39-00",
+   "NCT07206225"
+  ],
+  [
+   "2025-521707-48-00",
+   "NCT07094113"
+  ],
+  [
+   "2025-521697-34-00",
+   "NCT07003919"
+  ],
+  [
+   "2025-521624-30-00",
+   "NCT07105488"
+  ],
+  [
+   "2025-521590-13-00",
+   "NCT07499232"
+  ],
+  [
+   "2025-521480-12-00",
+   "NCT07038369"
+  ],
+  [
+   "2025-521476-65-00",
+   "NCT07004049"
+  ],
+  [
+   "2025-521315-39-00",
+   "NCT07047703"
+  ],
+  [
+   "2025-521277-14-00",
+   "NCT06995677"
+  ],
+  [
+   "2025-521244-38-00",
+   "NCT06904261"
+  ],
+  [
+   "2025-521117-88-00",
+   "NCT07293260"
+  ],
+  [
+   "2025-521115-40-00",
+   "NCT06933329"
+  ],
+  [
+   "2025-520854-12-00",
+   "NCT07203664"
+  ],
+  [
+   "2025-520688-42-00",
+   "NCT07142291"
+  ],
+  [
+   "2025-520624-25-00",
+   "NCT05416307"
+  ],
+  [
+   "2025-520557-36-00",
+   "NCT06220864"
+  ],
+  [
+   "2025-520555-89-00",
+   "NCT07213674"
+  ],
+  [
+   "2024-520388-15-00",
+   "NCT04337450"
+  ],
+  [
+   "2024-520364-34-00",
+   "NCT07301034"
+  ],
+  [
+   "2024-520331-33-00",
+   "NCT06842355"
+  ],
+  [
+   "2024-520218-23-00",
+   "NCT07365332"
+  ],
+  [
+   "2024-520109-37-00",
+   "NCT06892288"
+  ],
+  [
+   "2024-520050-38-00",
+   "NCT07005128"
+  ],
+  [
+   "2024-520027-88-00",
+   "NCT07195227"
+  ],
+  [
+   "2024-519969-21-00",
+   "NCT05398679"
+  ],
+  [
+   "2024-519901-36-00",
+   "NCT06931717"
+  ],
+  [
+   "2024-519893-38-00",
+   "NCT05146440"
+  ],
+  [
+   "2024-519727-18-00",
+   "NCT06561685"
+  ],
+  [
+   "2024-519623-23-00",
+   "NCT06568627"
+  ],
+  [
+   "2024-519590-19-00",
+   "NCT06948448"
+  ],
+  [
+   "2024-519575-26-00",
+   "NCT06794554"
+  ],
+  [
+   "2024-519554-37-00",
+   "NCT06971731"
+  ],
+  [
+   "2024-519551-29-00",
+   "NCT05691244"
+  ],
+  [
+   "2024-519498-20-00",
+   "NCT04068597"
+  ],
+  [
+   "2024-519444-33-00",
+   "NCT07022483"
+  ],
+  [
+   "2024-519275-26-00",
+   "NCT04687761"
+  ],
+  [
+   "2024-519194-19-00",
+   "NCT05908409"
+  ],
+  [
+   "2024-519188-17-00",
+   "NCT06253871"
+  ],
+  [
+   "2024-518951-52-00",
+   "NCT06815471"
+  ],
+  [
+   "2024-518875-73-00",
+   "NCT04826692"
+  ],
+  [
+   "2024-518844-20-00",
+   "NCT05658575"
+  ],
+  [
+   "2024-518710-11-00",
+   "NCT05821556"
+  ],
+  [
+   "2024-518531-10-00",
+   "NCT05329792"
+  ],
+  [
+   "2024-518508-31-00",
+   "NCT03950076"
+  ],
+  [
+   "2024-518434-83-01",
+   "NCT05313620"
+  ],
+  [
+   "2024-518407-22-00",
+   "NCT06017362"
+  ],
+  [
+   "2024-518376-31-00",
+   "NCT05692739"
+  ],
+  [
+   "2024-518365-10-00",
+   "NCT06793215"
+  ],
+  [
+   "2024-518304-53-00",
+   "NCT05028348"
+  ],
+  [
+   "2024-518289-28-00",
+   "NCT06951217"
+  ],
+  [
+   "2024-518266-27-00",
+   "NCT04860960"
+  ],
+  [
+   "2024-518205-17-00",
+   "NCT03721744"
+  ],
+  [
+   "2024-518199-30-00",
+   "NCT02275286"
+  ],
+  [
+   "2024-518154-16-00",
+   "NCT06881784"
+  ],
+  [
+   "2024-518131-11-02",
+   "NCT07821333"
+  ],
+  [
+   "2024-517856-36-00",
+   "NCT02273375"
+  ],
+  [
+   "2024-517706-29-00",
+   "NCT06673056"
+  ],
+  [
+   "2024-517705-93-00",
+   "NCT04253145"
+  ],
+  [
+   "2024-517666-41-00",
+   "NCT05781217"
+  ],
+  [
+   "2024-517660-27-00",
+   "NCT04762069"
+  ],
+  [
+   "2024-517631-43-00",
+   "NCT06578533"
+  ],
+  [
+   "2024-517599-39-00",
+   "NCT07461779"
+  ],
+  [
+   "2024-517528-20-00",
+   "NCT04950075"
+  ],
+  [
+   "2024-517331-48-00",
+   "NCT04194775"
+  ],
+  [
+   "2024-517290-24-00",
+   "NCT03070392"
+  ],
+  [
+   "2024-517251-12-00",
+   "NCT04338399"
+  ],
+  [
+   "2024-517121-10-00",
+   "NCT06641466"
+  ],
+  [
+   "2024-517020-18-00",
+   "NCT07045909"
+  ],
+  [
+   "2024-517008-12-00",
+   "NCT05558319"
+  ],
+  [
+   "2024-516986-35-00",
+   "NCT04625270"
+  ],
+  [
+   "2024-516982-35-00",
+   "NCT06819007"
+  ],
+  [
+   "2024-516914-39-00",
+   "NCT04674683"
+  ],
+  [
+   "2024-516908-42-00",
+   "NCT02415413"
+  ],
+  [
+   "2024-516804-40-00",
+   "NCT07290257"
+  ],
+  [
+   "2024-516754-22-00",
+   "NCT04816604"
+  ],
+  [
+   "2024-516733-12-00",
+   "NCT06607185"
+  ],
+  [
+   "2024-516728-32-00",
+   "NCT04910685"
+  ],
+  [
+   "2024-516722-59-00",
+   "NCT06977737"
+  ],
+  [
+   "2024-516720-34-00",
+   "NCT05208060"
+  ],
+  [
+   "2024-516672-16-00",
+   "NCT05441488"
+  ],
+  [
+   "2024-516654-22-00",
+   "NCT07037459"
+  ],
+  [
+   "2024-516652-18-00",
+   "NCT07037433"
+  ],
+  [
+   "2024-516633-12-00",
+   "NCT06532006"
+  ],
+  [
+   "2024-516604-41-00",
+   "NCT04919811"
+  ],
+  [
+   "2024-516598-60-00",
+   "NCT03906071"
+  ],
+  [
+   "2024-516532-97-00",
+   "NCT04036682"
+  ],
+  [
+   "2024-516471-33-00",
+   "NCT07211685"
+  ],
+  [
+   "2024-516405-23-00",
+   "NCT04229979"
+  ],
+  [
+   "2024-516370-30-00",
+   "NCT04762602"
+  ],
+  [
+   "2024-516369-36-00",
+   "NCT04764474"
+  ],
+  [
+   "2024-516350-22-00",
+   "NCT04901936"
+  ],
+  [
+   "2024-516341-39-00",
+   "NCT04704323"
+  ],
+  [
+   "2024-516322-60-00",
+   "NCT06612203"
+  ],
+  [
+   "2024-516296-32-00",
+   "NCT03502668"
+  ],
+  [
+   "2024-516295-14-00",
+   "NCT06928142"
+  ],
+  [
+   "2024-516166-11-00",
+   "NCT02584478"
+  ],
+  [
+   "2024-516149-38-00",
+   "NCT04378647"
+  ],
+  [
+   "2024-516064-28-00",
+   "NCT05263999"
+  ],
+  [
+   "2024-516063-89-00",
+   "NCT06625320"
+  ],
+  [
+   "2024-516051-40-00",
+   "NCT06745323"
+  ],
+  [
+   "2024-515953-52-00",
+   "NCT03165734"
+  ],
+  [
+   "2024-515921-27-00",
+   "NCT04745234"
+  ],
+  [
+   "2024-515903-21-00",
+   "NCT06898957"
+  ],
+  [
+   "2024-515864-30-00",
+   "NCT05694260"
+  ],
+  [
+   "2024-515830-34-00",
+   "NCT04918173"
+  ],
+  [
+   "2024-515813-17-00",
+   "NCT05847517"
+  ],
+  [
+   "2024-515702-63-00",
+   "NCT06248619"
+  ],
+  [
+   "2024-515561-34-01",
+   "NCT06571149"
+  ],
+  [
+   "2024-515518-41-00",
+   "NCT06672523"
+  ],
+  [
+   "2024-515485-14-00",
+   "NCT04867837"
+  ],
+  [
+   "2024-515448-22-00",
+   "NCT06680830"
+  ],
+  [
+   "2024-515394-10-00",
+   "NCT02611024"
+  ],
+  [
+   "2024-515368-29-00",
+   "NCT01272037"
+  ],
+  [
+   "2024-515240-24-00",
+   "NCT04293419"
+  ],
+  [
+   "2024-515172-12-00",
+   "NCT06594393"
+  ],
+  [
+   "2024-515167-56-00",
+   "NCT04884139"
+  ],
+  [
+   "2024-515144-23-00",
+   "NCT06619587"
+  ],
+  [
+   "2024-515131-30-00",
+   "NCT05052255"
+  ],
+  [
+   "2024-515119-23-00",
+   "NCT03260023"
+  ],
+  [
+   "2024-515104-39-00",
+   "NCT05819866"
+  ],
+  [
+   "2024-515069-33-00",
+   "NCT05181592"
+  ],
+  [
+   "2024-515063-66-00",
+   "NCT04866654"
+  ],
+  [
+   "2024-515020-36-00",
+   "NCT06265727"
+  ],
+  [
+   "2024-514934-19-00",
+   "NCT04967664"
+  ],
+  [
+   "2024-514905-79-00",
+   "NCT04888312"
+  ],
+  [
+   "2024-514779-16-00",
+   "NCT06321601"
+  ],
+  [
+   "2024-514776-40-00",
+   "NCT03277924"
+  ],
+  [
+   "2024-514714-12-00",
+   "NCT05254171"
+  ],
+  [
+   "2024-514604-14-00",
+   "NCT04186013"
+  ],
+  [
+   "2024-514570-43-00",
+   "NCT04987203"
+  ],
+  [
+   "2024-514542-37-00",
+   "NCT03175224"
+  ],
+  [
+   "2024-514497-41-00",
+   "NCT05217628"
+  ],
+  [
+   "2024-514467-26-00",
+   "NCT04655118"
+  ],
+  [
+   "2024-514449-12-00",
+   "NCT05276063"
+  ],
+  [
+   "2024-514333-37-00",
+   "NCT06717126"
+  ],
+  [
+   "2024-514309-73-00",
+   "NCT03173248"
+  ],
+  [
+   "2024-514266-39-00",
+   "NCT05384626"
+  ],
+  [
+   "2024-514206-31-00",
+   "NCT04358237"
+  ],
+  [
+   "2024-514110-12-00",
+   "NCT06401044"
+  ],
+  [
+   "2024-514016-26-00",
+   "NCT05849610"
+  ],
+  [
+   "2024-514010-12-00",
+   "NCT04740424"
+  ],
+  [
+   "2024-513912-89-00",
+   "NCT03662126"
+  ],
+  [
+   "2024-513857-55-00",
+   "NCT05145010"
+  ],
+  [
+   "2024-513738-39-00",
+   "NCT06478212"
+  ],
+  [
+   "2024-513618-37-00",
+   "NCT06664853"
+  ],
+  [
+   "2024-513601-31-00",
+   "NCT04778579"
+  ],
+  [
+   "2024-513559-34-00",
+   "NCT05153239"
+  ],
+  [
+   "2024-513540-29-00",
+   "NCT02947685"
+  ],
+  [
+   "2024-513422-38-00",
+   "NCT04483739"
+  ],
+  [
+   "2024-513384-15-00",
+   "NCT06602193"
+  ],
+  [
+   "2024-513366-18-00",
+   "NCT06640192"
+  ],
+  [
+   "2024-513356-15-00",
+   "NCT06514612"
+  ],
+  [
+   "2024-513313-13-00",
+   "NCT04278768"
+  ],
+  [
+   "2024-513285-19-00",
+   "NCT06026410"
+  ],
+  [
+   "2024-513252-15-00",
+   "NCT04984837"
+  ],
+  [
+   "2024-513230-38-00",
+   "NCT05092360"
+  ],
+  [
+   "2024-513229-22-00",
+   "NCT04830124"
+  ],
+  [
+   "2024-513227-16-00",
+   "NCT04573478"
+  ],
+  [
+   "2024-513174-22-00",
+   "NCT06659445"
+  ],
+  [
+   "2024-513123-17-00",
+   "NCT04798755"
+  ],
+  [
+   "2024-513122-27-00",
+   "NCT06731478"
+  ],
+  [
+   "2024-513098-31-00",
+   "NCT06534437"
+  ],
+  [
+   "2024-513087-26-00",
+   "NCT05899608"
+  ],
+  [
+   "2024-513077-48-00",
+   "NCT06388733"
+  ],
+  [
+   "2024-513062-19-00",
+   "NCT03997474"
+  ],
+  [
+   "2024-513060-26-00",
+   "NCT04032847"
+  ],
+  [
+   "2024-513056-15-00",
+   "NCT05835609"
+  ],
+  [
+   "2024-513032-14-00",
+   "NCT03967223"
+  ],
+  [
+   "2024-513030-38-00",
+   "NCT05101187"
+  ],
+  [
+   "2024-513023-17-00",
+   "NCT04769895"
+  ],
+  [
+   "2024-512972-36-00",
+   "NCT03571568"
+  ],
+  [
+   "2024-512945-18-00",
+   "NCT04770545"
+  ],
+  [
+   "2024-512900-20-00",
+   "NCT04752722"
+  ],
+  [
+   "2024-512847-21-00",
+   "NCT04044768"
+  ],
+  [
+   "2024-512835-53-00",
+   "NCT07254754"
+  ],
+  [
+   "2024-512831-66-00",
+   "NCT06441331"
+  ],
+  [
+   "2024-512828-12-00",
+   "NCT06713135"
+  ],
+  [
+   "2024-512789-32-00",
+   "NCT04650984"
+  ],
+  [
+   "2024-512717-41-00",
+   "NCT05011058"
+  ],
+  [
+   "2024-512707-40-00",
+   "NCT06564311"
+  ],
+  [
+   "2024-512704-20-00",
+   "NCT04733183"
+  ],
+  [
+   "2024-512696-12-00",
+   "NCT06409936"
+  ],
+  [
+   "2024-512659-19-00",
+   "NCT06697301"
+  ],
+  [
+   "2024-512652-38-00",
+   "NCT04050436"
+  ],
+  [
+   "2024-512622-29-00",
+   "NCT04526106"
+  ],
+  [
+   "2024-512619-28-00",
+   "NCT04365868"
+  ],
+  [
+   "2024-512606-25-00",
+   "NCT03093116"
+  ],
+  [
+   "2024-512575-12-00",
+   "NCT04725474"
+  ],
+  [
+   "2024-512568-72-00",
+   "NCT05024773"
+  ],
+  [
+   "2024-512515-45-01",
+   "NCT06343402"
+  ],
+  [
+   "2024-512514-18-00",
+   "NCT04280003"
+  ],
+  [
+   "2024-512423-36-00",
+   "NCT06263231"
+  ],
+  [
+   "2024-512421-92-00",
+   "NCT06667960"
+  ],
+  [
+   "2024-512412-22-00",
+   "NCT06389474"
+  ],
+  [
+   "2024-512390-27-00",
+   "NCT05737628"
+  ],
+  [
+   "2024-512380-32-00",
+   "NCT06560645"
+  ],
+  [
+   "2024-512360-55-00",
+   "NCT06486883"
+  ],
+  [
+   "2024-512227-36-00",
+   "NCT05060432"
+  ],
+  [
+   "2024-512194-27-01",
+   "NCT07185295"
+  ],
+  [
+   "2024-512177-27-01",
+   "NCT06545955"
+  ],
+  [
+   "2024-512171-12-00",
+   "NCT06657859"
+  ],
+  [
+   "2024-512138-13-00",
+   "NCT05601752"
+  ],
+  [
+   "2024-512127-36-00",
+   "NCT03974022"
+  ],
+  [
+   "2024-512108-20-00",
+   "NCT04708834"
+  ],
+  [
+   "2024-512029-10-00",
+   "NCT06510374"
+  ],
+  [
+   "2024-511999-32-00",
+   "NCT05109442"
+  ],
+  [
+   "2024-511953-23-00",
+   "NCT03246529"
+  ],
+  [
+   "2024-511951-16-00",
+   "NCT05549180"
+  ],
+  [
+   "2024-511948-42-00",
+   "NCT06530641"
+  ],
+  [
+   "2024-511940-20-00",
+   "NCT04006210"
+  ],
+  [
+   "2024-511927-32-00",
+   "NCT05147350"
+  ],
+  [
+   "2024-511875-14-00",
+   "NCT05340413"
+  ],
+  [
+   "2024-511838-12-00",
+   "NCT06598306"
+  ],
+  [
+   "2024-511801-51-00",
+   "NCT06422936"
+  ],
+  [
+   "2024-511798-31-00",
+   "NCT03600883"
+  ],
+  [
+   "2024-511793-71-00",
+   "NCT05118789"
+  ],
+  [
+   "2024-511755-18-00",
+   "NCT05178862"
+  ],
+  [
+   "2024-511719-40-00",
+   "NCT06423898"
+  ],
+  [
+   "2024-511610-20-00",
+   "NCT05189210"
+  ],
+  [
+   "2024-511561-10-00",
+   "NCT05077709"
+  ],
+  [
+   "2024-511548-19-00",
+   "NCT05462717"
+  ],
+  [
+   "2024-511542-39-00",
+   "NCT04250922"
+  ],
+  [
+   "2024-511535-97-00",
+   "NCT04624659"
+  ],
+  [
+   "2024-511534-12-00",
+   "NCT04657068"
+  ],
+  [
+   "2024-511520-13-00",
+   "NCT04105166"
+  ],
+  [
+   "2024-511457-22-00",
+   "NCT06645886"
+  ],
+  [
+   "2024-511453-22-00",
+   "NCT06507306"
+  ],
+  [
+   "2024-511404-17-00",
+   "NCT06346067"
+  ],
+  [
+   "2024-511346-39-00",
+   "NCT06723106"
+  ],
+  [
+   "2024-511316-25-00",
+   "NCT03869190"
+  ],
+  [
+   "2024-511292-15-00",
+   "NCT05660954"
+  ],
+  [
+   "2024-511290-30-00",
+   "NCT05673811"
+  ],
+  [
+   "2024-511236-27-00",
+   "NCT06618235"
+  ],
+  [
+   "2024-511212-24-00",
+   "NCT06631079"
+  ],
+  [
+   "2024-511166-36-00",
+   "NCT06846541"
+  ],
+  [
+   "2024-511136-27-00",
+   "NCT05611931"
+  ],
+  [
+   "2024-511066-36-00",
+   "NCT04973137"
+  ],
+  [
+   "2024-510995-18-00",
+   "NCT04794699"
+  ],
+  [
+   "2024-510877-67-00",
+   "NCT05809830"
+  ],
+  [
+   "2024-510812-64-00",
+   "NCT04919226"
+  ],
+  [
+   "2024-510753-10-00",
+   "NCT06527404"
+  ],
+  [
+   "2024-510655-36-00",
+   "NCT04180371"
+  ],
+  [
+   "2024-510627-20-00",
+   "NCT05500222"
+  ],
+  [
+   "2024-510626-89-00",
+   "NCT03900429"
+  ],
+  [
+   "2024-510584-37-00",
+   "NCT06559163"
+  ],
+  [
+   "2024-510581-17-00",
+   "NCT05598333"
+  ],
+  [
+   "2023-510509-17-00",
+   "NCT04067336"
+  ],
+  [
+   "2023-510444-21-00",
+   "NCT03049189"
+  ],
+  [
+   "2023-510390-33-00",
+   "NCT04595565"
+  ],
+  [
+   "2023-510389-28-00",
+   "NCT05018286"
+  ],
+  [
+   "2023-510366-28-00",
+   "NCT06355531"
+  ],
+  [
+   "2023-510109-16-00",
+   "NCT05947955"
+  ],
+  [
+   "2023-510021-16-00",
+   "NCT05817058"
+  ],
+  [
+   "2023-509996-18-00",
+   "NCT05018273"
+  ],
+  [
+   "2023-509845-10-00",
+   "NCT02932410"
+  ],
+  [
+   "2023-509781-37-00",
+   "NCT04561362"
+  ],
+  [
+   "2023-509750-58-00",
+   "NCT05210790"
+  ],
+  [
+   "2023-509723-41-01",
+   "NCT06709469"
+  ],
+  [
+   "2023-509716-29-00",
+   "NCT06328738"
+  ],
+  [
+   "2023-509644-10-00",
+   "NCT06173505"
+  ],
+  [
+   "2023-509638-20-00",
+   "NCT06425055"
+  ],
+  [
+   "2023-509566-38-00",
+   "NCT06324357"
+  ],
+  [
+   "2023-509485-38-00",
+   "NCT05661188"
+  ],
+  [
+   "2023-509469-19-00",
+   "NCT06539481"
+  ],
+  [
+   "2023-509406-30-00",
+   "NCT05002127"
+  ],
+  [
+   "2023-509396-16-00",
+   "NCT04691804"
+  ],
+  [
+   "2023-509340-10-00",
+   "NCT06472245"
+  ],
+  [
+   "2023-509305-68-00",
+   "NCT03683186"
+  ],
+  [
+   "2023-509304-16-00",
+   "NCT03626688"
+  ],
+  [
+   "2023-509254-58-00",
+   "NCT04669171"
+  ],
+  [
+   "2023-509220-17-00",
+   "NCT05898399"
+  ],
+  [
+   "2023-509215-81-00",
+   "NCT05131386"
+  ],
+  [
+   "2023-509155-14-00",
+   "NCT04569032"
+  ],
+  [
+   "2023-509077-23-00",
+   "NCT06193200"
+  ],
+  [
+   "2023-509067-24-01",
+   "NCT05363280"
+  ],
+  [
+   "2023-508959-39-00",
+   "NCT06588738"
+  ],
+  [
+   "2023-508945-41-00",
+   "NCT05063565"
+  ],
+  [
+   "2023-508853-13-00",
+   "NCT03410615"
+  ],
+  [
+   "2023-508827-10-00",
+   "NCT05296746"
+  ],
+  [
+   "2023-508819-23-00",
+   "NCT06291415"
+  ],
+  [
+   "2023-508818-42-00",
+   "NCT06073132"
+  ],
+  [
+   "2023-508808-38-00",
+   "NCT06402201"
+  ],
+  [
+   "2023-508738-32-00",
+   "NCT04733118"
+  ],
+  [
+   "2023-508735-31-00",
+   "NCT05557942"
+  ],
+  [
+   "2023-508734-34-00",
+   "NCT05036135"
+  ],
+  [
+   "2023-508730-34-00",
+   "NCT06162572"
+  ],
+  [
+   "2023-508637-14-00",
+   "NCT04478734"
+  ],
+  [
+   "2023-508612-29-00",
+   "NCT06264180"
+  ],
+  [
+   "2023-508587-29-00",
+   "NCT03363373"
+  ],
+  [
+   "2023-508511-23-00",
+   "NCT05021536"
+  ],
+  [
+   "2023-508507-20-00",
+   "NCT06127407"
+  ],
+  [
+   "2023-508497-28-00",
+   "NCT06504147"
+  ],
+  [
+   "2023-508458-25-00",
+   "NCT06181292"
+  ],
+  [
+   "2023-508454-26-00",
+   "NCT05225961"
+  ],
+  [
+   "2023-508442-18-00",
+   "NCT05294796"
+  ],
+  [
+   "2023-508435-31-00",
+   "NCT06239467"
+  ],
+  [
+   "2023-508429-29-00",
+   "NCT06329401"
+  ],
+  [
+   "2023-508359-38-00",
+   "NCT06430866"
+  ],
+  [
+   "2023-508307-21-00",
+   "NCT06366464"
+  ],
+  [
+   "2023-508306-15-00",
+   "NCT05531526"
+  ],
+  [
+   "2023-508259-38-00",
+   "NCT04833114"
+  ],
+  [
+   "2023-508258-24-00",
+   "NCT06180356"
+  ],
+  [
+   "2023-508248-23-00",
+   "NCT04849728"
+  ],
+  [
+   "2023-508204-38-00",
+   "NCT06072781"
+  ],
+  [
+   "2023-508194-89-00",
+   "NCT04931342"
+  ],
+  [
+   "2023-508178-27-00",
+   "NCT06128551"
+  ],
+  [
+   "2023-508139-29-00",
+   "NCT03715933"
+  ],
+  [
+   "2023-508104-38-00",
+   "NCT05327127"
+  ],
+  [
+   "2023-508001-25-00",
+   "NCT04710628"
+  ],
+  [
+   "2023-507914-28-00",
+   "NCT06161025"
+  ],
+  [
+   "2023-507853-13-00",
+   "NCT06598943"
+  ],
+  [
+   "2023-507803-76-00",
+   "NCT06072131"
+  ],
+  [
+   "2023-507738-26-00",
+   "NCT05573126"
+  ],
+  [
+   "2023-507717-94-00",
+   "NCT06745557"
+  ],
+  [
+   "2023-507698-16-00",
+   "NCT04965493"
+  ],
+  [
+   "2023-507697-40-00",
+   "NCT04666038"
+  ],
+  [
+   "2023-507695-52-00",
+   "NCT04662255"
+  ],
+  [
+   "2023-507692-21-00",
+   "NCT06371417"
+  ],
+  [
+   "2023-507684-19-00",
+   "NCT06319820"
+  ],
+  [
+   "2023-507677-18-00",
+   "NCT06163430"
+  ],
+  [
+   "2023-507655-30-00",
+   "NCT06439277"
+  ],
+  [
+   "2023-507634-24-00",
+   "NCT05093634"
+  ],
+  [
+   "2023-507589-22-00",
+   "NCT05544552"
+  ],
+  [
+   "2023-507516-12-00",
+   "NCT05945823"
+  ],
+  [
+   "2023-507498-16-00",
+   "NCT03677154"
+  ],
+  [
+   "2023-507261-25-00",
+   "NCT06331299"
+  ],
+  [
+   "2023-507233-19-00",
+   "NCT05248646"
+  ],
+  [
+   "2023-507149-27-00",
+   "NCT03937154"
+  ],
+  [
+   "2023-507146-91-00",
+   "NCT04768062"
+  ],
+  [
+   "2023-507097-41-01",
+   "NCT06095583"
+  ],
+  [
+   "2023-507093-40-00",
+   "NCT05037929"
+  ],
+  [
+   "2023-507073-18-00",
+   "NCT05895136"
+  ],
+  [
+   "2023-507015-35-00",
+   "NCT05952206"
+  ],
+  [
+   "2023-506948-17-00",
+   "NCT06073821"
+  ],
+  [
+   "2023-506872-29-00",
+   "NCT05744401"
+  ],
+  [
+   "2023-506841-52-00",
+   "NCT05067634"
+  ],
+  [
+   "2023-506820-10-00",
+   "NCT02500407"
+  ],
+  [
+   "2023-506759-51-00",
+   "NCT06043817"
+  ],
+  [
+   "2023-506686-66-01",
+   "NCT05987332"
+  ],
+  [
+   "2023-506680-34-00",
+   "NCT05243550"
+  ],
+  [
+   "2023-506616-41-00",
+   "NCT05219617"
+  ],
+  [
+   "2023-506541-39-00",
+   "NCT03319940"
+  ],
+  [
+   "2023-506539-14-00",
+   "NCT05983432"
+  ],
+  [
+   "2023-506425-12-00",
+   "NCT06153693"
+  ],
+  [
+   "2023-506285-31-00",
+   "NCT04250155"
+  ],
+  [
+   "2023-506250-20-00",
+   "NCT05964413"
+  ],
+  [
+   "2023-506185-31-00",
+   "NCT06097260"
+  ],
+  [
+   "2023-506165-62-00",
+   "NCT06366932"
+  ],
+  [
+   "2023-506038-65-00",
+   "NCT05954143"
+  ],
+  [
+   "2023-505985-28-01",
+   "NCT05962606"
+  ],
+  [
+   "2023-505975-54-00",
+   "NCT05232825"
+  ],
+  [
+   "2023-505911-19-00",
+   "NCT06191263"
+  ],
+  [
+   "2023-505910-10-00",
+   "NCT06268574"
+  ],
+  [
+   "2023-505898-32-00",
+   "NCT06190899"
+  ],
+  [
+   "2023-505893-14-00",
+   "NCT06122662"
+  ],
+  [
+   "2023-505816-39-00",
+   "NCT05805501"
+  ],
+  [
+   "2023-505737-26-00",
+   "NCT04629833"
+  ],
+  [
+   "2023-505606-42-00",
+   "NCT06064877"
+  ],
+  [
+   "2023-505497-14-00",
+   "NCT05003986"
+  ],
+  [
+   "2023-505479-56-00",
+   "NCT05512390"
+  ],
+  [
+   "2023-505436-35-00",
+   "NCT06284122"
+  ],
+  [
+   "2023-505385-28-00",
+   "NCT06236269"
+  ],
+  [
+   "2023-505316-37-00",
+   "NCT05928390"
+  ],
+  [
+   "2023-505296-72-00",
+   "NCT05964335"
+  ],
+  [
+   "2023-505292-73-00",
+   "NCT06274489"
+  ],
+  [
+   "2023-505222-34-00",
+   "NCT03533283"
+  ],
+  [
+   "2023-505211-21-00",
+   "NCT05775289"
+  ],
+  [
+   "2023-505204-34-00",
+   "NCT05544019"
+  ],
+  [
+   "2023-505185-28-00",
+   "NCT05169515"
+  ],
+  [
+   "2023-505167-36-00",
+   "NCT03696160"
+  ],
+  [
+   "2023-505160-12-00",
+   "NCT06514807"
+  ],
+  [
+   "2023-505122-34-00",
+   "NCT06095102"
+  ],
+  [
+   "2023-505121-14-00",
+   "NCT06143878"
+  ],
+  [
+   "2023-505107-24-00",
+   "NCT05074810"
+  ],
+  [
+   "2023-504915-34-00",
+   "NCT06878742"
+  ],
+  [
+   "2023-504845-30-00",
+   "NCT06923761"
+  ],
+  [
+   "2023-504835-42-00",
+   "NCT06017609"
+  ],
+  [
+   "2023-504799-94-00",
+   "NCT06077773"
+  ],
+  [
+   "2023-504724-25-00",
+   "NCT06479135"
+  ],
+  [
+   "2023-504660-41-00",
+   "NCT05050136"
+  ],
+  [
+   "2023-504647-14-00",
+   "NCT06544785"
+  ],
+  [
+   "2023-504639-42-00",
+   "NCT06234956"
+  ],
+  [
+   "2023-504630-22-00",
+   "NCT05652868"
+  ],
+  [
+   "2023-504545-31-00",
+   "NCT04553692"
+  ],
+  [
+   "2023-504471-25-00",
+   "NCT04905693"
+  ],
+  [
+   "2023-504434-22-00",
+   "NCT06396065"
+  ],
+  [
+   "2023-504376-21-00",
+   "NCT06059001"
+  ],
+  [
+   "2023-504364-42-00",
+   "NCT05975073"
+  ],
+  [
+   "2023-504323-25-01",
+   "NCT05232916"
+  ],
+  [
+   "2023-504264-41-00",
+   "NCT05533775"
+  ],
+  [
+   "2023-504251-27-00",
+   "NCT04585750"
+  ],
+  [
+   "2023-504199-19-00",
+   "NCT05120596"
+  ],
+  [
+   "2023-504169-22-02",
+   "NCT05150704"
+  ],
+  [
+   "2023-504135-40-00",
+   "NCT06247085"
+  ],
+  [
+   "2023-504028-24-00",
+   "NCT06047080"
+  ],
+  [
+   "2023-504027-78-00",
+   "NCT05645692"
+  ],
+  [
+   "2023-503923-24-00",
+   "NCT06245408"
+  ],
+  [
+   "2023-503836-41-00",
+   "NCT05850689"
+  ],
+  [
+   "2023-503731-18-00",
+   "NCT05662397"
+  ],
+  [
+   "2023-503708-10-00",
+   "NCT05696626"
+  ],
+  [
+   "2023-503666-23-00",
+   "NCT05407636"
+  ],
+  [
+   "2023-503435-17-00",
+   "NCT04804553"
+  ],
+  [
+   "2023-503387-16-00",
+   "NCT03646123"
+  ],
+  [
+   "2023-503356-27-00",
+   "NCT05983367"
+  ],
+  [
+   "2023-503335-18-00",
+   "NCT05304377"
+  ],
+  [
+   "2023-503245-58-00",
+   "NCT05804045"
+  ],
+  [
+   "2023-503229-21-00",
+   "NCT04770896"
+  ],
+  [
+   "2022-503140-41-00",
+   "NCT05727904"
+  ],
+  [
+   "2022-503114-23-00",
+   "NCT05563220"
+  ],
+  [
+   "2022-503110-23-00",
+   "NCT05898841"
+  ],
+  [
+   "2022-503067-15-00",
+   "NCT05604170"
+  ],
+  [
+   "2022-503013-32-00",
+   "NCT05896566"
+  ],
+  [
+   "2022-502983-19-00",
+   "NCT05128825"
+  ],
+  [
+   "2022-502982-49-00",
+   "NCT05848011"
+  ],
+  [
+   "2022-502972-22-00",
+   "NCT06237452"
+  ],
+  [
+   "2022-502959-54-00",
+   "NCT05668988"
+  ],
+  [
+   "2022-502850-14-00",
+   "NCT05639751"
+  ],
+  [
+   "2022-502840-11-00",
+   "NCT05908786"
+  ],
+  [
+   "2022-502787-20-00",
+   "NCT05280314"
+  ],
+  [
+   "2022-502757-34-00",
+   "NCT05856981"
+  ],
+  [
+   "2022-502741-10-00",
+   "NCT04988555"
+  ],
+  [
+   "2022-502732-39-00",
+   "NCT05549297"
+  ],
+  [
+   "2022-502727-21-00",
+   "NCT05937750"
+  ],
+  [
+   "2022-502684-37-00",
+   "NCT04262466"
+  ],
+  [
+   "2022-502673-41-01",
+   "NCT05643638"
+  ],
+  [
+   "2022-502669-14-00",
+   "NCT05740566"
+  ],
+  [
+   "2022-502645-99-00",
+   "NCT05732831"
+  ],
+  [
+   "2022-502559-69-01",
+   "NCT05460000"
+  ],
+  [
+   "2022-502540-12-00",
+   "NCT05814523"
+  ],
+  [
+   "2022-502501-15-00",
+   "NCT05878769"
+  ],
+  [
+   "2022-502457-34-00",
+   "NCT05852691"
+  ],
+  [
+   "2022-502434-10-00",
+   "NCT04128072"
+  ],
+  [
+   "2022-502401-15-00",
+   "NCT04936178"
+  ],
+  [
+   "2022-502352-31-00",
+   "NCT06252649"
+  ],
+  [
+   "2022-502267-37-00",
+   "NCT05743036"
+  ],
+  [
+   "2022-502187-20-00",
+   "NCT03702920"
+  ],
+  [
+   "2022-502092-33-00",
+   "NCT05718323"
+  ],
+  [
+   "2022-502061-17-00",
+   "NCT05936580"
+  ],
+  [
+   "2022-502060-21-00",
+   "NCT05935358"
+  ],
+  [
+   "2022-502051-56-00",
+   "NCT05580562"
+  ],
+  [
+   "2022-502049-91-00",
+   "NCT05776004"
+  ],
+  [
+   "2022-501935-18-00",
+   "NCT06488898"
+  ],
+  [
+   "2022-501831-18-00",
+   "NCT05762211"
+  ],
+  [
+   "2022-501636-42-00",
+   "NCT05443126"
+  ],
+  [
+   "2022-501618-70-00",
+   "NCT05668585"
+  ],
+  [
+   "2022-501493-19-00",
+   "NCT05204927"
+  ],
+  [
+   "2022-501453-36-00",
+   "NCT05512364"
+  ],
+  [
+   "2022-501427-24-00",
+   "NCT05186753"
+  ],
+  [
+   "2022-501421-20-00",
+   "NCT05586971"
+  ],
+  [
+   "2022-501413-31-00",
+   "NCT05439083"
+  ],
+  [
+   "2022-501363-40-00",
+   "NCT05480865"
+  ],
+  [
+   "2022-501352-28-00",
+   "NCT05722938"
+  ],
+  [
+   "2022-501152-28-00",
+   "NCT05306041"
+  ],
+  [
+   "2022-501139-17-01",
+   "NCT05563558"
+  ],
+  [
+   "2022-501050-11-01",
+   "NCT04307576"
+  ],
+  [
+   "2022-501005-12-00",
+   "NCT05786573"
+  ],
+  [
+   "2022-501004-10-00",
+   "NCT05490563"
+  ],
+  [
+   "2022-500921-34-00",
+   "NCT05631938"
+  ],
+  [
+   "2022-500718-24-00",
+   "NCT05662241"
+  ],
+  [
+   "2022-500637-80-00",
+   "NCT05208047"
+  ],
+  [
+   "2022-500537-84-01",
+   "NCT05535946"
+  ],
+  [
+   "2022-500536-11-01",
+   "NCT05507216"
+  ],
+  [
+   "2022-500535-36-01",
+   "NCT05507203"
+  ],
+  [
+   "2022-500488-10-00",
+   "NCT04020055"
+  ],
+  [
+   "2022-500319-38-00",
+   "NCT05763953"
+  ],
+  [
+   "2022-500266-10-00",
+   "NCT05464381"
+  ],
+  [
+   "2022-500252-28-00",
+   "NCT04229901"
+  ],
+  [
+   "2022-500186-27-00",
+   "NCT05184088"
+  ],
+  [
+   "2022-003662-21",
+   "NCT04592653"
+  ],
+  [
+   "2022-002348-33",
+   "NCT05619783"
+  ],
+  [
+   "2022-001805-40",
+   "NCT05919394"
+  ],
+  [
+   "2022-001802-23",
+   "NCT05599243"
+  ],
+  [
+   "2022-001542-38",
+   "NCT05357989"
+  ],
+  [
+   "2022-001289-36",
+   "NCT05641324"
+  ],
+  [
+   "2022-000795-19",
+   "NCT05305573"
+  ],
+  [
+   "2022-000718-32",
+   "NCT05468736"
+  ],
+  [
+   "2022-000715-31",
+   "NCT05593770"
+  ],
+  [
+   "2022-000698-17",
+   "NCT05483933"
+  ],
+  [
+   "2022-000498-15",
+   "NCT05570058"
+  ],
+  [
+   "2022-000289-16",
+   "NCT05286853"
+  ],
+  [
+   "2022-000074-25",
+   "NCT05246137"
+  ],
+  [
+   "2021-006812-10",
+   "NCT04278144"
+  ],
+  [
+   "2021-006711-29",
+   "NCT05578872"
+  ],
+  [
+   "2021-006366-20",
+   "NCT05176691"
+  ],
+  [
+   "2021-006039-25",
+   "NCT05242822"
+  ],
+  [
+   "2021-005724-38",
+   "NCT05280509"
+  ],
+  [
+   "2021-005546-15",
+   "NCT05405751"
+  ],
+  [
+   "2021-005486-40",
+   "NCT05520086"
+  ],
+  [
+   "2021-005332-27",
+   "NCT05164133"
+  ],
+  [
+   "2021-005226-26",
+   "NCT05142553"
+  ],
+  [
+   "2021-005105-27",
+   "NCT05305040"
+  ],
+  [
+   "2021-004310-19",
+   "NCT05270044"
+  ],
+  [
+   "2021-004167-27",
+   "NCT04966741"
+  ],
+  [
+   "2021-004137-36",
+   "NCT05289492"
+  ],
+  [
+   "2021-004067-28",
+   "NCT05171777"
+  ],
+  [
+   "2021-004040-19",
+   "NCT05126303"
+  ],
+  [
+   "2021-003907-16",
+   "NCT05162768"
+  ],
+  [
+   "2021-003829-30",
+   "NCT05127590"
+  ],
+  [
+   "2021-003810-38",
+   "NCT02649790"
+  ],
+  [
+   "2021-003791-13",
+   "NCT05307679"
+  ],
+  [
+   "2021-003665-35",
+   "NCT05070364"
+  ],
+  [
+   "2021-003636-88",
+   "NCT04968184"
+  ],
+  [
+   "2021-003603-18",
+   "NCT05121376"
+  ],
+  [
+   "2021-003471-34",
+   "NCT05267574"
+  ],
+  [
+   "2021-003450-22",
+   "NCT05179057"
+  ],
+  [
+   "2021-003441-38",
+   "NCT05323734"
+  ],
+  [
+   "2021-003273-66",
+   "NCT04612413"
+  ],
+  [
+   "2021-003160-27",
+   "NCT05096403"
+  ],
+  [
+   "2021-003062-12",
+   "NCT04064346"
+  ],
+  [
+   "2021-002855-12",
+   "NCT04963231"
+  ],
+  [
+   "2021-002821-32",
+   "NCT05232630"
+  ],
+  [
+   "2021-002264-41",
+   "NCT04622774"
+  ],
+  [
+   "2021-002037-42",
+   "NCT04993677"
+  ],
+  [
+   "2021-001978-37",
+   "NCT05378191"
+  ],
+  [
+   "2021-001695-42",
+   "NCT05116891"
+  ],
+  [
+   "2021-001627-40",
+   "NCT05039359"
+  ],
+  [
+   "2021-001572-42",
+   "NCT04954001"
+  ],
+  [
+   "2021-001530-19",
+   "NCT05027867"
+  ],
+  [
+   "2021-001394-23",
+   "NCT04979442"
+  ],
+  [
+   "2021-001081-38",
+   "NCT05526066"
+  ],
+  [
+   "2021-001029-32",
+   "NCT04901806"
+  ],
+  [
+   "2021-000999-11",
+   "NCT04648020"
+  ],
+  [
+   "2021-000441-41",
+   "NCT04442126"
+  ],
+  [
+   "2021-000293-28",
+   "NCT04729608"
+  ],
+  [
+   "2021-000290-84",
+   "NCT04880785"
+  ],
+  [
+   "2020-006118-19",
+   "NCT04579679"
+  ],
+  [
+   "2020-005802-24",
+   "NCT04752358"
+  ],
+  [
+   "2020-005575-12",
+   "NCT04983238"
+  ],
+  [
+   "2020-005429-10",
+   "NCT04933942"
+  ],
+  [
+   "2020-005364-57",
+   "NCT04740671"
+  ],
+  [
+   "2020-005268-71",
+   "NCT04732286"
+  ],
+  [
+   "2020-005263-31",
+   "NCT06616922"
+  ],
+  [
+   "2020-005104-20",
+   "NCT04771000"
+  ],
+  [
+   "2020-005054-19",
+   "NCT05065970"
+  ],
+  [
+   "2020-005016-21",
+   "NCT04731467"
+  ],
+  [
+   "2020-005015-40",
+   "NCT05993143"
+  ],
+  [
+   "2020-004918-35",
+   "NCT04634825"
+  ],
+  [
+   "2020-004752-16",
+   "NCT03669640"
+  ],
+  [
+   "2020-004699-16",
+   "NCT04835584"
+  ],
+  [
+   "2020-004569-37",
+   "NCT04855929"
+  ],
+  [
+   "2020-004556-15",
+   "NCT05032196"
+  ],
+  [
+   "2020-004285-19",
+   "NCT04505774"
+  ],
+  [
+   "2020-003930-18",
+   "NCT04696185"
+  ],
+  [
+   "2020-003802-30",
+   "NCT04808362"
+  ],
+  [
+   "2020-003767-25",
+   "NCT05067127"
+  ],
+  [
+   "2020-003759-14",
+   "NCT04677504"
+  ],
+  [
+   "2020-003652-32",
+   "NCT04398524"
+  ],
+  [
+   "2020-003469-20",
+   "NCT04932291"
+  ],
+  [
+   "2020-003376-40",
+   "NCT05178810"
+  ],
+  [
+   "2020-003328-17",
+   "NCT04826003"
+  ],
+  [
+   "2020-003313-35",
+   "NCT04764448"
+  ],
+  [
+   "2020-003132-24",
+   "NCT04907539"
+  ],
+  [
+   "2020-003063-26",
+   "NCT04402073"
+  ],
+  [
+   "2020-002907-20",
+   "NCT04641871"
+  ],
+  [
+   "2020-002855-40",
+   "NCT04535609"
+  ],
+  [
+   "2020-002703-18",
+   "NCT06045052"
+  ],
+  [
+   "2020-002637-15",
+   "NCT04572854"
+  ],
+  [
+   "2020-002213-18",
+   "NCT04633187"
+  ],
+  [
+   "2020-002118-42",
+   "NCT04684914"
+  ],
+  [
+   "2020-002098-86",
+   "NCT04810390"
+  ],
+  [
+   "2020-002059-38",
+   "NCT04734548"
+  ],
+  [
+   "2020-002032-69",
+   "NCT04435717"
+  ],
+  [
+   "2020-001995-13",
+   "NCT04445272"
+  ],
+  [
+   "2020-001969-37",
+   "NCT04688775"
+  ],
+  [
+   "2020-001966-13",
+   "NCT04816721"
+  ],
+  [
+   "2020-001673-75",
+   "NCT04393038"
+  ],
+  [
+   "2020-001671-32",
+   "NCT04449588"
+  ],
+  [
+   "2020-001669-35",
+   "NCT04772742"
+  ],
+  [
+   "2020-001497-30",
+   "NCT04369469"
+  ],
+  [
+   "2020-001442-19",
+   "NCT04332094"
+  ],
+  [
+   "2020-001385-11",
+   "NCT04334928"
+  ],
+  [
+   "2020-001379-34",
+   "NCT04359862"
+  ],
+  [
+   "2020-001332-96",
+   "NCT05063318"
+  ],
+  [
+   "2020-001321-31",
+   "NCT04346147"
+  ],
+  [
+   "2020-001245-39",
+   "NCT04654143"
+  ],
+  [
+   "2020-001099-14",
+   "NCT04735926"
+  ],
+  [
+   "2020-001064-29",
+   "NCT05066230"
+  ],
+  [
+   "2020-000951-11",
+   "NCT04447118"
+  ],
+  [
+   "2020-000917-34",
+   "NCT04410445"
+  ],
+  [
+   "2020-000722-26",
+   "NCT04390113"
+  ],
+  [
+   "2020-000697-22",
+   "NCT04419558"
+  ],
+  [
+   "2020-000620-18",
+   "NCT04793568"
+  ],
+  [
+   "2020-000578-31",
+   "NCT04684238"
+  ],
+  [
+   "2020-000540-60",
+   "NCT03043313"
+  ],
+  [
+   "2020-000502-29",
+   "NCT04338269"
+  ],
+  [
+   "2020-000166-41",
+   "NCT04793399"
+  ],
+  [
+   "2020-000158-88",
+   "NCT04322539"
+  ],
+  [
+   "2020-000134-17",
+   "NCT04440592"
+  ],
+  [
+   "2020-000100-11",
+   "NCT04471428"
+  ],
+  [
+   "2019-004686-41",
+   "NCT04817189"
+  ],
+  [
+   "2019-004509-29",
+   "NCT04277884"
+  ],
+  [
+   "2019-004497-25",
+   "NCT04418765"
+  ],
+  [
+   "2019-004431-23",
+   "NCT04339413"
+  ],
+  [
+   "2019-004090-50",
+   "NCT04353791"
+  ],
+  [
+   "2019-003924-19",
+   "NCT04253236"
+  ],
+  [
+   "2019-003884-23",
+   "NCT03398655"
+  ],
+  [
+   "2019-003826-25",
+   "NCT04607668"
+  ],
+  [
+   "2019-003502-28",
+   "NCT04429919"
+  ],
+  [
+   "2019-003474-35",
+   "NCT03138889"
+  ],
+  [
+   "2019-003358-10",
+   "NCT04222257"
+  ],
+  [
+   "2019-003343-29",
+   "NCT04531982"
+  ],
+  [
+   "2019-003296-19",
+   "NCT04259450"
+  ],
+  [
+   "2019-002980-81",
+   "NCT04042116"
+  ],
+  [
+   "2019-002974-29",
+   "NCT04525638"
+  ],
+  [
+   "2019-002954-21",
+   "NCT04265651"
+  ],
+  [
+   "2019-002813-20",
+   "NCT04100096"
+  ],
+  [
+   "2019-002755-42",
+   "NCT04168385"
+  ],
+  [
+   "2019-002745-38",
+   "NCT04529850"
+  ],
+  [
+   "2019-002704-41",
+   "NCT04448431"
+  ],
+  [
+   "2019-002678-29",
+   "NCT04575259"
+  ],
+  [
+   "2019-002669-37",
+   "NCT04456998"
+  ],
+  [
+   "2019-002627-16",
+   "NCT05258071"
+  ],
+  [
+   "2019-002475-34",
+   "NCT04276558"
+  ],
+  [
+   "2019-002150-23",
+   "NCT04338685"
+  ],
+  [
+   "2019-002076-13",
+   "NCT04060199"
+  ],
+  [
+   "2019-002057-34",
+   "NCT04502875"
+  ],
+  [
+   "2019-001976-12",
+   "NCT04112589"
+  ],
+  [
+   "2019-001925-28",
+   "NCT03941093"
+  ],
+  [
+   "2019-001848-21",
+   "NCT04022876"
+  ],
+  [
+   "2019-001687-30",
+   "NCT04245085"
+  ],
+  [
+   "2019-001546-18",
+   "NCT03980925"
+  ],
+  [
+   "2019-001476-11",
+   "NCT04592874"
+  ],
+  [
+   "2019-001461-32",
+   "NCT04720742"
+  ],
+  [
+   "2019-001334-34",
+   "NCT04075604"
+  ],
+  [
+   "2019-001323-12",
+   "NCT04090736"
+  ],
+  [
+   "2019-001289-14",
+   "NCT04209543"
+  ],
+  [
+   "2019-001237-14",
+   "NCT03980132"
+  ],
+  [
+   "2019-001219-22",
+   "NCT03657043"
+  ],
+  [
+   "2019-001201-24",
+   "NCT04113616"
+  ],
+  [
+   "2019-001144-22",
+   "NCT03850795"
+  ],
+  [
+   "2019-001073-86",
+   "NCT02361346"
+  ],
+  [
+   "2019-001003-20",
+   "NCT04101331"
+  ],
+  [
+   "2019-000999-42",
+   "NCT03993379"
+  ],
+  [
+   "2019-000941-10",
+   "NCT03008187"
+  ],
+  [
+   "2019-000854-69",
+   "NCT03980041"
+  ],
+  [
+   "2019-000780-24",
+   "NCT04145440"
+  ],
+  [
+   "2019-000752-34",
+   "NCT03826628"
+  ],
+  [
+   "2019-000648-86",
+   "NCT03960580"
+  ],
+  [
+   "2019-000583-18",
+   "NCT04173494"
+  ],
+  [
+   "2019-000370-27",
+   "NCT03823404"
+  ],
+  [
+   "2019-000220-18",
+   "NCT03764293"
+  ],
+  [
+   "2019-000199-41",
+   "NCT04076423"
+  ],
+  [
+   "2018-004808-19",
+   "NCT03786926"
+  ],
+  [
+   "2018-004807-38",
+   "NCT03779113"
+  ],
+  [
+   "2018-004774-97",
+   "NCT03764618"
+  ],
+  [
+   "2018-004676-35",
+   "NCT03938545"
+  ],
+  [
+   "2018-004651-20",
+   "NCT03918447"
+  ],
+  [
+   "2018-004568-72",
+   "NCT03520075"
+  ],
+  [
+   "2018-004449-18",
+   "NCT03963921"
+  ],
+  [
+   "2018-004407-39",
+   "NCT03759678"
+  ],
+  [
+   "2018-004405-64",
+   "NCT03917225"
+  ],
+  [
+   "2018-004211-42",
+   "NCT03786094"
+  ],
+  [
+   "2018-004202-25",
+   "NCT03991754"
+  ],
+  [
+   "2018-004180-31",
+   "NCT03948178"
+  ],
+  [
+   "2018-003988-54",
+   "NCT03996447"
+  ],
+  [
+   "2018-003896-37",
+   "NCT03858972"
+  ],
+  [
+   "2018-003866-14",
+   "NCT03123783"
+  ],
+  [
+   "2018-003864-30",
+   "NCT04337931"
+  ],
+  [
+   "2018-003539-31",
+   "NCT03763422"
+  ],
+  [
+   "2018-003498-82",
+   "NCT03772665"
+  ],
+  [
+   "2018-003337-15",
+   "NCT03655236"
+  ],
+  [
+   "2018-003329-26",
+   "NCT04056195"
+  ],
+  [
+   "2018-003287-31",
+   "NCT03785184"
+  ],
+  [
+   "2018-003273-10",
+   "NCT03813160"
+  ],
+  [
+   "2018-003249-41",
+   "NCT03890744"
+  ],
+  [
+   "2018-003167-54",
+   "NCT03719313"
+  ],
+  [
+   "2018-003153-21",
+   "NCT03219268"
+  ],
+  [
+   "2018-003146-17",
+   "NCT03715998"
+  ],
+  [
+   "2018-003120-36",
+   "NCT03973333"
+  ],
+  [
+   "2018-002990-24",
+   "NCT03778931"
+  ],
+  [
+   "2018-002987-14",
+   "NCT03761849"
+  ],
+  [
+   "2018-002941-12",
+   "NCT03679767"
+  ],
+  [
+   "2018-002930-19",
+   "NCT03805100"
+  ],
+  [
+   "2018-002925-47",
+   "NCT03885713"
+  ],
+  [
+   "2018-002851-14",
+   "NCT04107727"
+  ],
+  [
+   "2018-002647-29",
+   "NCT04099888"
+  ],
+  [
+   "2018-002630-21",
+   "NCT03667690"
+  ],
+  [
+   "2018-002402-31",
+   "NCT03737448"
+  ],
+  [
+   "2018-002211-10",
+   "NCT03674242"
+  ],
+  [
+   "2018-002125-30",
+   "NCT04364035"
+  ],
+  [
+   "2018-002095-40",
+   "NCT04009876"
+  ],
+  [
+   "2018-002094-22",
+   "NCT04010552"
+  ],
+  [
+   "2018-001881-40",
+   "NCT03726879"
+  ],
+  [
+   "2018-001701-82",
+   "NCT03600441"
+  ],
+  [
+   "2018-001698-25",
+   "NCT03780673"
+  ],
+  [
+   "2018-001495-38",
+   "NCT03592472"
+  ],
+  [
+   "2018-001464-35",
+   "NCT03664674"
+  ],
+  [
+   "2018-001462-42",
+   "NCT03703310"
+  ],
+  [
+   "2018-001456-34",
+   "NCT03543813"
+  ],
+  [
+   "2018-001437-40",
+   "NCT03719690"
+  ],
+  [
+   "2018-001171-20",
+   "NCT03602560"
+  ],
+  [
+   "2018-001158-82",
+   "NCT03685500"
+  ],
+  [
+   "2018-001076-38",
+   "NCT03616470"
+  ],
+  [
+   "2018-001072-37",
+   "NCT03603184"
+  ],
+  [
+   "2018-001010-15",
+   "NCT04225897"
+  ],
+  [
+   "2018-000820-33",
+   "NCT03674502"
+  ],
+  [
+   "2018-000757-49",
+   "NCT03510897"
+  ],
+  [
+   "2018-000754-22",
+   "NCT03978000"
+  ],
+  [
+   "2018-000665-36",
+   "NCT03859427"
+  ],
+  [
+   "2018-000586-37",
+   "NCT03160898"
+  ],
+  [
+   "2018-000539-29",
+   "NCT03505723"
+  ],
+  [
+   "2018-000447-11",
+   "NCT03617367"
+  ],
+  [
+   "2018-000446-19",
+   "NCT03608397"
+  ],
+  [
+   "2018-000363-91",
+   "NCT03428217"
+  ],
+  [
+   "2018-000285-10",
+   "NCT03568656"
+  ],
+  [
+   "2018-000271-32",
+   "NCT03693170"
+  ],
+  [
+   "2018-000215-24",
+   "NCT03626467"
+  ],
+  [
+   "2018-000137-13",
+   "NCT03491462"
+  ],
+  [
+   "2018-000120-33",
+   "NCT03495882"
+  ],
+  [
+   "2018-000039-28",
+   "NCT03724071"
+  ],
+  [
+   "2017-004902-16",
+   "NCT03643965"
+  ],
+  [
+   "2017-004878-34",
+   "NCT03669549"
+  ],
+  [
+   "2017-004754-42",
+   "NCT03654729"
+  ],
+  [
+   "2017-004647-20",
+   "NCT03621280"
+  ],
+  [
+   "2017-004642-20",
+   "NCT03545191"
+  ],
+  [
+   "2017-004603-52",
+   "NCT03603964"
+  ],
+  [
+   "2017-004378-32",
+   "NCT03504917"
+  ],
+  [
+   "2017-004377-13",
+   "NCT03879122"
+  ],
+  [
+   "2017-004352-33",
+   "NCT03456830"
+  ],
+  [
+   "2017-004335-36",
+   "NCT03774459"
+  ],
+  [
+   "2017-004154-41",
+   "NCT03750786"
+  ],
+  [
+   "2017-003908-50",
+   "NCT03345095"
+  ],
+  [
+   "2017-003836-35",
+   "NCT03310125"
+  ],
+  [
+   "2017-003834-10",
+   "NCT03539484"
+  ],
+  [
+   "2017-003823-31",
+   "NCT03548220"
+  ],
+  [
+   "2017-003715-19",
+   "NCT03661515"
+  ],
+  [
+   "2017-003689-28",
+   "NCT03576378"
+  ],
+  [
+   "2017-003680-35",
+   "NCT03357224"
+  ],
+  [
+   "2017-003541-17",
+   "NCT03732625"
+  ],
+  [
+   "2017-003528-62",
+   "NCT03394924"
+  ],
+  [
+   "2017-003497-14",
+   "NCT03465722"
+  ],
+  [
+   "2017-003413-25",
+   "NCT03438396"
+  ],
+  [
+   "2017-003369-85",
+   "NCT03425539"
+  ],
+  [
+   "2017-003342-25",
+   "NCT03692065"
+  ],
+  [
+   "2017-003323-30",
+   "NCT03260712"
+  ],
+  [
+   "2017-003309-16",
+   "NCT03339297"
+  ],
+  [
+   "2017-003228-54",
+   "NCT03773952"
+  ],
+  [
+   "2017-003159-44",
+   "NCT03702179"
+  ],
+  [
+   "2017-003114-10",
+   "NCT03312751"
+  ],
+  [
+   "2017-002961-23",
+   "NCT03326674"
+  ],
+  [
+   "2017-002840-34",
+   "NCT03606408"
+  ],
+  [
+   "2017-002824-26",
+   "NCT03276013"
+  ],
+  [
+   "2017-002754-36",
+   "NCT03505021"
+  ],
+  [
+   "2017-002743-16",
+   "NCT02448251"
+  ],
+  [
+   "2017-002579-25",
+   "NCT03369262"
+  ],
+  [
+   "2017-002530-23",
+   "NCT03470545"
+  ],
+  [
+   "2017-002485-40",
+   "NCT03596385"
+  ],
+  [
+   "2017-002454-36",
+   "NCT03445533"
+  ],
+  [
+   "2017-002338-21",
+   "NCT03566238"
+  ],
+  [
+   "2017-002326-21",
+   "NCT03589222"
+  ],
+  [
+   "2017-002237-29",
+   "NCT03154827"
+  ],
+  [
+   "2017-002120-24",
+   "NCT03481556"
+  ],
+  [
+   "2017-001994-18",
+   "NCT03262935"
+  ],
+  [
+   "2017-001772-28",
+   "NCT04884191"
+  ],
+  [
+   "2017-001769-26",
+   "NCT03296163"
+  ],
+  [
+   "2017-001699-43",
+   "NCT03138733"
+  ],
+  [
+   "2017-001657-13",
+   "NCT04254380"
+  ],
+  [
+   "2017-001641-27",
+   "NCT03595553"
+  ],
+  [
+   "2017-001618-27",
+   "NCT03180736"
+  ],
+  [
+   "2017-001491-35",
+   "NCT03422679"
+  ],
+  [
+   "2017-001450-34",
+   "NCT03371082"
+  ],
+  [
+   "2017-001290-17",
+   "NCT03583164"
+  ],
+  [
+   "2017-001219-35",
+   "NCT03277690"
+  ],
+  [
+   "2017-001120-22",
+   "NCT03403725"
+  ],
+  [
+   "2017-001051-32",
+   "NCT02719574"
+  ],
+  [
+   "2017-000937-30",
+   "NCT03093259"
+  ],
+  [
+   "2017-000760-15",
+   "NCT02360579"
+  ],
+  [
+   "2017-000758-20",
+   "NCT03098030"
+  ],
+  [
+   "2017-000625-12",
+   "NCT03149549"
+  ],
+  [
+   "2017-000606-37",
+   "NCT04153630"
+  ],
+  [
+   "2017-000576-29",
+   "NCT03566823"
+  ],
+  [
+   "2017-000487-15",
+   "NCT03048825"
+  ],
+  [
+   "2017-000474-11",
+   "NCT03439254"
+  ],
+  [
+   "2017-000338-70",
+   "NCT03256903"
+  ],
+  [
+   "2017-000265-67",
+   "NCT03268382"
+  ],
+  [
+   "2017-000232-34",
+   "NCT03380130"
+  ],
+  [
+   "2017-000202-37",
+   "NCT03353831"
+  ],
+  [
+   "2016-005032-14",
+   "NCT03158948"
+  ],
+  [
+   "2016-005008-24",
+   "NCT03336073"
+  ],
+  [
+   "2016-004977-42",
+   "NCT03099785"
+  ],
+  [
+   "2016-004941-94",
+   "NCT02993107"
+  ],
+  [
+   "2016-004877-42",
+   "NCT03523429"
+  ],
+  [
+   "2016-004790-40",
+   "NCT03394937"
+  ],
+  [
+   "2016-004724-34",
+   "NCT03151408"
+  ],
+  [
+   "2016-004648-12",
+   "NCT02980874"
+  ],
+  [
+   "2016-004524-38",
+   "NCT03094286"
+  ],
+  [
+   "2016-004477-40",
+   "NCT03119649"
+  ],
+  [
+   "2016-004459-65",
+   "NCT03074942"
+  ],
+  [
+   "2016-004448-12",
+   "NCT03230318"
+  ],
+  [
+   "2016-004365-16",
+   "NCT03068130"
+  ],
+  [
+   "2016-004359-57",
+   "NCT02993731"
+  ],
+  [
+   "2016-004353-32",
+   "NCT03293680"
+  ],
+  [
+   "2016-004352-30",
+   "NCT03461276"
+  ],
+  [
+   "2016-004144-11",
+   "NCT04798703"
+  ],
+  [
+   "2016-004143-36",
+   "NCT03077165"
+  ],
+  [
+   "2016-004039-19",
+   "NCT03242382"
+  ],
+  [
+   "2016-003980-21",
+   "NCT03111238"
+  ],
+  [
+   "2016-003957-14",
+   "NCT03110562"
+  ],
+  [
+   "2016-003906-16",
+   "NCT03917186"
+  ],
+  [
+   "2016-003818-26",
+   "NCT03071692"
+  ],
+  [
+   "2016-003732-20",
+   "NCT03081689"
+  ],
+  [
+   "2016-003543-11",
+   "NCT02983045"
+  ],
+  [
+   "2016-003429-41",
+   "NCT03291002"
+  ],
+  [
+   "2016-003098-17",
+   "NCT03248427"
+  ],
+  [
+   "2016-003093-40",
+   "NCT03045406"
+  ],
+  [
+   "2016-002890-37",
+   "NCT03324828"
+  ],
+  [
+   "2016-002176-27",
+   "NCT03338218"
+  ],
+  [
+   "2016-002171-94",
+   "NCT02778360"
+  ],
+  [
+   "2016-002162-30",
+   "NCT03278548"
+  ],
+  [
+   "2016-002077-35",
+   "NCT03669172"
+  ],
+  [
+   "2016-002004-10",
+   "NCT02851407"
+  ],
+  [
+   "2016-001834-82",
+   "NCT02856893"
+  ],
+  [
+   "2016-001754-18",
+   "NCT02629692"
+  ],
+  [
+   "2016-001209-17",
+   "NCT02807454"
+  ],
+  [
+   "2016-000965-21",
+   "NCT02963493"
+  ],
+  [
+   "2016-000706-12",
+   "NCT03075423"
+  ],
+  [
+   "2016-000700-29",
+   "NCT02936037"
+  ],
+  [
+   "2016-000527-24",
+   "NCT02828098"
+  ],
+  [
+   "2016-000485-34",
+   "NCT02979899"
+  ],
+  [
+   "2016-000474-38",
+   "NCT02926898"
+  ],
+  [
+   "2016-000467-16",
+   "NCT02865356"
+  ],
+  [
+   "2016-000196-24",
+   "NCT02657356"
+  ],
+  [
+   "2016-000068-40",
+   "NCT03036462"
+  ],
+  [
+   "2015-005717-80",
+   "NCT02917291"
+  ],
+  [
+   "2015-005608-28",
+   "NCT03023527"
+  ],
+  [
+   "2015-005471-24",
+   "NCT02891824"
+  ],
+  [
+   "2015-005256-97",
+   "NCT02920008"
+  ],
+  [
+   "2015-005223-90",
+   "NCT02725372"
+  ],
+  [
+   "2015-005117-72",
+   "NCT02989857"
+  ],
+  [
+   "2015-005105-36",
+   "NCT02902965"
+  ],
+  [
+   "2015-005093-38",
+   "NCT03158220"
+  ],
+  [
+   "2015-004851-28",
+   "NCT02970682"
+  ],
+  [
+   "2015-004776-30",
+   "NCT02665650"
+  ],
+  [
+   "2015-004535-12",
+   "NCT02383927"
+  ],
+  [
+   "2015-004405-16",
+   "NCT02774005"
+  ],
+  [
+   "2015-004336-35",
+   "NCT02686762"
+  ],
+  [
+   "2015-004257-41",
+   "NCT02635776"
+  ],
+  [
+   "2015-004222-34",
+   "NCT02570308"
+  ],
+  [
+   "2015-004219-19",
+   "NCT02795949"
+  ],
+  [
+   "2015-004214-14",
+   "NCT02765165"
+  ],
+  [
+   "2015-004202-41",
+   "NCT02776605"
+  ],
+  [
+   "2015-004167-37",
+   "NCT02682927"
+  ],
+  [
+   "2015-004026-34",
+   "NCT02754882"
+  ],
+  [
+   "2015-003954-42",
+   "NCT02706119"
+  ],
+  [
+   "2015-003922-15",
+   "NCT02606305"
+  ],
+  [
+   "2015-003607-30",
+   "NCT02627963"
+  ],
+  [
+   "2015-003596-30",
+   "NCT02775903"
+  ],
+  [
+   "2015-003513-24",
+   "NCT02615873"
+  ],
+  [
+   "2015-003512-20",
+   "NCT02605434"
+  ],
+  [
+   "2015-003438-28",
+   "NCT02558231"
+  ],
+  [
+   "2015-003359-23",
+   "NCT02636010"
+  ],
+  [
+   "2015-003326-13",
+   "NCT02707120"
+  ],
+  [
+   "2015-003314-24",
+   "NCT02576678"
+  ],
+  [
+   "2015-003078-33",
+   "NCT02610296"
+  ],
+  [
+   "2015-002947-33",
+   "NCT02608125"
+  ],
+  [
+   "2015-002560-16",
+   "NCT02548351"
+  ],
+  [
+   "2015-002478-19",
+   "NCT02584959"
+  ],
+  [
+   "2015-002105-11",
+   "NCT02560948"
+  ],
+  [
+   "2015-001924-40",
+   "NCT02974322"
+  ],
+  [
+   "2015-001909-14",
+   "NCT03070964"
+  ],
+  [
+   "2015-001859-67",
+   "NCT02535091"
+  ],
+  [
+   "2015-001801-15",
+   "NCT02614534"
+  ],
+  [
+   "2015-001800-74",
+   "NCT02517021"
+  ],
+  [
+   "2015-001722-42",
+   "NCT02530320"
+  ],
+  [
+   "2015-001641-89",
+   "NCT02566993"
+  ],
+  [
+   "2015-001617-27",
+   "NCT02503644"
+  ],
+  [
+   "2015-001534-13",
+   "NCT02630004"
+  ],
+  [
+   "2015-001410-10",
+   "NCT02994836"
+  ],
+  [
+   "2015-001183-19",
+   "NCT02575144"
+  ],
+  [
+   "2015-001141-80",
+   "NCT02684318"
+  ],
+  [
+   "2015-001048-12",
+   "NCT02638766"
+  ],
+  [
+   "2015-001000-58",
+   "NCT02404376"
+  ],
+  [
+   "2015-000905-38",
+   "NCT02436668"
+  ],
+  [
+   "2015-000380-13",
+   "NCT02492711"
+  ],
+  [
+   "2015-000276-10",
+   "NCT02382718"
+  ],
+  [
+   "2015-000206-18",
+   "NCT02451007"
+  ],
+  [
+   "2015-000203-89",
+   "NCT02790996"
+  ],
+  [
+   "2014-005156-26",
+   "NCT02361060"
+  ],
+  [
+   "2014-005079-10",
+   "NCT02438007"
+  ],
+  [
+   "2014-005042-21",
+   "NCT02411591"
+  ],
+  [
+   "2014-004857-15",
+   "NCT02455999"
+  ],
+  [
+   "2014-004806-14",
+   "NCT02524847"
+  ],
+  [
+   "2014-004624-21",
+   "NCT02382016"
+  ],
+  [
+   "2014-004572-34",
+   "NCT02399137"
+  ],
+  [
+   "2014-004509-34",
+   "NCT02674750"
+  ],
+  [
+   "2014-004113-85",
+   "NCT02478957"
+  ],
+  [
+   "2014-003924-34",
+   "NCT02806648"
+  ],
+  [
+   "2014-003865-11",
+   "NCT02312206"
+  ],
+  [
+   "2014-003773-42",
+   "NCT02454972"
+  ],
+  [
+   "2014-003599-21",
+   "NCT02224066"
+  ],
+  [
+   "2014-003437-26",
+   "NCT02322281"
+  ],
+  [
+   "2014-003356-30",
+   "NCT02259582"
+  ],
+  [
+   "2014-003355-56",
+   "NCT02289898"
+  ],
+  [
+   "2014-003220-52",
+   "NCT02374099"
+  ],
+  [
+   "2014-003159-73",
+   "NCT02213744"
+  ],
+  [
+   "2014-003066-24",
+   "NCT02278718"
+  ],
+  [
+   "2014-003056-31",
+   "NCT02406742"
+  ],
+  [
+   "2014-002740-41",
+   "NCT02384083"
+  ],
+  [
+   "2014-002624-28",
+   "NCT02510560"
+  ],
+  [
+   "2014-002388-13",
+   "NCT02447666"
+  ],
+  [
+   "2014-002189-64",
+   "NCT02200757"
+  ],
+  [
+   "2014-002186-30",
+   "NCT02273141"
+  ],
+  [
+   "2014-002185-78",
+   "NCT02273167"
+  ],
+  [
+   "2014-001661-27",
+   "NCT02457130"
+  ],
+  [
+   "2014-001408-23",
+   "NCT02301143"
+  ],
+  [
+   "2014-001233-89",
+   "NCT02348489"
+  ],
+  [
+   "2014-000934-53",
+   "NCT02112656"
+  ],
+  [
+   "2014-000834-50",
+   "NCT02077868"
+  ],
+  [
+   "2014-000667-40",
+   "NCT02279160"
+  ],
+  [
+   "2014-000554-10",
+   "NCT02406144"
+  ],
+  [
+   "2014-000449-65",
+   "NCT02307383"
+  ],
+  [
+   "2014-000443-33",
+   "NCT02115750"
+  ],
+  [
+   "2014-000370-19",
+   "NCT02186301"
+  ],
+  [
+   "2014-000268-17",
+   "NCT01734928"
+  ],
+  [
+   "2013-005557-73",
+   "NCT02293460"
+  ],
+  [
+   "2013-005532-23",
+   "NCT02147990"
+  ],
+  [
+   "2013-005478-22",
+   "NCT02165397"
+  ],
+  [
+   "2013-005357-79",
+   "NCT02134353"
+  ],
+  [
+   "2013-005155-32",
+   "NCT02821507"
+  ],
+  [
+   "2013-005001-31",
+   "NCT02123264"
+  ],
+  [
+   "2013-004698-29",
+   "NCT02093962"
+  ],
+  [
+   "2013-004516-21",
+   "NCT01956812"
+  ],
+  [
+   "2013-004391-35",
+   "NCT01008150"
+  ],
+  [
+   "2013-004323-37",
+   "NCT02445742"
+  ],
+  [
+   "2013-004103-40",
+   "NCT02049905"
+  ],
+  [
+   "2013-003835-31",
+   "NCT02100657"
+  ],
+  [
+   "2013-003822-96",
+   "NCT02070991"
+  ],
+  [
+   "2013-003704-39",
+   "NCT02098837"
+  ],
+  [
+   "2013-003586-34",
+   "NCT01303796"
+  ],
+  [
+   "2013-003503-19",
+   "NCT02200081"
+  ],
+  [
+   "2013-003489-15",
+   "NCT02112487"
+  ],
+  [
+   "2013-003462-14",
+   "NCT02081690"
+  ],
+  [
+   "2013-003368-29",
+   "NCT02794168"
+  ],
+  [
+   "2013-003358-25",
+   "NCT01957878"
+  ],
+  [
+   "2013-002845-12",
+   "NCT03311178"
+  ],
+  [
+   "2013-002403-34",
+   "NCT02216786"
+  ],
+  [
+   "2013-002154-67",
+   "NCT02056665"
+  ],
+  [
+   "2013-001884-21",
+   "NCT01829347"
+  ],
+  [
+   "2013-001858-10",
+   "NCT01866111"
+  ],
+  [
+   "2013-001729-26",
+   "NCT02112175"
+  ],
+  [
+   "2013-001596-21",
+   "NCT02096328"
+  ],
+  [
+   "2013-001590-25",
+   "NCT01925768"
+  ],
+  [
+   "2013-001309-98",
+   "NCT02512653"
+  ],
+  [
+   "2013-001245-14",
+   "NCT01938001"
+  ],
+  [
+   "2013-001150-10",
+   "NCT01892345"
+  ],
+  [
+   "2013-001080-23",
+   "NCT03124199"
+  ],
+  [
+   "2013-001065-17",
+   "NCT02012088"
+  ],
+  [
+   "2013-000547-85",
+   "NCT01966822"
+  ],
+  [
+   "2012-005563-27",
+   "NCT01471028"
+  ],
+  [
+   "2012-005546-38",
+   "NCT01767155"
+  ],
+  [
+   "2012-004987-23",
+   "NCT01709149"
+  ],
+  [
+   "2012-004766-17",
+   "NCT01728805"
+  ],
+  [
+   "2012-004641-33",
+   "NCT02633696"
+  ],
+  [
+   "2012-004259-36",
+   "NCT01802450"
+  ],
+  [
+   "2012-004076-19",
+   "NCT02009579"
+  ],
+  [
+   "2012-004013-13",
+   "NCT01732913"
+  ],
+  [
+   "2012-003450-92",
+   "NCT02472665"
+  ],
+  [
+   "2012-002866-11",
+   "NCT01689246"
+  ],
+  [
+   "2012-002852-17",
+   "NCT01533207"
+  ],
+  [
+   "2012-002847-28",
+   "NCT01689233"
+  ],
+  [
+   "2012-002542-20",
+   "NCT01865110"
+  ],
+  [
+   "2012-002451-41",
+   "NCT02003742"
+  ],
+  [
+   "2012-002400-40",
+   "NCT02261714"
+  ],
+  [
+   "2012-001580-68",
+   "NCT01796002"
+  ],
+  [
+   "2012-001574-28",
+   "NCT01685268"
+  ],
+  [
+   "2012-000541-12",
+   "NCT02907177"
+  ],
+  [
+   "2012-000142-35",
+   "NCT01957436"
+  ],
+  [
+   "2011-005189-39",
+   "NCT01526369"
+  ],
+  [
+   "2010-024273-38",
+   "NCT02602210"
+  ],
+  [
+   "2010-022949-17",
+   "NCT01379989"
+  ]
+ ],
+ "hospitals": 91,
+ "hospitalsWithTrials": 70,
+ "trials": 11065,
+ "locationMatching": {
+  "madrid_location_rows": 23179,
+  "placeholder": 7038,
+  "unmatched": 1645,
+  "matched": 13855,
+  "non_hospital": 641,
+  "trials_without_attributable_site": 3262
+ },
+ "topUnmatchedFacilities": [
+  [
+   "CSEU La Salle",
+   24
+  ],
+  [
+   "Altana Pharma/Nycomed",
+   18
+  ],
+  [
+   "NEXT Oncology Madrid",
+   12
+  ],
+  [
+   "Spanish Cooperative Group for Gastrointestinal Tumour Therapy",
+   12
+  ],
+  [
+   "Instituto Palacios",
+   11
+  ],
+  [
+   "Centro Investigación Fisioterapia y Dolor",
+   10
+  ],
+  [
+   "START Madrid",
+   10
+  ],
+  [
+   "Clinica Baviera",
+   10
+  ],
+  [
+   "Instituto de Investigaciones del Sueno",
+   9
+  ],
+  [
+   "Mayuben Clinic",
+   9
+  ],
+  [
+   "CSEU LaSalle",
+   8
+  ],
+  [
+   "Centro Superior de Estudios Universitarios La Salle",
+   7
+  ],
+  [
+   "César Fernández-de-las-Peñas",
+   7
+  ],
+  [
+   "FutureMeds - Madrid",
+   6
+  ],
+  [
+   "Instituto de Ciencia y Tecnología de Alimentos y Nutrición",
+   6
+  ],
+  [
+   "Instituto Palacios de Salud y Medicina de la Mujer",
+   6
+  ],
+  [
+   "Physioterapy and Pain center research",
+   6
+  ],
+  [
+   "Cesar Fernandez-de-Las-Peñas",
+   6
+  ],
+  [
+   "Instituto Palacios, Salud y Medicina de la Mujer",
+   5
+  ],
+  [
+   "Spanish Cooperative Group for Digestive Tumour Therapy",
+   5
+  ],
+  [
+   "IMDEA Food",
+   5
+  ],
+  [
+   "Grupo Fisioterapia y Dolor",
+   5
+  ],
+  [
+   "Gerencia de Atención Primaria",
+   5
+  ],
+  [
+   "NEXT Madrid",
+   5
+  ],
+  [
+   "PHN-012-001 Site",
+   5
+  ],
+  [
+   "Instituto de Investigaciones del Sueño",
+   5
+  ],
+  [
+   "Spanish Breast Cancer Research Group (GEICAM)",
+   5
+  ],
+  [
+   "GSK Clinical Trials Call Center",
+   4
+  ],
+  [
+   "Clínica Quirón",
+   4
+  ],
+  [
+   "Complutense Medical Center (Virtus Group)",
+   4
+  ],
+  [
+   "Hospital Ruber International",
+   4
+  ],
+  [
+   "Clínica La Concepción",
+   4
+  ],
+  [
+   "Cecilia Estrada Barranco",
+   4
+  ],
+  [
+   "Grupo Dermatologico Y Estetico Pedro Jaen",
+   4
+  ],
+  [
+   "Gerencia de Atención Primaria, Madrid",
+   4
+  ],
+  [
+   "J.Nicolas Cuenca Zaldivar",
+   4
+  ],
+  [
+   "Clinica Rementeria",
+   4
+  ],
+  [
+   "Futuremeds Spain S.L.",
+   4
+  ],
+  [
+   "Facility #1",
+   4
+  ],
+  [
+   "Facility #2",
+   4
+  ],
+  [
+   "Dpt. Nutricion, Bromatologia y Tecnologia de los Alimentos",
+   3
+  ],
+  [
+   "ESP006",
+   3
+  ],
+  [
+   "Spain, Madrid",
+   3
+  ],
+  [
+   "IMDEA-Food",
+   3
+  ],
+  [
+   "Gerencia Atención Primaria, Madrid",
+   3
+  ],
+  [
+   "Exelixis Clinical Site #34",
+   3
+  ],
+  [
+   "Exelixis Clinical Site #17",
+   3
+  ],
+  [
+   "Study Center",
+   3
+  ],
+  [
+   "Hospital Clínico",
+   3
+  ],
+  [
+   "Foundation for Science, Health and Education",
+   3
+  ],
+  [
+   "ES005",
+   3
+  ],
+  [
+   "Grupo Pedro Jaén",
+   3
+  ],
+  [
+   "Real Centro Universitario María Cristina",
+   3
+  ],
+  [
+   "Hospital Clinico Universitario Virgen de la Arrixaca",
+   3
+  ],
+  [
+   "Novartis",
+   3
+  ],
+  [
+   "H.C. S.Carlos",
+   3
+  ],
+  [
+   "ES009",
+   3
+  ],
+  [
+   "Gabinete Médico Velázquez",
+   3
+  ],
+  [
+   "Móstoles, Madrid",
+   3
+  ],
+  [
+   "Hospital Vithas Madrid Arturo Soria",
+   3
+  ]
+ ]
+}

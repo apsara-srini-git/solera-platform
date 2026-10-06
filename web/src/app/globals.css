@@ -1,0 +1,192 @@
+@import "tailwindcss";
+
+/* ──────────────────────────────────────────────────────────────────────────
+   Solera design tokens - see web/DESIGN.md
+   Brand: deep clinical teal (OKLCH hue ≈ 192). Neutrals: cool slate.
+   ────────────────────────────────────────────────────────────────────────── */
+
+@theme inline {
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: var(--font-geist-mono), ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+
+@theme {
+  /* Brand teal - generated in OKLCH, monotone lightness */
+  --color-brand-50: #f1fdfd;
+  --color-brand-100: #e0f8f6;
+  --color-brand-200: #bcecea;
+  --color-brand-300: #87d8d4;
+  --color-brand-400: #42bab3;
+  --color-brand-500: #00958f;
+  --color-brand-600: #007775;
+  --color-brand-700: #005e5d;
+  --color-brand-800: #004849;
+  --color-brand-900: #003032;
+
+  /* Surfaces & ink (semantic) */
+  --color-canvas: #f6f7f9; /* page background */
+  --color-surface: #ffffff; /* cards, header */
+  --color-subtle: #f1f3f6; /* wells, table heads, hover */
+  --color-line: #e3e7ec; /* default borders */
+  --color-line-strong: #cdd3db; /* input borders */
+  --color-ink: #0f1d22; /* primary text */
+  --color-ink-2: #3d4a52; /* secondary text */
+  --color-muted: #66737c; /* tertiary text, captions (4.7:1 on white) */
+
+  /* Score scale (ordinal, 5 bins) - mirrors src/lib/score-scale.ts */
+  --color-score-1: #5ab9ba;
+  --color-score-2: #1da19f;
+  --color-score-3: #00837f;
+  --color-score-4: #006967;
+  --color-score-5: #005051;
+
+  /* Elevation */
+  --shadow-xs: 0 1px 2px rgb(15 29 34 / 0.05);
+  --shadow-card: 0 1px 2px rgb(15 29 34 / 0.04), 0 1px 3px rgb(15 29 34 / 0.06);
+  --shadow-raised: 0 2px 4px rgb(15 29 34 / 0.04), 0 8px 24px -6px rgb(15 29 34 / 0.12);
+  --shadow-pop: 0 12px 40px -8px rgb(15 29 34 / 0.25), 0 2px 6px rgb(15 29 34 / 0.06);
+
+  /* Motion */
+  --ease-out-soft: cubic-bezier(0.22, 1, 0.36, 1);
+
+  /* Layout */
+  --header-h: 60px;
+}
+
+/* ── Base ─────────────────────────────────────────────────────────────── */
+
+html {
+  -webkit-text-size-adjust: 100%;
+  scroll-padding-top: calc(var(--header-h) + 16px);
+}
+
+body {
+  background: var(--color-canvas);
+  color: var(--color-ink);
+  font-feature-settings: "cv11", "ss01", "ss03";
+  overflow-x: clip;
+  overflow-wrap: break-word; /* long URLs / ids never push the page sideways */
+}
+
+::selection {
+  background: var(--color-brand-200);
+  color: var(--color-ink);
+}
+
+/* One consistent, visible focus ring for keyboard users everywhere. */
+:where(a, button, input, select, textarea, summary, [tabindex]):focus-visible {
+  outline: 2px solid var(--color-brand-500);
+  outline-offset: 2px;
+  border-radius: 6px;
+}
+
+h1, h2, h3, h4 {
+  letter-spacing: -0.015em;
+  text-wrap: balance;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* ── Utilities (legacy names kept stable for existing pages) ─────────── */
+
+@utility card {
+  @apply rounded-xl border border-line bg-surface shadow-card;
+}
+
+@utility card-interactive {
+  @apply card transition duration-200 ease-out-soft hover:-translate-y-px hover:border-line-strong hover:shadow-raised;
+}
+
+@utility btn {
+  @apply inline-flex h-9 shrink-0 cursor-pointer items-center justify-center gap-2 rounded-lg px-3.5 text-sm font-medium whitespace-nowrap transition duration-150 select-none disabled:pointer-events-none disabled:opacity-50 aria-disabled:pointer-events-none aria-disabled:opacity-50;
+}
+
+@utility btn-primary {
+  @apply btn bg-brand-600 text-white shadow-xs hover:bg-brand-700 active:bg-brand-800;
+}
+
+@utility btn-secondary {
+  @apply btn border border-line-strong bg-surface text-ink shadow-xs hover:border-ink-2/30 hover:bg-subtle active:bg-line;
+}
+
+@utility btn-ghost {
+  @apply btn text-ink-2 hover:bg-subtle hover:text-ink active:bg-line;
+}
+
+@utility btn-danger {
+  @apply btn border border-rose-300 bg-surface text-rose-700 shadow-xs hover:bg-rose-50 active:bg-rose-100;
+}
+
+@utility input {
+  @apply block w-full rounded-lg border border-line-strong bg-surface px-3 py-2 text-sm text-ink shadow-xs transition outline-none placeholder:text-muted/80 hover:border-ink-2/35 focus:border-brand-500 focus:ring-3 focus:ring-brand-500/15 disabled:cursor-not-allowed disabled:bg-subtle disabled:text-muted aria-invalid:border-rose-400 aria-invalid:focus:ring-rose-500/15;
+}
+
+@utility label {
+  @apply mb-1.5 block text-[13px] font-medium text-ink-2;
+}
+
+@utility chip {
+  @apply inline-flex items-center gap-1 rounded-full px-2 py-0.5 text-xs leading-5 font-medium whitespace-nowrap;
+}
+
+/* Numbers that line up in tables and stats. */
+@utility num {
+  font-variant-numeric: tabular-nums;
+  font-feature-settings: "tnum", "cv11";
+}
+
+/* Break out of the centred page container (e.g. full-width list ↔ map search). */
+@utility full-bleed {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+}
+
+/* Height of the viewport below the sticky header (for map panes). */
+@utility h-below-header {
+  height: calc(100dvh - var(--header-h));
+}
+
+@utility scrollbar-none {
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+/* Native <dialog> backdrop used by Modal / Drawer. */
+dialog.ui-dialog::backdrop {
+  background: rgb(15 29 34 / 0.45);
+  backdrop-filter: blur(2px);
+}
+dialog.ui-dialog[open] {
+  animation: ui-pop 180ms var(--ease-out-soft);
+}
+dialog.ui-drawer[open] {
+  animation: ui-slide 220ms var(--ease-out-soft);
+}
+@keyframes ui-pop {
+  from { opacity: 0; transform: translateY(6px) scale(0.98); }
+}
+@keyframes ui-slide {
+  from { transform: translateX(24px); opacity: 0; }
+}
+
+/* Mobile nav: hide the native disclosure marker. */
+details > summary.no-marker { list-style: none; }
+details > summary.no-marker::-webkit-details-marker { display: none; }
+
+/* Native selects styled with .input get a consistent chevron (all pages, incl. untouched ones). */
+select.input:not([multiple]) {
+  appearance: none;
+  padding-right: 2.25rem;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='%2366737c' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.75rem center;
+  cursor: pointer;
+}
